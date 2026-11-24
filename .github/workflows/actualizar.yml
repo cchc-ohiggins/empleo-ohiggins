@@ -1,0 +1,77 @@
+name: Actualizar panel de empleo
+
+on:
+  schedule:
+    # El INE publica la Encuesta Nacional de Empleo (ENE) hacia fines de cada mes, a las 09:00 hora de Chile.
+    # Se revisa varias veces al día entre el 24 y el 31 (hora UTC; en horario de verano de Chile son ~10:07, ~13:07 y ~17:07).
+    # Si no hay trimestre nuevo, los datos no cambian y no se guarda nada. Minutos poco comunes porque GitHub atrasa las horas redondas.
+    - cron: "7 13,16,20 24-31 * *"
+    # Revisión de respaldo los primeros días del mes, por si el INE publicó con atraso.
+    - cron: "37 14 1-3 * *"
+  workflow_dispatch:   # permite lanzarlo a mano desde la pestaña Actions
+    inputs:
+      ic:
+        description: "Margen de error de O'Higgins (opcional): AAAA-MM=inferior,superior. Ej.: 2026-08=9.4,12.3. Varios separados por espacio."
+        required: false
+        default: ""
+
+permissions:
+  contents: write      # guardar los datos nuevos en docs/data
+  pages: write         # publicar la página
+  id-token: write
+
+concurrency:
+  group: actualizar-panel
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Descargar la ENE desde SIMEL y generar los datos
+        env:
+          IC: ${{ github.event.inputs.ic }}
+        run: |
+          ARGS=""
+          for x in $IC; do ARGS="$ARGS --ic $x"; done
+          python actualizar_empleo.py --descargar $ARGS
+
+      - name: Guardar los datos en el repositorio
+        run: |
+          git config user.name "panel-empleo"
+          git config user.email "panel-empleo@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+          else
+            git commit -m "Actualización de datos $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+      - name: Configurar la publicación
+        uses: actions/configure-pages@v5
+
+      - name: Preparar la página
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Publicar la página
+        id: deployment
+        uses: actions/deploy-pages@v4
