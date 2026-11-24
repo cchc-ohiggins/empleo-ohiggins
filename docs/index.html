@@ -1,0 +1,2546 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mercado laboral en Chile y sus regiones · CChC O'Higgins</title>
+<meta name="description" content="Desocupación, empleo y construcción en Chile y en las 16 regiones, con descarga de minuta en Word, Excel y CSV. Cámara Chilena de la Construcción, Sede O'Higgins.">
+<meta name="theme-color" content="#0A57A8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mercado laboral en Chile y sus regiones">
+<meta property="og:description" content="Desocupación, empleo y construcción en Chile y en las 16 regiones. Cámara Chilena de la Construcción, Sede O'Higgins.">
+<meta property="og:image" content="logo-cchc.png">
+<link rel="icon" href="logo-cchc.png">
+<style>
+
+@font-face{font-family:"Jakarta";src:url("fonts/jakarta.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+.mo{--or:#E74100;--az:#006EDC;--no:#003D6B;--gr:#D9D9D9;--ease:cubic-bezier(.2,.7,.2,1);--sombra:0 1px 2px rgba(0,40,70,.06),0 12px 28px -16px rgba(0,40,70,.28);--r:18px;
+  --mo-font:"Jakarta",var(--font-anthropic-sans),system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-family:var(--mo-font);color:var(--color-fg);font-size:15px;line-height:1.55;max-width:1140px;margin:0 auto;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+.mo *{box-sizing:border-box}
+.mo p{margin:0}
+.mo h1,.mo h2,.mo h3{margin:0;font-family:var(--mo-font);font-weight:600;letter-spacing:-.02em}
+.mo h2{font-size:clamp(23px,3vw,29px);line-height:1.15}
+.mo button,.mo select{font-family:var(--mo-font)}
+.mo-sub{color:var(--color-fg-muted);font-size:14px;margin-top:6px!important;max-width:66ch}
+.mo-ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- barra de filtros ---------- */
+.mo-bar{position:sticky;top:10px;z-index:6;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;justify-content:space-between;margin-bottom:14px;padding:10px 14px;border:1px solid var(--color-border-line);border-radius:28px;background:color-mix(in srgb,var(--color-panel) 88%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:var(--sombra)}
+.mo-bar-g{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.mo-bar-l{font-size:12.5px;color:var(--color-fg-muted);font-weight:500}
+.mo-pick{display:flex;align-items:center;gap:6px}
+.mo-ib{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--color-border-line);background:var(--color-panel);color:var(--color-fg);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.mo-ib:hover:not(:disabled){background:var(--no);color:#fff;border-color:var(--no)}
+.mo-ib:disabled{opacity:.35;cursor:default}
+.mo-ib:focus-visible,.mo-select:focus-visible,.mo-ult:focus-visible,.mo-seg button:focus-visible{outline:2px solid var(--az);outline-offset:2px}
+.mo-select{appearance:none;-webkit-appearance:none;font-size:14px;font-weight:600;color:var(--color-fg);height:36px;min-width:210px;max-width:100%;padding:0 38px 0 16px;border-radius:999px;border:1px solid var(--color-border-line);background-color:var(--color-panel);cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23006EDC' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.mo-ult{font-size:13px;font-weight:600;border:0;border-radius:999px;padding:7px 14px;background:var(--or);color:#fff;cursor:pointer}
+.mo-ult[hidden]{display:none}
+.mo-seg{display:inline-flex;border:1px solid var(--color-border-line);border-radius:999px;padding:3px;background:var(--color-panel)}
+.mo-seg button{font-size:13px;font-weight:500;border:0;background:transparent;color:var(--color-fg-muted);padding:5px 14px;border-radius:999px;cursor:pointer;transition:background .15s,color .15s}
+.mo-seg button:hover{color:var(--color-fg)}
+.mo-seg button.mo-on{background:var(--no);color:#fff}
+
+/* ---------- portada ---------- */
+.mo-hero{position:relative;overflow:hidden;color:#fff;border-radius:var(--r);border-top:5px solid var(--or);padding:clamp(22px,4.4vw,46px);box-shadow:var(--sombra);
+  background-color:#00335c;
+  background-image:radial-gradient(900px 420px at 92% -12%,rgba(0,110,220,.55),transparent 62%),radial-gradient(620px 360px at -6% 112%,rgba(231,65,0,.22),transparent 60%),linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:auto,auto,96px 96px,96px 96px,24px 24px,24px 24px}
+.mo-hero-in{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:center}
+.mo-from{font-size:13.5px;opacity:.82;margin-bottom:16px!important;font-weight:500}
+.mo-hero h1{font-size:clamp(32px,5.2vw,54px);line-height:1.03;letter-spacing:-.03em;margin-bottom:20px;font-weight:600}
+.mo-lead{font-size:clamp(16px,2vw,19px);line-height:1.55;max-width:46ch;font-weight:400}
+.mo-lead b{font-weight:700}
+.mo-lead2{margin-top:12px!important;font-size:15px;opacity:.86;max-width:46ch}
+.mo-next{display:flex;gap:10px;align-items:center;margin-top:26px!important;padding:10px 16px;border:1px solid rgba(255,255,255,.26);border-radius:999px;width:fit-content;max-width:100%;font-size:14px;background:rgba(0,28,52,.38);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.mo-next .mo-ic{color:#ff7a3d;stroke-width:2.2}
+.mo-next b{font-weight:700}
+.mo-plano{width:100%;height:auto;display:block;overflow:visible}
+.mo-plano .mo-contra,.mo-plano .mo-banderin{fill:var(--or)}
+.mo-plano .mo-cable{stroke:#fff;stroke-width:1.4}
+.mo-plano .mo-fade{stroke:rgba(255,255,255,.55);stroke-width:1.4}
+@media (prefers-reduced-motion:no-preference){
+  .mo-trazo path{stroke-dasharray:1;animation:mo-dib 1.3s var(--ease) backwards;animation-delay:calc(var(--d,0) * 1s)}
+  .mo-plano .mo-fade{animation:mo-ap .9s ease-out backwards;animation-delay:calc(var(--d,0) * 1s + .6s)}
+  .mo-plano .mo-contra,.mo-plano .mo-banderin{animation:mo-ap .6s ease-out 1.3s backwards}
+  .mo-plano .mo-cable{transform-box:fill-box;transform-origin:50% 0;animation:mo-cable 1.5s var(--ease) 1.7s backwards}
+  .mo-plano .mo-carga{animation:mo-baja 1.5s var(--ease) 1.7s backwards}
+  @keyframes mo-dib{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+  @keyframes mo-ap{from{opacity:0}to{opacity:1}}
+  @keyframes mo-cable{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
+  @keyframes mo-baja{from{transform:translateY(-35px)}to{transform:translateY(0)}}
+}
+.mo-hist{margin-top:12px!important;padding:9px 16px;border-radius:12px;background:color-mix(in srgb,var(--or) 11%,transparent);font-size:13.5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mo-hist[hidden]{display:none}
+.mo-hist button{font:inherit;font-weight:600;border:0;background:none;color:var(--or);cursor:pointer;text-decoration:underline;padding:0}
+
+/* ---------- cifras ---------- */
+.mo-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:18px 0 0}
+.mo-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--r);padding:20px 22px 14px;display:flex;flex-direction:column;gap:6px;min-width:0;box-shadow:var(--sombra)}
+.mo-card-h{display:flex;gap:10px;align-items:center;color:var(--color-fg-muted);font-size:13.5px;font-weight:500}
+.mo-bola{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:color-mix(in srgb,var(--or) 13%,transparent);color:var(--or)}
+.mo-bola.az{background:color-mix(in srgb,var(--az) 13%,transparent);color:var(--az)}
+.mo-num{font-size:clamp(36px,4.6vw,46px);line-height:1.05;font-weight:300;letter-spacing:-.035em;margin-top:6px!important}
+.mo-num small{font-size:.48em;margin-left:3px;font-weight:500;letter-spacing:0;color:var(--color-fg-muted)}
+.mo-d{font-size:13px;color:var(--color-fg-muted)}
+.mo-chip{display:inline-block;padding:1px 9px;border-radius:999px;font-weight:700;font-size:12.5px;background:color-mix(in srgb,currentColor 12%,transparent)}
+.mo-bad{color:var(--color-bad)}
+.mo-good{color:var(--color-ok)}
+.mo-spark{min-height:42px;margin-top:6px}
+.mo-spark svg{display:block}
+
+/* ---------- secciones ---------- */
+.mo-sec{margin-top:clamp(40px,6.5vw,68px)}
+.mo-take{margin-top:12px!important;font-size:15.5px;max-width:72ch}
+.mo-take b{font-weight:700}
+.mo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:18px;margin-top:20px}
+.mo-fig{min-width:0;background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--r);padding:20px 22px 16px;box-shadow:var(--sombra)}
+.mo-fig.solo{margin-top:18px}
+.mo-fig h3{font-size:16.5px;line-height:1.3}
+.mo-leg{display:flex;flex-wrap:wrap;gap:2px 16px;font-size:12.5px;color:var(--color-fg-muted);margin:8px 0 6px}
+.mo-sw{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.mo-sw.band{opacity:.35}
+.mo-chart{position:relative;min-height:240px;width:100%}
+.mo-chart svg{display:block;max-width:100%;overflow:visible}
+.mo-chart text{font-family:var(--mo-font);font-variant-numeric:tabular-nums}
+.mo-tt{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);box-shadow:var(--cds-shadow-popover);color:var(--cds-text-secondary);padding:8px 12px;border-radius:10px;font-size:12.5px;line-height:1.5;white-space:nowrap;z-index:3}
+.mo-tt b{color:var(--color-fg);font-weight:700}
+.mo-note{color:var(--color-fg-muted);font-size:12.5px;margin-top:10px!important;max-width:72ch}
+.mo-note b{color:var(--color-fg);font-weight:600}
+.mo-empty{color:var(--color-fg-muted);font-size:13.5px;padding:var(--cds-pad-lg)}
+.mo-modo{margin-top:12px}
+
+.mo-bar2{transform-box:fill-box;transform-origin:left center;transition:transform .7s var(--ease)}
+.mo-bar2.neg{transform-origin:right center}
+.mo-line{transition:stroke-dashoffset 1.3s var(--ease)}
+.mo-late{transition:opacity .5s ease .85s}
+.mo-pre .mo-bar2{transform:scaleX(0)}
+.mo-pre .mo-line{stroke-dashoffset:var(--len)}
+.mo-pre .mo-late{opacity:0}
+.mo-line{stroke-dasharray:var(--len);stroke-dashoffset:0}
+.mo-pick-rect{cursor:pointer}
+
+/* ---------- tablas ---------- */
+.mo-tw{overflow-x:auto;margin-top:12px}
+.mo-t{width:100%;border-collapse:collapse;font-size:13.5px}
+.mo-t th{text-align:left;font-weight:600;color:var(--color-fg-muted);font-size:12.5px;border-bottom:2px solid var(--or);padding:7px 14px 7px 0;white-space:nowrap}
+.mo-t td{border-bottom:1px solid var(--color-border-line);padding:9px 14px 9px 0;vertical-align:top}
+.mo-t .r{text-align:right;padding-right:0;padding-left:14px}
+.mo-t th.r{text-align:right}
+.mo-t tr.mo-prox td{font-weight:700}
+.mo-t tr.mo-oh td{font-weight:700}
+.mo-heat th{white-space:normal;text-align:center;padding:7px 3px;font-size:12px;line-height:1.25;vertical-align:bottom}
+.mo-heat th:first-child{text-align:left;padding-left:0}
+.mo-heat th.r{text-align:center;padding-left:3px}
+.mo-heat td{padding:0!important;border-bottom:2px solid var(--color-panel)!important}
+.mo-heat td.reg{padding:6px 10px 6px 0!important;white-space:nowrap}
+.mo-heat td.c{text-align:center;padding:7px 2px!important;min-width:48px;font-weight:500}
+.mo-heat tr.mo-oh td.reg{border-left:4px solid var(--or);padding-left:8px!important}
+.mo-det{margin-top:38px;border-top:1px solid var(--color-border-line);padding-top:14px}
+.mo-det summary{cursor:pointer;font-weight:600}
+.mo-det p{margin-top:10px;max-width:74ch;color:var(--color-fg-muted);font-size:14px}
+.mo-det p b{color:var(--color-fg);font-weight:600}
+.mo-foot{margin-top:22px!important;color:var(--color-fg-muted);font-size:12.5px}
+
+
+/* ---------- franja de construcción ---------- */
+.mo-big{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));margin-top:20px;border-radius:var(--r);border-top:5px solid var(--or);color:#fff;overflow:hidden;box-shadow:var(--sombra);
+  background-color:#00335c;background-image:radial-gradient(700px 300px at 100% -20%,rgba(0,110,220,.5),transparent 60%),linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:auto,24px 24px,24px 24px}
+.mo-big:not(:has(.mo-cell:not([hidden]))){display:none}
+.mo-cell{padding:22px 24px;border-left:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;gap:4px;min-width:0}
+.mo-cell:first-child{border-left:0}
+.mo-cell[hidden]{display:none}
+.mo-big-l{font-size:13.5px;opacity:.82;font-weight:500}
+.mo-big-n{font-size:clamp(44px,6.4vw,70px);line-height:1;font-weight:300;letter-spacing:-.04em;margin-top:8px!important}
+.mo-big-m{font-size:clamp(30px,3.6vw,40px);line-height:1.05;font-weight:300;letter-spacing:-.03em;margin-top:8px!important}
+.mo-big-m small{font-size:.5em;font-weight:500;margin-left:3px;opacity:.85}
+.mo-big-s{font-size:13px;opacity:.85;margin-top:auto!important;padding-top:6px}
+.mo-big-s b{font-weight:700}
+
+/* ---------- lectura del trimestre ---------- */
+.mo-ana{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+@media (min-width:640px){.mo-ana{grid-template-columns:repeat(2,minmax(0,1fr))}.mo-an:last-child:nth-child(odd){grid-column:1/-1}}
+@media (min-width:980px){.mo-ana{grid-template-columns:repeat(3,minmax(0,1fr))}.mo-an:last-child:nth-child(odd){grid-column:auto}.mo-an:last-child:nth-child(3n+1){grid-column:1/-1}}
+.mo-an{background:var(--color-panel);border:1px solid var(--color-border-line);border-left:5px solid var(--gr);border-radius:var(--r);padding:16px 20px 15px;box-shadow:var(--sombra);display:flex;flex-direction:column;gap:2px;min-width:0}
+.mo-an-bad{border-left-color:var(--or)}
+.mo-an-good{border-left-color:var(--az)}
+.mo-an h3{font-size:14px;color:var(--color-fg-muted);font-weight:600;letter-spacing:0}
+.mo-an-v{font-size:clamp(28px,3.4vw,36px);line-height:1.1;font-weight:300;letter-spacing:-.03em;margin-top:6px!important}
+.mo-an-n{font-size:12.5px;font-weight:700;color:var(--color-fg-muted);margin-top:2px!important}
+.mo-an-bad .mo-an-n{color:var(--or)}
+.mo-an-good .mo-an-n{color:var(--az)}
+.mo-an-d{font-size:13.5px;line-height:1.5;margin-top:8px!important;color:var(--color-fg-muted)}
+
+/* ---------- descargas ---------- */
+.mo-dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:20px}
+.mo-dl{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--r);padding:20px 22px;box-shadow:var(--sombra);display:flex;flex-direction:column;gap:10px;min-width:0}
+.mo-dl h3{font-size:17px}
+.mo-dl p{font-size:14px;color:var(--color-fg-muted);margin:0}
+.mo-btn{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:600;border:0;border-radius:999px;padding:11px 18px;background:var(--or);color:#fff;cursor:pointer;transition:background .15s,transform .15s}
+.mo-btn:hover:not(:disabled){background:#c93a00}
+.mo-btn:active:not(:disabled){transform:translateY(1px)}
+.mo-btn:disabled{opacity:.45;cursor:default}
+.mo-btn.az{background:var(--no)}
+.mo-btn.az:hover:not(:disabled){background:#002a4a}
+.mo-btn[hidden]{display:none}
+.mo-btn:focus-visible,.mo-dlb:focus-visible,.mo-hbtn:focus-visible{outline:2px solid var(--az);outline-offset:2px}
+.mo-dl-st{margin-top:14px!important;min-height:22px;font-size:14px;font-weight:600;color:var(--no)}
+.mo-dl-st span[hidden]{display:none}
+.mo-dlb{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;border:1px solid var(--color-border-line);border-radius:999px;padding:6px 14px;background:var(--color-panel);color:var(--color-fg);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.mo-dlb:hover{background:var(--no);color:#fff;border-color:var(--no)}
+.mo-dlb .mo-ic{width:16px;height:16px}
+.mo-hbtn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:9px 16px;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;transition:background .15s}
+.mo-hbtn:hover:not(:disabled){background:rgba(255,255,255,.22)}
+.mo-hbtn:disabled{opacity:.5;cursor:default}
+.mo-hbtn[hidden]{display:none}
+.mo-hbtn .mo-ic{width:18px;height:18px}
+
+
+/* ---------- ámbito: nacional / O'Higgins ---------- */
+.mo.amb-pais [data-ambito="oh"],.mo.amb-oh [data-ambito="pais"]{display:none!important}
+.mo-select-reg{min-width:190px;border-color:var(--or);border-width:2px}
+.mo-t tr.mo-click{cursor:pointer}
+.mo-t tr.mo-click:hover td{filter:brightness(.94)}
+.mo-cta-box{margin-top:clamp(40px,6vw,64px);padding:clamp(20px,3vw,30px) clamp(20px,3.4vw,34px);border-radius:var(--r);background:var(--color-panel);border:1px solid var(--color-border-line);border-left:6px solid var(--or);box-shadow:var(--sombra);display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between}
+.mo-cta-box h2{font-size:clamp(20px,2.6vw,25px)}
+.mo-cta-box p{color:var(--color-fg-muted);font-size:14.5px;margin-top:4px!important;max-width:60ch}
+@media (max-width:900px){.mo-big{grid-template-columns:1fr 1fr}.mo-cell:first-child{grid-column:1/-1;border-bottom:1px solid rgba(255,255,255,.16)}.mo-cell:nth-child(3){border-left:0}}
+@media (max-width:719px){.mo-bar{position:static}.mo-hero-in{grid-template-columns:1fr}.mo-plano{max-width:460px;margin:0 auto}.mo-bar{border-radius:22px}.mo-select{min-width:0;width:100%}.mo-pick{width:100%}.mo-pick .mo-select{flex:1}}
+@media print{
+  .mo-tt,.mo-bar,.mo-hbtn,#descargas{display:none}
+  .mo-pre .mo-bar2{transform:none}.mo-pre .mo-line{stroke-dashoffset:0}.mo-pre .mo-late{opacity:1}
+  .mo-hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* =====================  Versión web: tema claro  ===================== */
+:root{color-scheme:light;
+  --color-fg:#10253B;--color-fg-muted:#53677D;--color-bg:#F3F7FC;--color-panel:#FFFFFF;--color-border-line:rgba(0,70,130,.13);
+  --color-ok:#1B7F4C;--color-bad:#C93A00;
+  --cds-surface-popover:#FFFFFF;--cds-border:rgba(0,70,130,.22);--cds-shadow-popover:0 10px 28px rgba(0,40,80,.18);--cds-text-secondary:#3E5268;
+  --cds-chart-grid:rgba(0,70,130,.13);--cds-chart-axis:rgba(0,70,130,.38);--cds-pad-lg:16px;
+  --font-anthropic-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+html{scroll-behavior:smooth;background:var(--color-bg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--color-bg)}
+.mo{--or:#E74100;--az:#006EDC;--no:#003D6B;--gr:#D9D9D9;--sombra:0 1px 2px rgba(0,40,70,.05),0 16px 34px -22px rgba(0,50,95,.35);--r:20px;
+  max-width:none;margin:0;color:var(--color-fg);
+  background:
+    radial-gradient(900px 520px at 100% 30%,rgba(0,110,220,.06),transparent 70%),
+    radial-gradient(800px 520px at 0% 75%,rgba(231,65,0,.045),transparent 70%),
+    var(--color-bg)}
+.mo-wrap{max-width:1140px;margin:0 auto;padding:0 clamp(14px,3vw,24px) 64px}
+.dash-skeleton{background:linear-gradient(90deg,rgba(0,70,130,.05),rgba(0,70,130,.12),rgba(0,70,130,.05));background-size:200% 100%;animation:web-sk 1.4s linear infinite;border-radius:12px;min-height:120px}
+@keyframes web-sk{to{background-position:-200% 0}}
+
+/* barra superior */
+.web-top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:16px;padding:9px clamp(14px,3vw,32px);background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-border-line)}
+.web-brand{display:flex;align-items:center;gap:12px;color:var(--color-fg);text-decoration:none;min-width:0}
+.web-brand img{height:38px;width:auto;flex:none}
+.web-brand b{display:block;font-size:15px;font-weight:700;line-height:1.15;letter-spacing:-.01em;white-space:nowrap;color:#003D6B}
+.web-brand small{display:block;font-size:11.5px;color:var(--color-fg-muted);font-weight:500;white-space:nowrap}
+.web-links{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.web-links::-webkit-scrollbar{display:none}
+.web-links a{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;color:var(--color-fg-muted);text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s}
+.web-links a .mo-ic{width:16px;height:16px}
+.web-links a:hover{color:#003D6B;background:rgba(0,110,220,.08)}
+.web-links a.on{color:#B93500;background:rgba(231,65,0,.1)}
+.web-reg{display:flex;align-items:center;gap:8px;flex:none}
+.web-reg .mo-select-reg{height:38px;background-color:#fff;border:1.5px solid var(--or);color:var(--color-fg)}
+.mo-select{background-color:#fff;color:var(--color-fg)}
+@media (max-width:1000px){.web-links{display:none}.web-reg{margin-left:auto}}
+@media (max-width:560px){.web-brand span{display:none}.web-brand small{display:none}.web-brand img{height:32px}.web-reg .mo-select-reg{min-width:0;width:172px;padding-left:12px;padding-right:30px}}
+
+/* portada */
+.web-hero{position:relative;overflow:hidden;color:#fff;min-height:clamp(600px,88vh,780px);display:flex;align-items:center;
+  background:
+    radial-gradient(900px 480px at 82% 0%,rgba(120,190,255,.55),transparent 62%),
+    radial-gradient(800px 440px at 4% 100%,rgba(255,130,60,.55),transparent 64%),
+    linear-gradient(180deg,#0A57A8 0%,#0F6CC8 48%,#2A8BE6 82%,#5BAEF2 100%)}
+.web-hero::before{content:"";position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(180deg,#000 15%,transparent 80%);mask-image:linear-gradient(180deg,#000 15%,transparent 80%)}
+.web-hero .mo-hero-in{position:relative;z-index:3;width:100%;max-width:1140px;margin:0 auto;padding:clamp(40px,7vw,84px) clamp(14px,3vw,24px) clamp(200px,24vw,330px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(20px,4vw,52px);align-items:center}
+.web-hero .mo-from{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:#fff;padding:6px 14px;border:1px solid rgba(255,255,255,.4);border-radius:999px;background:rgba(0,40,90,.28);margin-bottom:22px!important;opacity:1}
+.web-hero .mo-from::before{content:"";width:8px;height:8px;border-radius:50%;background:#FF7A3D;box-shadow:0 0 0 4px rgba(255,122,61,.35);animation:web-pulso 2.4s ease-in-out infinite}
+@keyframes web-pulso{50%{box-shadow:0 0 0 8px rgba(255,122,61,0)}}
+.web-hero h1{font-size:clamp(36px,6vw,66px);line-height:1;letter-spacing:-.035em;font-weight:700;margin-bottom:22px;text-wrap:balance;text-shadow:0 2px 24px rgba(0,40,90,.25)}
+.web-hero .mo-lead{font-size:clamp(16px,1.9vw,19px);color:#fff;max-width:48ch}
+.web-hero .mo-lead b{color:#fff}
+.web-hero .mo-lead2{color:#E3F0FF;opacity:1}
+.web-hero .mo-next{background:rgba(0,40,90,.3);border-color:rgba(255,255,255,.4)}
+.web-hero .mo-next .mo-ic{color:#FFB48A}
+.web-hero .mo-hbtn{background:#E74100;border-color:#E74100;color:#fff;padding:11px 20px;font-weight:700;box-shadow:0 12px 28px -10px rgba(120,30,0,.6)}
+.web-hero .mo-hbtn:hover:not(:disabled){background:#C93A00}
+.web-chile{position:relative;background:#fff;color:var(--color-fg);border:1px solid rgba(255,255,255,.7);border-radius:22px;padding:16px 16px 10px;box-shadow:0 30px 60px -28px rgba(0,30,70,.65)}
+.web-chile h2{font-size:16px;font-weight:700;display:flex;align-items:center;gap:9px;letter-spacing:-.01em;color:#003D6B}
+.web-chile h2 .mo-ic{color:var(--or)}
+.web-chile p{font-size:12.5px;color:var(--color-fg-muted);margin:4px 0 6px!important}
+.web-chile .web-eje{display:flex;justify-content:space-between;font-size:11.5px;color:#7A8CA0;margin:2px 4px 0}
+#hero-chile{min-height:380px}
+#sky{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:max(250px,32.5vw);z-index:2;pointer-events:none}
+#sky .cap{will-change:transform;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:no-preference){
+  #sky .jib{transform-box:fill-box;transform-origin:50% 100%;animation:web-gira 11s ease-in-out infinite alternate}
+  #sky .jib2{animation-duration:15s;animation-delay:-5s}
+  #sky .carro{animation:web-carro 9s ease-in-out infinite alternate}
+  #sky .lz{animation:web-luz 5s ease-in-out infinite}
+  @keyframes web-gira{from{transform:rotate(-1.4deg)}to{transform:rotate(1.4deg)}}
+  @keyframes web-carro{from{transform:translateX(0)}to{transform:translateX(-46px)}}
+  @keyframes web-luz{0%,100%{opacity:.25}50%{opacity:1}}
+}
+@media (max-width:860px){.web-hero .mo-hero-in{grid-template-columns:1fr}.web-hero{min-height:0}.web-chile{max-width:560px}}
+
+/* filtros */
+.mo-bar{top:66px;margin:18px 0 0;background:rgba(255,255,255,.9);border-color:var(--color-border-line);box-shadow:0 14px 30px -20px rgba(0,50,95,.45)}
+.mo-seg button.mo-on{background:var(--no);color:#fff}
+@media (max-width:719px){.mo-bar{top:58px}}
+
+/* tarjetas */
+.mo-card,.mo-fig,.mo-an,.mo-dl,.mo-cta-box{position:relative;transition:border-color .25s,transform .25s,box-shadow .25s}
+.mo-card::after,.mo-fig::after,.mo-an::after,.mo-dl::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(0,110,220,.08),transparent 62%)}
+.mo-card:hover::after,.mo-fig:hover::after,.mo-an:hover::after,.mo-dl:hover::after{opacity:1}
+.mo-card:hover,.mo-dl:hover{transform:translateY(-3px);box-shadow:0 1px 2px rgba(0,40,70,.06),0 22px 40px -22px rgba(0,60,110,.45)}
+.mo-num{font-weight:300}
+.mo-t tr.mo-click:hover td{filter:none;background:rgba(0,110,220,.07)}
+.mo-heat td{border-bottom:2px solid #fff!important}
+.mo-big{border-top:0;box-shadow:0 22px 40px -24px rgba(0,50,95,.6)}
+
+/* secciones */
+.mo-sec{scroll-margin-top:130px}
+.mo-kpis,.mo-big{scroll-margin-top:130px}
+.mo-sec>h2{display:flex;align-items:center;gap:12px;color:#003D6B}
+.mo-hic{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;flex:none;background:rgba(231,65,0,.1);color:#E74100}
+.mo-hic .mo-ic{width:21px;height:21px}
+@media (prefers-reduced-motion:no-preference){
+  .web-rev{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .web-rev.vis{opacity:1;transform:none}
+}
+
+/* pie */
+.web-foot{position:relative;overflow:hidden;margin-top:30px;background:linear-gradient(180deg,#0B4F98,#083C75);color:#fff}
+.web-foot svg.sk{position:absolute;left:0;right:0;bottom:0;width:100%;height:150px;opacity:.5}
+.web-foot .in{position:relative;max-width:1140px;margin:0 auto;padding:44px clamp(14px,3vw,24px) 150px;display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
+.web-foot img{height:44px;background:#fff;border-radius:10px;padding:4px 10px}
+.web-foot p{font-size:13px;color:#DCEBFA;max-width:62ch;margin:0}
+.web-foot a{color:#fff;text-decoration:underline}
+.web-top-btn{position:fixed;right:18px;bottom:18px;z-index:25;width:44px;height:44px;border-radius:50%;border:1px solid var(--color-border-line);background:#fff;color:#003D6B;cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s,background .2s;box-shadow:0 10px 24px -10px rgba(0,40,80,.5)}
+.web-top-btn.on{opacity:1;pointer-events:auto}
+.web-top-btn:hover{transform:translateY(-2px);background:var(--or);color:#fff;border-color:var(--or)}
+.web-top-btn .mo-ic{transform:rotate(-90deg)}
+.web-links a:focus-visible,.web-brand:focus-visible,.web-top-btn:focus-visible,.web-foot a:focus-visible{outline:2px solid var(--az);outline-offset:2px}
+.mo-sub a,.mo-note a{color:#0057B3}
+@media print{.web-top,.web-top-btn,#sky,.web-foot svg.sk{display:none}}
+
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sin" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M17 8h5"/></symbol>
+  <symbol id="i-mal" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+  <symbol id="i-pue" viewBox="0 0 24 24"><path d="M3 10l1.5-5h15L21 10"/><path d="M4.5 10v10h15V10"/><path d="M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></symbol>
+  <symbol id="i-cas" viewBox="0 0 24 24"><path d="M3 17h18v2.5H3z"/><path d="M5 17a7 7 0 0 1 14 0"/><path d="M12 6.5V11M8.8 8.2V11M15.2 8.2V11"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-xls" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></symbol>
+  <symbol id="i-csv" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></symbol>
+  <symbol id="i-baj" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-izq" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-der" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+
+  <symbol id="i-ciu" viewBox="0 0 24 24"><path d="M4 21V9l6-3v15M10 21V4l10 4v13M2 21h20M13 11h4M13 15h4"/></symbol>
+  <symbol id="i-graf" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16l4-5 3 3 5-7"/></symbol>
+  <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-gru" viewBox="0 0 24 24"><path d="M7 21V6M4 21h6M3 6h18M7 2l-4 4M7 2l13 4M17 6v6M17 12h-2v2.5h4V12z"/></symbol>
+  <symbol id="i-pila" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></symbol>
+</svg>
+
+<div class="mo amb-pais" id="mo-raiz">
+  <header class="web-top">
+    <a class="web-brand" href="#portada" id="web-inicio" aria-label="Ir al inicio, panorama de Chile"><img src="logo-cchc.png" alt="Cámara Chilena de la Construcción, Sede O'Higgins"><span><b>Mercado laboral</b><small>Estudios CChC Sede O'Higgins</small></span></a>
+    <nav class="web-links" id="web-links" aria-label="Secciones del panel"></nav>
+    <div class="web-reg"><select class="mo-select mo-select-reg" id="s-reg" data-draw="ctl_reg" data-source="resumen" aria-label="Elegir Chile o una región"></select></div>
+  </header>
+  <header class="web-hero" id="portada">
+    <svg id="sky" aria-hidden="true" focusable="false"></svg>
+    <div class="mo-hero-in">
+      <div>
+        <p class="mo-from">Cámara Chilena de la Construcción, Sede Región de O'Higgins</p>
+        <h1 id="titulo" data-ambito="pais">Mercado laboral en Chile</h1>
+        <h1 data-ambito="oh">Mercado laboral en <span data-draw="rt1" data-source="resumen">—</span></h1>
+        <p class="mo-lead" data-ambito="pais">En <b data-draw="hn_per" data-source="resumen" data-field="largo" data-row="0">—</b>, la desocupación nacional fue de <b data-draw="hn_nac" data-source="resumen" data-field="tasa_nac" data-row="0">—</b>&nbsp;%, <b data-draw="hn_var" data-source="resumen" data-field="var_nac" data-row="0">—</b> puntos <span data-draw="hn_mas">—</span> que hace un año. <span data-draw="rt2" data-source="resumen">—</span> registró <b data-draw="hn_oh" data-source="resumen" data-field="tasa_oh" data-row="0">—</b>&nbsp;% y ocupa el puesto <b data-draw="hn_lug" data-source="resumen" data-field="lugar" data-row="0">—</b> de 16 regiones, ordenadas de mayor a menor desocupación.</p>
+        <p class="mo-lead2" data-ambito="pais">La más alta es la de <b data-draw="hn_alta" data-source="resumen" data-field="reg_alta" data-row="0">—</b> (<span data-draw="hn_alta_v" data-source="resumen" data-field="reg_alta_v" data-row="0">—</span>&nbsp;%) y la más baja la de <b data-draw="hn_baja" data-source="resumen" data-field="reg_baja" data-row="0">—</b> (<span data-draw="hn_baja_v" data-source="resumen" data-field="reg_baja_v" data-row="0">—</span>&nbsp;%).</p>
+        <p class="mo-lead" data-ambito="oh">En <b data-draw="h_per" data-source="resumen" data-field="largo" data-row="0">—</b>, la desocupación regional fue de <b data-draw="h_oh" data-source="resumen" data-field="tasa_oh" data-row="0">—</b>&nbsp;%, <b data-draw="h_br" data-source="resumen" data-field="brecha" data-row="0">—</b> puntos <span data-draw="h_sobre">—</span> el promedio del país (<b data-draw="h_nac" data-source="resumen" data-field="tasa_nac" data-row="0">—</b>&nbsp;%). Ocupa el puesto <b data-draw="h_lug" data-source="resumen" data-field="lugar" data-row="0">—</b> de 16 regiones, ordenadas de mayor a menor desocupación.</p>
+        <p class="mo-lead2" id="lead2" data-ambito="oh"><span data-draw="ic_sel"></span><span id="ic-dentro" hidden>Esa diferencia cae dentro del margen de error de la encuesta en la región.</span><span id="ic-fuera" hidden>Esa diferencia es mayor que el margen de error de la encuesta en la región.</span></p>
+        <p class="mo-next" id="proximo"><svg class="mo-ic" aria-hidden="true"><use href="#i-cal"/></svg><span>Próximo dato del INE: <b data-draw="px_fecha" data-source="calendario" data-field="fecha">—</b>, <span data-draw="px_dias">—</span></span></p>
+        <button type="button" class="mo-hbtn" data-dl="minuta" disabled><svg class="mo-ic" aria-hidden="true"><use href="#i-doc"/></svg>Descargar la minuta de este trimestre</button>
+      </div>
+      <aside class="web-chile" aria-label="Desocupación por región">
+        <h2><svg class="mo-ic" aria-hidden="true"><use href="#i-mapa"/></svg>Chile, región por región</h2>
+        <p>Desocupación en <span data-draw="hc_per">—</span>. Toca una región para ver su detalle.</p>
+        <div class="web-eje"><span>Norte</span><span>Sur</span></div>
+        <div id="hero-chile" data-draw="hero_chile" data-source="reg_sel resumen"></div>
+      </aside>
+    </div>
+  </header>
+  <main class="mo-wrap" id="contenido">
+  <nav class="mo-bar" id="filtro" aria-label="Filtros del panel">
+    <div class="mo-bar-g">
+      <div class="mo-pick">
+        <button type="button" class="mo-ib" id="b-prev" aria-label="Trimestre anterior"><svg class="mo-ic" aria-hidden="true"><use href="#i-izq"/></svg></button>
+        <select class="mo-select" id="s-trim" data-draw="ctl_sel" data-source="serie resumen" aria-label="Elegir trimestre móvil"></select>
+        <button type="button" class="mo-ib" id="b-next" aria-label="Trimestre siguiente"><svg class="mo-ic" aria-hidden="true"><use href="#i-der"/></svg></button>
+      </div>
+      <button type="button" class="mo-ult" id="b-ult" hidden>Ir al último dato</button>
+    </div>
+    <div class="mo-bar-g">
+      <div class="mo-seg" role="group" aria-label="Período de los gráficos de series" id="g-rango">
+        <button type="button" data-rango="2" aria-pressed="false">2 años</button>
+        <button type="button" data-rango="5" aria-pressed="false">5 años</button>
+        <button type="button" data-rango="10" aria-pressed="false">10 años</button>
+        <button type="button" data-rango="0" aria-pressed="true" class="mo-on">Desde 2010</button>
+      </div>
+      <button type="button" class="mo-dlb" id="b-desc"><svg class="mo-ic" aria-hidden="true"><use href="#i-baj"/></svg>Descargas</button>
+    </div>
+  </nav>
+
+  <p class="mo-hist" id="vista-hist" hidden>Estás viendo un trimestre anterior. Las cifras, el ranking y las tablas corresponden a ese período. <button type="button" id="b-ult2">Volver al último dato</button></p>
+
+  <section class="mo-kpis" id="cifras-nac" data-ambito="pais" aria-label="Cifras principales del país">
+    <article class="mo-card">
+      <div class="mo-card-h"><span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-sin"/></svg></span>Desocupación nacional</div>
+      <p class="mo-num"><span data-draw="kn1" data-source="resumen" data-field="tasa_nac" data-row="0">—</span><small>%</small></p>
+      <p class="mo-d"><span class="mo-chip"><span data-draw="kn1d" data-source="resumen" data-field="var_nac" data-row="0">—</span> pp</span> en 12 meses</p>
+      <div class="mo-spark" data-draw="spn1" data-source="spark_sel">—</div>
+    </article>
+    <article class="mo-card">
+      <div class="mo-card-h"><span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-mal"/></svg></span>Personas ocupadas</div>
+      <p class="mo-num"><span data-draw="kn2" data-source="resumen" data-field="ocu_nac" data-row="0">—</span></p>
+      <p class="mo-d"><span class="mo-chip"><span data-draw="kn2d" data-source="resumen" data-field="ocu_var_nac" data-row="0">—</span> %</span> en 12 meses</p>
+      <div class="mo-spark" data-draw="spn2" data-source="spark_sel">—</div>
+    </article>
+    <article class="mo-card">
+      <div class="mo-card-h"><span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-pue"/></svg></span>Ocupación informal</div>
+      <p class="mo-num"><span data-draw="kn3" data-source="resumen" data-field="inf_nac" data-row="0">—</span><small>%</small></p>
+      <p class="mo-d"><span class="mo-chip"><span data-draw="kn3d" data-source="resumen" data-field="inf_var_nac" data-row="0">—</span> pp</span> en 12 meses</p>
+      <div class="mo-spark" data-draw="spn3" data-source="spark_sel">—</div>
+    </article>
+    <article class="mo-card">
+      <div class="mo-card-h"><span class="mo-bola"><svg class="mo-ic" aria-hidden="true"><use href="#i-cas"/></svg></span>Ocupados en construcción</div>
+      <p class="mo-num"><span data-draw="kn4" data-source="resumen" data-field="con_nac" data-row="0">—</span></p>
+      <p class="mo-d"><span class="mo-chip"><span data-draw="kn4d" data-source="resumen" data-field="con_var_nac" data-row="0">—</span> %</span> en 12 meses</p>
+      <p class="mo-d">Del empleo del país: <span data-draw="kn4p" data-source="resumen" data-field="con_peso_nac" data-row="0">—</span> %</p>
+      <div class="mo-spark" data-draw="spn4" data-source="spark_sel">—</div>
+    </article>
+  </section>
+
+  <section class="mo-sec" id="lectura-nac" data-ambito="pais">
+    <h2>Lo esencial del país</h2>
+    <p class="mo-sub">El trimestre elegido frente a la historia y al año anterior.</p>
+    <div class="mo-ana" data-draw="an_cards_nac" data-source="analisis_nac">—</div>
+  </section>
+
+  <section class="mo-sec" id="desocupacion-nac" data-ambito="pais">
+    <h2>Desocupación en el país</h2>
+    <p class="mo-sub">Tasa por trimestre móvil. Desde 2010, el máximo nacional fue de <b data-draw="tn_max" data-source="resumen" data-field="max_nac" data-row="0">—</b>&nbsp;% (<span data-draw="tn_maxq" data-source="resumen" data-field="max_nac_largo" data-row="0">—</span>) y el mínimo de <b data-draw="tn_min" data-source="resumen" data-field="min_nac" data-row="0">—</b>&nbsp;% (<span data-draw="tn_minq" data-source="resumen" data-field="min_nac_largo" data-row="0">—</span>).</p>
+    <div class="mo-grid">
+      <div class="mo-fig">
+        <h3>Total, mujeres y hombres</h3>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#006EDC"></i>Total país</span><span><i class="mo-sw" style="background:#E74100"></i>Mujeres</span><span><i class="mo-sw" style="background:#003D6B"></i>Hombres</span></div>
+        <div class="mo-chart" data-draw="ch_tasa_nac" data-source="serie_v">—</div>
+        <p class="mo-note">Haz clic en el gráfico para ir a ese trimestre.</p>
+      </div>
+      <div class="mo-fig">
+        <h3>El mismo trimestre en cada año</h3>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i>Trimestre elegido</span><span><i class="mo-sw" style="background:#006EDC"></i>Otros años</span></div>
+        <div class="mo-chart" data-draw="ch_anual_nac" data-source="anual" style="min-height:300px">—</div>
+        <p class="mo-note">Comparar el mismo trimestre móvil deja fuera el efecto de la temporada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mo-kpis" id="cifras" data-ambito="oh" aria-label="Cifras principales">
+    <article class="mo-card" id="k-des">
+      <div class="mo-card-h"><span class="mo-bola"><svg class="mo-ic" aria-hidden="true"><use href="#i-sin"/></svg></span><span>Desocupación en <span data-draw="rt3" data-source="resumen">—</span></span></div>
+      <p class="mo-num"><span data-draw="k1" data-source="resumen" data-field="tasa_oh" data-row="0">—</span><small>%</small></p>
+      <p class="mo-d"><span class="mo-chip" id="k1c"><span data-draw="k1d" data-source="resumen" data-field="var_oh" data-row="0">—</span> pp</span> en 12 meses</p>
+      <p class="mo-d" id="k-ic">Margen de error 95 %: <span data-draw="k1l" data-source="resumen" data-field="ic_lo" data-row="0">—</span> a <span data-draw="k1h" data-source="resumen" data-field="ic_hi" data-row="0">—</span> %</p>
+      <div class="mo-spark" data-draw="sp1" data-source="spark_sel">—</div>
+    </article>
+    <article class="mo-card" id="k-ocu">
+      <div class="mo-card-h"><span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-mal"/></svg></span>Personas ocupadas</div>
+      <p class="mo-num"><span data-draw="k2" data-source="resumen" data-field="ocu_oh" data-row="0">—</span></p>
+      <p class="mo-d"><span class="mo-chip" id="k2c"><span data-draw="k2d" data-source="resumen" data-field="ocu_var" data-row="0">—</span> %</span> en 12 meses</p>
+      <div class="mo-spark" data-draw="sp2" data-source="spark_sel">—</div>
+    </article>
+    <article class="mo-card" id="k-inf">
+      <div class="mo-card-h"><span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-pue"/></svg></span>Ocupación informal</div>
+      <p class="mo-num"><span data-draw="k3" data-source="resumen" data-field="inf_oh" data-row="0">—</span><small>%</small></p>
+      <p class="mo-d"><span class="mo-chip" id="k3c"><span data-draw="k3d" data-source="resumen" data-field="inf_var" data-row="0">—</span> pp</span> en 12 meses</p>
+      <p class="mo-d">País: <span data-draw="k3n" data-source="resumen" data-field="inf_nac" data-row="0">—</span> %</p>
+      <div class="mo-spark" data-draw="sp3" data-source="spark_sel">—</div>
+    </article>
+    <article class="mo-card" id="k-con">
+      <div class="mo-card-h"><span class="mo-bola"><svg class="mo-ic" aria-hidden="true"><use href="#i-cas"/></svg></span>Ocupados en construcción</div>
+      <p class="mo-num"><span data-draw="k4" data-source="resumen" data-field="con_oh" data-row="0">—</span></p>
+      <p class="mo-d"><span class="mo-chip" id="k4c"><span data-draw="k4d" data-source="resumen" data-field="con_var" data-row="0">—</span> %</span> en 12 meses</p>
+      <p class="mo-d">País: <span data-draw="k4n" data-source="resumen" data-field="con_var_nac" data-row="0">—</span> %</p>
+      <div class="mo-spark" data-draw="sp4" data-source="spark_sel">—</div>
+    </article>
+  </section>
+
+  <section class="mo-sec" id="lectura" data-ambito="oh">
+    <h2>Lo esencial de <span data-draw="rt4" data-source="resumen">—</span></h2>
+    <p class="mo-sub">El trimestre elegido frente a la historia, al año anterior y al país.</p>
+    <div class="mo-ana" data-draw="an_cards" data-source="analisis">—</div>
+  </section>
+
+  <section class="mo-sec" id="desocupacion" data-ambito="oh">
+    <h2>Desocupación: <span data-draw="rt5" data-source="resumen">—</span> y el país</h2>
+    <p class="mo-sub">Tasa por trimestre móvil.<span id="sub-ic"> La banda naranja es el margen de error al 95 % que publica el INE en sus notas estadísticas; está disponible solo para O'Higgins y para los trimestres recientes.</span></p>
+    <p class="mo-take">Desde 2010, el máximo regional fue de <b data-draw="t_max" data-source="resumen" data-field="max_oh" data-row="0">—</b>&nbsp;% (<span data-draw="t_maxq" data-source="resumen" data-field="max_largo" data-row="0">—</span>) y el mínimo de <b data-draw="t_min" data-source="resumen" data-field="min_oh" data-row="0">—</b>&nbsp;% (<span data-draw="t_minq" data-source="resumen" data-field="min_largo" data-row="0">—</span>).</p>
+    <div class="mo-grid">
+      <div class="mo-fig" id="f-tasa">
+        <h3>Total regional frente al promedio nacional</h3>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i><span data-draw="rt6" data-source="resumen">—</span></span><span><i class="mo-sw" style="background:#006EDC"></i>País</span><span id="leg-ic"><i class="mo-sw band" style="background:#E74100"></i>Margen de error</span></div>
+        <div class="mo-chart" data-draw="ch_tasa" data-source="serie_v">—</div>
+        <p class="mo-note">Haz clic en el gráfico para ir a ese trimestre.</p>
+      </div>
+      <div class="mo-fig" id="f-sexo">
+        <h3>Mujeres y hombres en <span data-draw="rt7" data-source="resumen">—</span></h3>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i>Mujeres</span><span><i class="mo-sw" style="background:#003D6B"></i>Hombres</span><span><i class="mo-sw" style="background:#006EDC"></i>Total país</span></div>
+        <div class="mo-chart" data-draw="ch_sexo" data-source="serie_v">—</div>
+        <p class="mo-note">La brecha entre mujeres y hombres es de <b data-draw="s_br" data-source="resumen" data-field="brecha_sexo" data-row="0">—</b> puntos (<b data-draw="s_m" data-source="resumen" data-field="muj" data-row="0">—</b>&nbsp;% y <b data-draw="s_h" data-source="resumen" data-field="hom" data-row="0">—</b>&nbsp;%). <span id="s-ant">Hace un año era de <b data-draw="s_bra" data-source="resumen" data-field="brecha_sexo_ant" data-row="0">—</b> puntos.</span></p>
+      </div>
+    </div>
+  
+    <div class="mo-fig solo" id="f-anual-des">
+      <h3>El mismo trimestre en cada año</h3>
+      <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i>Trimestre elegido</span><span><i class="mo-sw" style="background:#006EDC"></i><span data-draw="rt8" data-source="resumen">—</span> en otros años</span><span><i class="mo-sw" style="background:#003D6B;height:3px;vertical-align:3px"></i>País</span></div>
+      <div class="mo-chart" data-draw="ch_anual_des" data-source="anual" style="min-height:300px">—</div>
+      <p class="mo-note">Comparar el mismo trimestre móvil entre años deja fuera el efecto de la temporada. Haz clic en una barra para ir a ese año.</p>
+    </div>
+</section>
+
+  <section class="mo-sec" id="posicion" data-ambito="oh">
+    <h2><span data-draw="rt9" data-source="resumen">—</span> frente a las otras regiones</h2>
+    <p class="mo-sub">Tasa de desocupación del trimestre elegido en las 16 regiones. La línea punteada es el promedio nacional. Haz clic en una región para ver su detalle.</p>
+    <div class="mo-fig solo" id="f-rank-oh">
+      <h3>Ranking regional</h3>
+      <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i><span data-draw="rt10" data-source="resumen">—</span></span><span><i class="mo-sw" style="background:#006EDC"></i>Otras regiones</span></div>
+      <div class="mo-chart" data-draw="ch_reg_oh" data-source="reg_sel resumen" style="min-height:440px">—</div>
+    </div>
+  </section>
+
+  <section class="mo-sec" id="regiones" data-ambito="pais">
+    <h2>Las 16 regiones</h2>
+    <p class="mo-sub">Tasa de desocupación del trimestre elegido. La línea punteada es el promedio nacional. Haz clic en una región para ver su detalle completo, con sus propias descargas.</p>
+    <div class="mo-grid">
+      <div class="mo-fig" id="f-rank">
+        <h3>Ranking regional</h3>
+        <div class="mo-seg mo-modo" role="group" aria-label="Orden de las regiones" id="g-modo"><button type="button" class="mo-on" data-modo="tasa" aria-pressed="true">Mayor a menor</button><button type="button" data-modo="geo" aria-pressed="false">Norte a sur</button></div>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i><span data-draw="rt11" data-source="resumen">—</span></span><span><i class="mo-sw" style="background:#006EDC"></i>Otras regiones</span></div>
+        <div class="mo-chart" data-draw="ch_reg" data-source="reg_sel resumen" style="min-height:440px">—</div>
+      </div>
+      <div class="mo-fig" id="f-heat">
+        <h3>Cómo llegó cada región hasta aquí</h3>
+        <div class="mo-tw">
+          <table class="mo-t mo-heat" data-source="reg_sel" data-row-key="id">
+            <thead><tr><th data-field="region">Región</th><th class="r" data-field="t0">Hace 12 meses</th><th class="r" data-field="t1">Hace 3 meses</th><th class="r" data-field="t2">Hace 2 meses</th><th class="r" data-field="t3">Hace 1 mes</th><th class="r" data-field="tasa">Trimestre elegido</th></tr></thead>
+            <tbody data-draw="t_heat"></tbody>
+          </table>
+        </div>
+        <p class="mo-note">Tasa de desocupación en cada trimestre móvil. Mientras más oscuro el azul, mayor la desocupación. Haz clic en una fila para ver esa región.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mo-sec" id="construccion-nac" data-ambito="pais">
+    <h2>Construcción en el país</h2>
+    <p class="mo-sub">Personas ocupadas en la rama construcción, según la Encuesta Nacional de Empleo. El INE publica esta apertura por rama desde 2013.</p>
+    <div class="mo-big">
+      <div class="mo-cell">
+        <p class="mo-big-l">Ocupados en construcción en el país</p>
+        <p class="mo-big-n"><span data-draw="cn1" data-source="resumen" data-field="con_nac" data-row="0">—</span></p>
+        <p class="mo-big-s">personas, trimestre móvil <b data-draw="cn_per" data-source="resumen" data-field="largo" data-row="0">—</b></p>
+      </div>
+      <div class="mo-cell">
+        <p class="mo-big-l">Del empleo del país</p>
+        <p class="mo-big-m"><span data-draw="cn2" data-source="resumen" data-field="con_peso_nac" data-row="0">—</span><small>%</small></p>
+        <p class="mo-big-s">En <span data-draw="rt12" data-source="resumen">—</span>: <b data-draw="cn2o" data-source="resumen" data-field="con_peso" data-row="0">—</b> %</p>
+      </div>
+      <div class="mo-cell">
+        <p class="mo-big-l">Frente al mismo trimestre de 2019</p>
+        <p class="mo-big-m"><span data-draw="cn3" data-source="resumen" data-field="con_19_nac" data-row="0">—</span><small>%</small></p>
+        <p class="mo-big-s">antes de la pandemia</p>
+      </div>
+      <div class="mo-cell">
+        <p class="mo-big-l">Máximo desde 2013</p>
+        <p class="mo-big-m"><span data-draw="cn4" data-source="resumen" data-field="con_max_nac" data-row="0">—</span></p>
+        <p class="mo-big-s"><span data-draw="cn4q" data-source="resumen" data-field="con_max_nac_largo" data-row="0">—</span>. Hoy está <b data-draw="cn4v" data-source="resumen" data-field="con_vs_max_nac" data-row="0">—</b> % respecto de ese máximo.</p>
+      </div>
+    </div>
+    <div class="mo-grid">
+      <div class="mo-fig">
+        <h3>Ocupados en construcción, país</h3>
+        <div class="mo-chart" data-draw="ch_con_nac" data-source="serie_v">—</div>
+        <p class="mo-note">El eje no parte de cero. La serie tiene movimientos de temporada además de la tendencia.</p>
+      </div>
+      <div class="mo-fig">
+        <h3>El mismo trimestre en cada año</h3>
+        <div class="mo-chart" data-draw="ch_anual_con_nac" data-source="anual" style="min-height:300px">—</div>
+        <p class="mo-note">Ocupados en construcción en el país, siempre en el mismo trimestre móvil.</p>
+      </div>
+    </div>
+    <div class="mo-fig solo">
+      <h3>Variación en 12 meses de los ocupados en construcción, por región</h3>
+      <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i><span data-draw="rt13" data-source="resumen">—</span></span><span><i class="mo-sw" style="background:#006EDC"></i>Sube</span><span><i class="mo-sw" style="background:#8FA0B0"></i>Baja</span></div>
+      <div class="mo-chart" data-draw="ch_conreg" data-source="reg_sel" style="min-height:440px">—</div>
+      <p class="mo-note">El asterisco marca una estimación poco fiable o no fiable según el estándar de calidad del INE.</p>
+    </div>
+  </section>
+
+  <section class="mo-sec" id="ramas-nac" data-ambito="pais">
+    <h2>Empleo por rama de actividad en el país</h2>
+    <p class="mo-sub">Dónde se ganaron y se perdieron empleos en 12 meses. El INE publica esta apertura desde 2013.</p>
+    <div class="mo-fig solo" id="f-sec-nac">
+      <h3>Variación de personas ocupadas por rama, en 12 meses</h3>
+      <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i>Construcción</span><span><i class="mo-sw" style="background:#006EDC"></i>Gana empleos</span><span><i class="mo-sw" style="background:#8FA0B0"></i>Pierde empleos</span></div>
+      <div class="mo-chart" data-draw="ch_sec_nac" data-source="sec_sel_nac" style="min-height:290px">—</div>
+      <p class="mo-note">Las cifras con asterisco son estimaciones poco fiables según el INE.</p>
+    </div>
+  </section>
+
+  <section class="mo-sec" id="detalle-nac" data-ambito="pais">
+    <h2>Todas las cifras del país</h2>
+    <div class="mo-grid">
+      <div class="mo-fig" id="f-tnac">
+        <h3>Indicadores nacionales</h3>
+        <div class="mo-tw">
+          <table class="mo-t" data-source="ind_nac" data-row-key="id">
+            <thead><tr><th data-field="indicador">Indicador</th><th class="r" data-field="valor">Valor</th><th class="r" data-field="variacion">Variación en 12 meses</th></tr></thead>
+            <tbody data-draw="t_nac"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mo-cta-box" data-ambito="pais">
+    <div><h2>Entra al detalle de una región</h2><p>Elige una región arriba o haz clic en el ranking: desocupación, mujeres y hombres, construcción, ramas de actividad y todas las cifras, con su propia minuta, Excel y CSV.</p></div>
+    <button type="button" class="mo-btn mo-cta" data-amb="06"><span>Ver <span data-draw="rt14" data-source="resumen">—</span></span></button>
+  </div>
+
+  <section class="mo-sec" id="construccion" data-ambito="oh">
+    <h2>Construcción: cuánta gente trabaja en el sector</h2>
+    <p class="mo-sub">Personas ocupadas en la rama construcción, según la Encuesta Nacional de Empleo. El INE publica esta apertura por rama desde 2013.</p>
+    <div class="mo-big" id="franja-con">
+      <div class="mo-cell">
+        <p class="mo-big-l">Ocupados en construcción en <span data-draw="rt15" data-source="resumen">—</span></p>
+        <p class="mo-big-n"><span data-draw="cb1" data-source="resumen" data-field="con_oh" data-row="0">—</span></p>
+        <p class="mo-big-s">personas, trimestre móvil <b data-draw="cb_per" data-source="resumen" data-field="largo" data-row="0">—</b></p>
+      </div>
+      <div class="mo-cell">
+        <p class="mo-big-l">Del empleo de la región</p>
+        <p class="mo-big-m"><span data-draw="cb2" data-source="resumen" data-field="con_peso" data-row="0">—</span><small>%</small></p>
+        <p class="mo-big-s">En el país: <b data-draw="cb2n" data-source="resumen" data-field="con_peso_nac" data-row="0">—</b> %</p>
+      </div>
+      <div class="mo-cell">
+        <p class="mo-big-l">Frente al mismo trimestre de 2019</p>
+        <p class="mo-big-m"><span data-draw="cb3" data-source="resumen" data-field="con_19" data-row="0">—</span><small>%</small></p>
+        <p class="mo-big-s">antes de la pandemia</p>
+      </div>
+      <div class="mo-cell">
+        <p class="mo-big-l">Máximo desde 2013</p>
+        <p class="mo-big-m"><span data-draw="cb4" data-source="resumen" data-field="con_max" data-row="0">—</span></p>
+        <p class="mo-big-s"><span data-draw="cb4q" data-source="resumen" data-field="con_max_largo" data-row="0">—</span>. Hoy está <b data-draw="cb4v" data-source="resumen" data-field="con_vs_max" data-row="0">—</b> % respecto de ese máximo.</p>
+      </div>
+    </div>
+    <p class="mo-take" id="take-con">En <span data-draw="rt16" data-source="resumen">—</span> hay <b data-draw="c_oh" data-source="resumen" data-field="con_oh" data-row="0">—</b> ocupados en construcción, con una variación de <b data-draw="c_dif" data-source="resumen" data-field="con_dif" data-row="0">—</b> personas (<b data-draw="c_var" data-source="resumen" data-field="con_var" data-row="0">—</b>&nbsp;%) en 12 meses. A nivel país la variación es de <b data-draw="c_nac" data-source="resumen" data-field="con_var_nac" data-row="0">—</b>&nbsp;%.</p>
+    <div class="mo-grid">
+      <div class="mo-fig" id="f-conser">
+        <h3>Ocupados en construcción, <span data-draw="rt17" data-source="resumen">—</span></h3>
+        <div class="mo-chart" data-draw="ch_con" data-source="serie_v">—</div>
+        <p class="mo-note">El eje no parte de cero. La serie tiene movimientos de temporada además de la tendencia.</p>
+      </div>
+      <div class="mo-fig" id="f-peso">
+        <h3>Qué parte del empleo es construcción</h3>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i><span data-draw="rt18" data-source="resumen">—</span></span><span><i class="mo-sw" style="background:#006EDC"></i>País</span></div>
+        <div class="mo-chart" data-draw="ch_peso" data-source="serie_v">—</div>
+        <p class="mo-note">Ocupados en construcción como porcentaje del total de ocupados.</p>
+      </div>
+    </div>
+    <div class="mo-grid">
+      <div class="mo-fig" id="f-anual-con">
+        <h3>El mismo trimestre en cada año</h3>
+        <div class="mo-chart" data-draw="ch_anual_con" data-source="anual" style="min-height:300px">—</div>
+        <p class="mo-note">Ocupados en construcción en <span data-draw="rt19" data-source="resumen">—</span>, siempre en el mismo trimestre móvil. Haz clic en una barra para ir a ese año.</p>
+      </div>
+      <div class="mo-fig" id="f-conreg">
+        <h3>Variación en 12 meses, por región</h3>
+        <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i><span data-draw="rt20" data-source="resumen">—</span></span><span><i class="mo-sw" style="background:#006EDC"></i>Sube</span><span><i class="mo-sw" style="background:#8FA0B0"></i>Baja</span></div>
+        <div class="mo-chart" data-draw="ch_conreg_oh" data-source="reg_sel" style="min-height:440px">—</div>
+        <p class="mo-note">El asterisco marca una estimación poco fiable o no fiable según el estándar de calidad del INE.</p>
+      </div>
+    </div>
+    <div class="mo-fig solo" id="f-sec">
+      <h3>Empleo por rama en <span data-draw="rt21" data-source="resumen">—</span>: dónde se ganó y dónde se perdió en 12 meses</h3>
+      <div class="mo-leg"><span><i class="mo-sw" style="background:#E74100"></i>Construcción</span><span><i class="mo-sw" style="background:#006EDC"></i>Gana empleos</span><span><i class="mo-sw" style="background:#8FA0B0"></i>Pierde empleos</span></div>
+      <div class="mo-chart" data-draw="ch_sec" data-source="sec_sel" style="min-height:290px">—</div>
+      <p class="mo-note">Se muestran las ramas con estimación fiable o poco fiable (con asterisco). Las que el INE califica como no fiables, por su tamaño muestral, quedan fuera.</p>
+    </div>
+    <div class="mo-tw">
+      <table class="mo-t" data-source="con_sel" data-row-key="id">
+        <thead><tr><th data-field="ambito">Ámbito</th><th class="r" data-field="ocupados">Ocupados</th><th class="r" data-field="ocupados_ant">Hace 12 meses</th><th class="r" data-field="var_pct">Variación</th><th class="r" data-field="peso">% del empleo</th></tr></thead>
+        <tbody data-draw="t_con"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mo-sec" id="detalle" data-ambito="oh">
+    <h2>Todas las cifras de <span data-draw="rt22" data-source="resumen">—</span></h2>
+    <div class="mo-grid">
+      <div class="mo-fig" id="f-toh">
+        <h3>Indicadores de <span data-draw="rt23" data-source="resumen">—</span></h3>
+        <div class="mo-tw">
+          <table class="mo-t" data-source="ind_oh" data-row-key="id">
+            <thead><tr><th data-field="indicador">Indicador</th><th class="r" data-field="valor">Valor</th><th class="r" data-field="variacion">Variación en 12 meses</th></tr></thead>
+            <tbody data-draw="t_oh"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mo-cta-box" data-ambito="oh">
+    <div><h2>Volver al panorama nacional</h2><p>Desocupación, empleo y construcción del país, y el ranking de las 16 regiones.</p></div>
+    <button type="button" class="mo-btn az mo-cta" data-amb="pais">Ver el país</button>
+  </div>
+
+  <section class="mo-sec" id="descargas">
+    <h2>Descargas</h2>
+    <p class="mo-sub">Los archivos se arman en tu navegador con los datos de esta página y corresponden a lo que estás viendo: <span data-draw="rt24" data-source="resumen">—</span>. Para bajar los de otra región, elígela arriba. La minuta es del trimestre elegido: <b data-draw="dl_per" data-source="resumen" data-field="largo" data-row="0">—</b>.</p>
+    <div class="mo-dl-grid">
+      <article class="mo-dl">
+        <span class="mo-bola"><svg class="mo-ic" aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <h3>Minuta en Word</h3>
+        <p>Resumen del trimestre de <span data-draw="rt25" data-source="resumen">—</span>: desocupación, empleo, construcción, ramas de actividad y comparación entre las 16 regiones, con tablas, lista para ajustar y enviar.</p>
+        <button type="button" class="mo-btn" data-dl="minuta" disabled><svg class="mo-ic" aria-hidden="true"><use href="#i-baj"/></svg>Descargar minuta (.docx)</button>
+      </article>
+      <article class="mo-dl">
+        <span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-xls"/></svg></span>
+        <h3>Excel con toda la serie</h3>
+        <p>Cuatro hojas de <span data-draw="rt26" data-source="resumen">—</span>: serie trimestral desde 2010, las 16 regiones y las ramas de actividad, con filtros en los encabezados.</p>
+        <button type="button" class="mo-btn az" data-dl="excel" disabled><svg class="mo-ic" aria-hidden="true"><use href="#i-baj"/></svg>Descargar Excel (.xlsx)</button>
+      </article>
+      <article class="mo-dl">
+        <span class="mo-bola az"><svg class="mo-ic" aria-hidden="true"><use href="#i-csv"/></svg></span>
+        <h3>Serie en CSV</h3>
+        <p data-ambito="pais">La serie trimestral del país en un archivo simple. Separador punto y coma y decimales con coma, para abrirlo directo en Excel en español.</p>
+        <p data-ambito="oh">La serie trimestral de <span data-draw="rt27" data-source="resumen">—</span> y del país en un archivo simple. Separador punto y coma y decimales con coma, para abrirlo directo en Excel en español.</p>
+        <button type="button" class="mo-btn az" data-dl="csv" disabled><svg class="mo-ic" aria-hidden="true"><use href="#i-baj"/></svg>Descargar CSV</button>
+      </article>
+    </div>
+    <p class="mo-dl-st" role="status"><span id="dl-ok" hidden>Listo, el archivo quedó guardado.</span><span id="dl-no" hidden>Cancelaste la descarga. Puedes volver a pedirla cuando quieras.</span><span id="dl-rl" hidden>Espera unos segundos antes de pedir otro archivo.</span><span id="dl-er" hidden>No se pudo armar el archivo. Recarga la página y vuelve a intentarlo.</span></p>
+    <p class="mo-note" id="dl-na" hidden>Las descargas no están disponibles en esta vista. Abre la página en tu navegador para bajar los archivos.</p>
+  </section>
+
+  <section class="mo-sec" id="calendario">
+    <h2>Próximas publicaciones del INE</h2>
+    <p class="mo-sub">Fechas de la agenda estadística del INE. El día de la semana cambia de un mes a otro; confirma siempre en el <a href="https://www.ine.gob.cl/calendario" target="_blank" rel="noopener">calendario oficial</a>.</p>
+    <div class="mo-tw">
+      <table class="mo-t" data-source="calendario" data-row-key="id">
+        <thead><tr><th data-field="fecha">Fecha</th><th data-field="hora">Hora</th><th data-field="publicacion">Publicación</th><th data-field="periodo">Trimestre o mes</th></tr></thead>
+        <tbody data-draw="t_cal"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <details class="mo-det" id="notas">
+    <summary>Definiciones, margen de error y fuentes</summary>
+    <p><b>Trimestre móvil.</b> Promedio de tres meses consecutivos. El INE publica uno nuevo cada mes, que desplaza la ventana en un mes. Por ejemplo, «julio–septiembre» incluye julio, agosto y septiembre.</p>
+    <p><b>Tasa de desocupación.</b> Personas desocupadas como porcentaje de la fuerza de trabajo. <b>Ocupación informal:</b> porcentaje de los ocupados que están en situación de informalidad; el INE la entrega desde mediados de 2017. <b>Tasa de participación:</b> fuerza de trabajo como porcentaje de la población en edad de trabajar.</p>
+    <p><b>Margen de error.</b> La encuesta es una muestra, y en una región el error es mayor que en el total del país. El intervalo de confianza al 95 % de una región es bastante más ancho que el nacional, así que diferencias de uno o dos décimos entre trimestres consecutivos no son concluyentes. El INE no lo entrega en SIMEL: el panel lo muestra solo para O'Higgins, tomado de sus notas estadísticas. Las cifras por rama y las de construcción por región tienen más error todavía.</p>
+    <p><b>Variaciones.</b> Las comparaciones de «Lo esencial» usan el margen de error de un trimestre. El error de una diferencia entre dos trimestres es mayor que el de cada cifra por separado, así que una variación que supera ese margen tampoco es prueba de un cambio real.</p>
+    <p><b>Series largas.</b> Desde 2010 el INE ha actualizado la encuesta y sus factores de expansión. Conviene comparar con cuidado períodos muy distantes, y tener presente el efecto de la pandemia en 2020.</p>
+    <p><b>Fuentes.</b> INE, Encuesta Nacional de Empleo, descargada desde SIMEL (sdmx.ine.gob.cl). Los márgenes de error de O'Higgins vienen de las notas estadísticas de la ENE del INE. La agenda es la del INE.</p>
+  </details>
+
+  <p class="mo-foot">Último trimestre móvil publicado: <span data-draw="pie_per" data-source="resumen" data-field="ult_largo" data-row="0">—</span>. Los datos se actualizan con cada publicación del INE.</p>
+  </main>
+  <footer class="web-foot">
+    <svg id="sky2" class="sk" aria-hidden="true" focusable="false"></svg>
+    <div class="in">
+      <img src="logo-cchc.png" alt="Cámara Chilena de la Construcción, Sede O'Higgins">
+      <p>Elaborado por la Cámara Chilena de la Construcción, Sede Región de O'Higgins (Estudios). Fuente: Instituto Nacional de Estadísticas, Encuesta Nacional de Empleo, vía <a href="https://sdmx.ine.gob.cl" target="_blank" rel="noopener">SIMEL</a>. Se actualiza solo con cada publicación del INE.</p>
+    </div>
+  </footer>
+  <button type="button" class="web-top-btn" id="web-arriba" aria-label="Volver arriba"><svg class="mo-ic" aria-hidden="true"><use href="#i-der"/></svg></button>
+</div>
+
+<script src="vendor/d3.min.js"></script>
+<script>
+/* Mini motor del panel: reemplaza al motor de Claude en la versión web.
+   Carga los archivos de data/, calcula los resúmenes y redibuja los gráficos cuando cambia la región, el trimestre o el período. */
+(function () {
+  'use strict';
+  var loaders = {}, calcs = {}, draws = {}, cache = {}, RAW = {}, ready = false, queued = false;
+  var DEFAULTS = {trim: '', rango: 0, orden: 'tasa', reg: ''};
+  var P = Object.assign({}, DEFAULTS);
+
+  function leerUrl() {
+    try {
+      var q = new URLSearchParams(location.search);
+      if (q.has('reg')) P.reg = q.get('reg') || '';
+      if (q.has('trim')) P.trim = q.get('trim') || '';
+      if (q.has('rango')) P.rango = +q.get('rango') || 0;
+      if (q.get('orden') === 'geo') P.orden = 'geo';
+    } catch (e) {}
+  }
+  function escribeUrl() {
+    try {
+      var q = new URLSearchParams();
+      ['reg', 'trim', 'rango', 'orden'].forEach(function (k) { if (P[k] && P[k] !== DEFAULTS[k]) q.set(k, P[k]); });
+      var s = q.toString();
+      history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash);
+    } catch (e) {}
+  }
+  function dibujaTodo() {
+    queued = false;
+    Object.keys(draws).forEach(function (n) {
+      document.querySelectorAll('[data-draw="' + n + '"]').forEach(function (el) {
+        try { draws[n](el); } catch (e) { if (window.console) console.error('draw ' + n, e); }
+      });
+    });
+    document.dispatchEvent(new CustomEvent('panel:dibujado'));
+  }
+  function pide() { if (queued) return; queued = true; requestAnimationFrame(dibujaTodo); }
+
+  window.dash = {
+    loader: function (id, o) { loaders[id] = o; },
+    calc: function (id, o) { calcs[id] = o; },
+    draw: function (n, fn) {
+      if (typeof fn === 'function') { draws[n] = fn; if (ready) pide(); return; }
+      pide();
+    },
+    data: function (id) {
+      if (!ready) return {status: 'loading', data: []};
+      if (cache[id]) return cache[id];
+      var r;
+      try {
+        if (loaders[id]) r = {status: 'ok', data: loaders[id].fn({answer: RAW[id] || {rows: []}})};
+        else if (calcs[id]) { var c = calcs[id]; r = {status: 'ok', data: c.fn.apply(null, c.inputs.map(function (i) { return dash.data(i).data; }))}; }
+        else r = {status: 'missing', data: []};
+      } catch (e) { if (window.console) console.error('data ' + id, e); r = {status: 'error', data: []}; }
+      cache[id] = r; return r;
+    },
+    params: function () { return P; },
+    setParams: function (p) {
+      P = Object.assign({}, DEFAULTS, p);
+      Object.keys(cache).forEach(function (k) { if (calcs[k]) delete cache[k]; });
+      escribeUrl();
+      pide();
+    },
+    iniciar: function (archivos) {
+      leerUrl();
+      var ids = Object.keys(archivos);
+      return Promise.all(ids.map(function (id) {
+        return fetch(archivos[id], {cache: 'no-cache'}).then(function (r) { if (!r.ok) throw new Error(archivos[id] + ' ' + r.status); return r.json(); })
+          .then(function (j) { RAW[id] = j; }, function (e) { if (window.console) console.error(e); RAW[id] = {rows: []}; });
+      })).then(function () {
+        ready = true; cache = {};
+        dibujaTodo();
+        document.documentElement.classList.add('listo');
+      });
+    }
+  };
+
+  /* descargas: se arman en el navegador y se guardan como archivo */
+  window.claude = {
+    use: function (n) {
+      if (n !== 'downloads') return Promise.resolve(null);
+      return Promise.resolve({
+        save: function (o) {
+          return new Promise(function (ok, no) {
+            try {
+              var b = o.data instanceof Blob ? o.data : new Blob([o.data]);
+              var u = URL.createObjectURL(b), a = document.createElement('a');
+              a.href = u; a.download = o.filename; document.body.appendChild(a); a.click(); a.remove();
+              setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
+              ok({status: 'saved'});
+            } catch (e) { no({code: 'error'}); }
+          });
+        }
+      });
+    }
+  };
+})();
+
+const RT_IDS = [["rt1", "reg_la"], ["rt2", "reg_nom"], ["rt3", "reg_nom"], ["rt4", "reg_la"], ["rt5", "reg_nom"], ["rt6", "reg_nom"], ["rt7", "reg_nom"], ["rt8", "reg_nom"], ["rt9", "reg_nom"], ["rt10", "reg_nom"], ["rt11", "reg_nom"], ["rt12", "reg_nom"], ["rt13", "reg_nom"], ["rt14", "reg_nom"], ["rt15", "reg_nom"], ["rt16", "reg_nom"], ["rt17", "reg_nom"], ["rt18", "reg_nom"], ["rt19", "reg_nom"], ["rt20", "reg_nom"], ["rt21", "reg_nom"], ["rt22", "reg_nom"], ["rt23", "reg_nom"], ["rt24", "amb_la"], ["rt25", "amb_la"], ["rt26", "amb_la"], ["rt27", "reg_la"]];
+const MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const MES3 = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const DIAS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+const C_OR = '#E74100', C_AZ = '#006EDC', C_NO = '#003D6B', C_GR = '#8FA0B0';
+const MOTION = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const NF = d3.formatLocale({decimal: ',', thousands: '.', grouping: [3], currency: ['', '']});
+const fmt1 = NF.format(',.1f'), fmtI = NF.format(',d');
+const bad = (x) => x == null || (typeof x === 'number' && isNaN(x));
+const f1 = (x) => bad(x) ? '—' : fmt1(x);
+const fI = (x) => bad(x) ? '—' : fmtI(Math.round(x));
+const sg1 = (x) => bad(x) ? '—' : (x > 0 ? '+' : x < 0 ? '−' : '') + fmt1(Math.abs(x));
+const sgI = (x) => bad(x) ? '—' : (x > 0 ? '+' : x < 0 ? '−' : '') + fmtI(Math.abs(Math.round(x)));
+const pct = (x) => bad(x) ? '—' : f1(x) + ' %';
+const fFecha = (iso) => { const d = new Date(iso + 'T00:00:00Z'); return DIAS[d.getUTCDay()] + ' ' + d.getUTCDate() + ' de ' + MESES[d.getUTCMonth()]; };
+const r1 = (x) => Math.round(x * 10) / 10;
+const dif = (a, b) => (bad(a) || bad(b)) ? null : r1(a - b);
+const pcv = (a, b) => (bad(a) || bad(b) || !b) ? null : r1((a / b - 1) * 100);
+
+/* ---------- regiones ---------- */
+const REGS = [['15', 'Arica y Parinacota'], ['01', 'Tarapacá'], ['02', 'Antofagasta'], ['03', 'Atacama'], ['04', 'Coquimbo'], ['05', 'Valparaíso'], ['13', 'Metropolitana'], ['06', 'O\'Higgins'],
+  ['07', 'Maule'], ['16', 'Ñuble'], ['08', 'Biobío'], ['09', 'La Araucanía'], ['14', 'Los Ríos'], ['10', 'Los Lagos'], ['11', 'Aysén'], ['12', 'Magallanes']];
+function regInfo(cod) {
+  const r = REGS.find((x) => x[0] === cod) || REGS[7];
+  const largo = r[0] === '13' ? 'Región Metropolitana' : r[0] === '08' ? 'Región del Biobío' : 'Región de ' + r[1];
+  return {cod: r[0], nom: r[1], largo, la: 'la ' + largo, slug: r[1].normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z0-9]+/g, '')};
+}
+function regParam() { const c = String(dash.params().reg || ''); return REGS.some((x) => x[0] === c) ? c : ''; }
+const NR = () => { const r = resumen(); return r ? r.reg_nom : 'O\'Higgins'; };
+const _sr = {s: null, r: null, c: null, v: null};
+/* Serie trimestral en el formato del panel: los campos *_oh son los de la región elegida (O'Higgins si se ve el país) y *_nac los del país. */
+function serieReg(serie, regT, cod) {
+  if (_sr.s === serie && _sr.r === regT && _sr.c === cod) return _sr.v;
+  const m = new Map(); regT.forEach((r) => { if (r.cod === cod) m.set(r.t, r); });
+  const n = (x) => (x == null ? null : x);
+  const v = serie.map((s) => {
+    const r = m.get(s.id) || {}, o = Object.assign({}, s);
+    o.tasa_oh = n(r.tasa); o.tasa_oh_f = n(r.tasa_f); o.tasa_oh_m = n(r.tasa_m); o.ocu_oh = n(r.ocu); o.des_oh = n(r.des);
+    o.tocu_oh = n(r.tocu); o.tpar_oh = n(r.tpar); o.inf_oh = n(r.inf); o.con_oh = n(r.con_ocu);
+    o.ic_lo = cod === '06' ? n(s.ic_lo) : null; o.ic_hi = cod === '06' ? n(s.ic_hi) : null;
+    return o;
+  });
+  _sr.s = serie; _sr.r = regT; _sr.c = cod; _sr.v = v;
+  return v;
+}
+
+function mesMas(t, n) { const k = +t.slice(0, 4) * 12 + (+t.slice(5) - 1) + n; return String(Math.floor(k / 12)).padStart(4, '0') + '-' + String(k % 12 + 1).padStart(2, '0'); }
+function pickId(rows, p) { return (p && rows.some((r) => r.id === p)) ? p : rows[rows.length - 1].id; }
+function mapOf(rows) { const m = new Map(); rows.forEach((r) => m.set(r.id, r)); return m; }
+
+/* ---------- datos ---------- */
+dash.loader('serie', {description: 'Toma las filas del archivo de la serie trimestral', fn: ({answer}) => answer.rows});
+dash.loader('regiones_t', {description: 'Toma las filas del archivo de regiones por trimestre', fn: ({answer}) => answer.rows});
+const RAMA_K = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S'];
+const RAMA_N = {A: 'Agricultura y pesca', B: 'Minería', C: 'Industria manufacturera', D: 'Electricidad y gas', E: 'Agua y residuos', F: 'Construcción', G: 'Comercio', H: 'Transporte', I: 'Alojamiento y comidas', J: 'Información y comunicaciones', K: 'Finanzas y seguros', L: 'Inmobiliarias', M: 'Servicios profesionales', N: 'Servicios administrativos', O: 'Administración pública', P: 'Enseñanza', Q: 'Salud', R: 'Artes y entretenimiento', S: 'Otros servicios'};
+dash.loader('sectores_t', {description: 'Toma el archivo de ramas por región y trimestre (formato ancho) y arma una fila por rama', fn: ({answer}) => {
+  const out = [];
+  answer.rows.forEach((r) => RAMA_K.forEach((k, i) => {
+    const v = r.o[i]; if (v == null) return;
+    const e = r.e.charAt(i);
+    out.push({id: r.cod + '|' + k + '|' + r.t, t: r.t, cod: r.cod, rama: k, nombre: RAMA_N[k], ocu: v, peso: r.tot ? r1(v / r.tot * 100) : null, est: e === '.' ? '' : e});
+  }));
+  return out;
+}});
+dash.loader('calendario', {description: 'Toma las publicaciones de empleo del archivo del calendario', fn: ({answer}) => answer.rows.filter((r) => r.publicacion.indexOf('Empleo') === 0)});
+
+dash.calc('resumen', {
+  title: 'Resumen del trimestre elegido',
+  description: 'Brechas, lugar en el ranking, variaciones a 12 meses y extremos de la serie para la región elegida (O\'Higgins si se ve el país), según el trimestre elegido arriba',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regionesT) => {
+    const p = dash.params();
+    const cod = regParam() || '06', RI = regInfo(cod);
+    const serie = serieReg(serie0, regionesT, cod);
+    const sid = pickId(serie, p.trim);
+    const m = mapOf(serie);
+    const u = m.get(sid), a = m.get(mesMas(sid, -12)) || {};
+    const p19 = sid.slice(0, 4) > '2019' ? (m.get('2019-' + sid.slice(5)) || {}) : {};
+    const ult = serie[serie.length - 1];
+    const orden = regionesT.filter((r) => r.t === sid).sort((x, y) => y.tasa - x.tasa);
+    const iOh = orden.findIndex((r) => r.cod === cod);
+    const regA = new Map(regionesT.filter((r) => r.t === mesMas(sid, -12)).map((r) => [r.cod, r]));
+    const nacRows = serie.filter((r) => r.id <= ult.id);
+    const mxN = nacRows.reduce((q, r) => (r.tasa_nac > q.tasa_nac ? r : q), nacRows[0]);
+    const mnN = nacRows.reduce((q, r) => (r.tasa_nac < q.tasa_nac ? r : q), nacRows[0]);
+    const mx = serie.reduce((q, r) => (r.tasa_oh > q.tasa_oh ? r : q), serie[0]);
+    const mn = serie.reduce((q, r) => (r.tasa_oh < q.tasa_oh ? r : q), serie[0]);
+    const conRows = serie.filter((r) => r.con_oh != null);
+    const cmx = conRows.reduce((q, r) => (!q || r.con_oh > q.con_oh ? r : q), null);
+    const cmn = conRows.reduce((q, r) => (!q || r.con_oh < q.con_oh ? r : q), null);
+    const cnx = serie.filter((r) => r.con_nac != null).reduce((q, r) => (!q || r.con_nac > q.con_nac ? r : q), null);
+    const ambito = regParam() ? 'oh' : 'pais';
+    return [{
+      ambito, reg: regParam(), reg_cod: cod, reg_nom: RI.nom, reg_largo: RI.largo, reg_la: RI.la, amb_nom: ambito === 'oh' ? RI.nom : 'Chile', amb_la: ambito === 'oh' ? RI.la : 'Chile',
+      ic_hay: cod === '06' ? 1 : 0, grua: ambito === 'oh' ? u.tasa_oh : u.tasa_nac,
+      var_nac: dif(u.tasa_nac, a.tasa_nac), des_nac: u.des_nac, ocu_nac: u.ocu_nac, ocu_var_nac: pcv(u.ocu_nac, a.ocu_nac),
+      inf_nac: u.inf_nac, inf_var_nac: dif(u.inf_nac, a.inf_nac), con_nac: u.con_nac,
+      con_19_nac: pcv(u.con_nac, p19.con_nac), con_max_nac: cnx ? cnx.con_nac : null, con_max_nac_largo: cnx ? cnx.largo : null,
+      con_vs_max_nac: cnx ? pcv(u.con_nac, cnx.con_nac) : null,
+      max_nac: mxN.tasa_nac, max_nac_largo: mxN.largo, min_nac: mnN.tasa_nac, min_nac_largo: mnN.largo,
+      reg_alta: orden.length ? orden[0].region : '', reg_alta_v: orden.length ? orden[0].tasa : null,
+      reg_baja: orden.length ? orden[orden.length - 1].region : '', reg_baja_v: orden.length ? orden[orden.length - 1].tasa : null,
+      reg_suben: orden.filter((r) => regA.has(r.cod) && r.tasa > regA.get(r.cod).tasa).length,
+      id: sid, largo: u.largo, periodo: u.periodo, ult_largo: ult.largo, es_ultimo: sid === ult.id ? 1 : 0,
+      prev_id: m.has(mesMas(sid, -1)) ? mesMas(sid, -1) : '', next_id: m.has(mesMas(sid, 1)) ? mesMas(sid, 1) : '',
+      rango: +p.rango || 0, orden: p.orden === 'geo' ? 'geo' : 'tasa',
+      tasa_oh: u.tasa_oh, tasa_nac: u.tasa_nac, brecha: dif(u.tasa_oh, u.tasa_nac),
+      lugar: iOh + 1, var_oh: dif(u.tasa_oh, a.tasa_oh),
+      ic_lo: u.ic_lo, ic_hi: u.ic_hi,
+      dentro_ic: (u.ic_lo != null && u.tasa_nac >= u.ic_lo && u.tasa_nac <= u.ic_hi) ? 1 : 0,
+      ocu_oh: u.ocu_oh, ocu_var: pcv(u.ocu_oh, a.ocu_oh),
+      inf_oh: u.inf_oh, inf_var: dif(u.inf_oh, a.inf_oh), inf_nac: u.inf_nac,
+      con_oh: u.con_oh, con_dif: (u.con_oh != null && a.con_oh != null) ? u.con_oh - a.con_oh : null,
+      con_var: pcv(u.con_oh, a.con_oh), con_var_nac: pcv(u.con_nac, a.con_nac),
+      muj: u.tasa_oh_f, hom: u.tasa_oh_m, brecha_sexo: dif(u.tasa_oh_f, u.tasa_oh_m), brecha_sexo_ant: dif(a.tasa_oh_f, a.tasa_oh_m),
+      max_oh: mx.tasa_oh, max_largo: mx.largo, min_oh: mn.tasa_oh, min_largo: mn.largo,
+      con_peso: u.con_oh != null ? r1(u.con_oh / u.ocu_oh * 100) : null,
+      con_peso_nac: u.con_nac != null ? r1(u.con_nac / u.ocu_nac * 100) : null,
+      con_19: pcv(u.con_oh, p19.con_oh), con_vs_max: cmx ? pcv(u.con_oh, cmx.con_oh) : null,
+      con_max: cmx ? cmx.con_oh : null, con_max_largo: cmx ? cmx.largo : null,
+      con_min: cmn ? cmn.con_oh : null, con_min_largo: cmn ? cmn.largo : null
+    }];
+  }
+});
+
+dash.calc('serie_v', {
+  title: 'Serie para los gráficos',
+  description: 'Trimestres móviles dentro del período elegido (2, 5, 10 años o todo), con el trimestre elegido marcado',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regT) => {
+    const p = dash.params();
+    const serie = serieReg(serie0, regT, regParam() || '06');
+    const sid = pickId(serie, p.trim);
+    const N = +p.rango || 0;
+    let a = 0, b = serie.length - 1;
+    if (N > 0) {
+      const k = 12 * N;
+      a = Math.max(0, b - k);
+      const si = serie.findIndex((r) => r.id === sid);
+      if (si < a) { a = Math.max(0, si - Math.round(k / 2)); b = Math.min(serie.length - 1, a + k); a = Math.max(0, b - k); }
+    }
+    return serie.slice(a, b + 1).map((r) => Object.assign({}, r, {sel: r.id === sid ? 1 : 0, con_peso: r.con_oh != null ? r1(r.con_oh / r.ocu_oh * 100) : null, con_peso_nac: r.con_nac != null ? r1(r.con_nac / r.ocu_nac * 100) : null}));
+  }
+});
+
+dash.calc('spark_sel', {
+  title: 'Últimos 13 trimestres hasta el elegido',
+  description: 'Ventana de 13 trimestres móviles que termina en el trimestre elegido, para los minigráficos de las tarjetas',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regT) => {
+    const serie = serieReg(serie0, regT, regParam() || '06');
+    const sid = pickId(serie, dash.params().trim);
+    const si = serie.findIndex((r) => r.id === sid);
+    return serie.slice(Math.max(0, si - 12), si + 1);
+  }
+});
+
+dash.calc('reg_sel', {
+  title: 'Regiones en el trimestre elegido',
+  description: 'Desocupación y construcción de las 16 regiones en el trimestre elegido, con los trimestres anteriores',
+  inputs: ['regiones_t', 'serie'],
+  fn: (regT, serie) => {
+    const sid = pickId(serie, dash.params().trim);
+    const m = mapOf(regT);
+    const out = [];
+    regT.filter((r) => r.t === sid).forEach((r) => {
+      const at = (k) => m.get(r.cod + '|' + mesMas(sid, k)) || null;
+      const a12 = at(-12), a3 = at(-3), a2 = at(-2), a1 = at(-1);
+      out.push({
+        id: r.cod, region: r.region, geo: r.geo, tasa: r.tasa,
+        tasa_ant: a12 ? a12.tasa : null, var_pp: a12 ? dif(r.tasa, a12.tasa) : null,
+        t0: a12 ? a12.tasa : null, t1: a3 ? a3.tasa : null, t2: a2 ? a2.tasa : null, t3: a1 ? a1.tasa : null,
+        con_ocu: r.con_ocu == null ? null : r.con_ocu, con_peso: r.con_peso == null ? null : r.con_peso,
+        con_var: (a12 && r.con_ocu != null) ? pcv(r.con_ocu, a12.con_ocu) : null,
+        con_est: r.con_est || ''
+      });
+    });
+    return out;
+  }
+});
+
+function seccion(secT, serie, cod) {
+  const sid = pickId(serie, dash.params().trim);
+  const m = mapOf(secT);
+  const out = [];
+  secT.filter((r) => r.t === sid && r.cod === cod).forEach((r) => {
+    const a = m.get(cod + '|' + r.rama + '|' + mesMas(sid, -12));
+    out.push({
+      id: r.rama, rama: r.nombre, ocu: r.ocu, ocu_ant: a ? a.ocu : null,
+      var_pers: a ? r.ocu - a.ocu : null, var_pct: a ? pcv(r.ocu, a.ocu) : null,
+      peso: r.peso, est: r.est || ''
+    });
+  });
+  return out;
+}
+dash.calc('sec_sel', {
+  title: 'Ramas de la región elegida en el trimestre elegido',
+  description: 'Personas ocupadas por rama de actividad en la región elegida (O\'Higgins si se ve el país) y su variación en 12 meses (desde 2014)',
+  inputs: ['sectores_t', 'serie'],
+  fn: (secT, serie) => seccion(secT, serie, regParam() || '06')
+});
+dash.calc('sec_sel_nac', {
+  title: 'Ramas del país en el trimestre elegido',
+  description: 'Personas ocupadas por rama de actividad en todo el país y su variación en 12 meses (desde 2014)',
+  inputs: ['sectores_t', 'serie'],
+  fn: (secT, serie) => seccion(secT, serie, '00')
+});
+
+dash.calc('con_sel', {
+  title: 'Construcción: región elegida y país',
+  description: 'Ocupados en construcción en la región elegida (O\'Higgins si se ve el país) y en el país en el trimestre elegido y hace 12 meses',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regT) => {
+    const cod = regParam() || '06';
+    const serie = serieReg(serie0, regT, cod);
+    const sid = pickId(serie, dash.params().trim);
+    const m = mapOf(serie);
+    const u = m.get(sid), a = m.get(mesMas(sid, -12)) || {};
+    if (u.con_oh == null) return [];
+    return [
+      {id: 'c1', ambito: regInfo(cod).nom, ocupados: u.con_oh, ocupados_ant: a.con_oh == null ? null : a.con_oh, var_pct: pcv(u.con_oh, a.con_oh), peso: r1(u.con_oh / u.ocu_oh * 100)},
+      {id: 'c2', ambito: 'País', ocupados: u.con_nac, ocupados_ant: a.con_nac == null ? null : a.con_nac, var_pct: pcv(u.con_nac, a.con_nac), peso: r1(u.con_nac / u.ocu_nac * 100)}
+    ];
+  }
+});
+
+function armaIndicadores(serie, k) {
+  const sid = pickId(serie, dash.params().trim);
+  const m = mapOf(serie);
+  const u = m.get(sid), a = m.get(mesMas(sid, -12)) || {};
+  const filas = [];
+  const add = (id, nombre, v, w, unidad, tipo) => {
+    if (bad(v)) return;
+    filas.push({id, indicador: nombre, valor: v, unidad, variacion: tipo === 'pp' ? dif(v, w) : pcv(v, w), unidad_var: tipo === 'pp' ? 'pp' : '%'});
+  };
+  add('i1', 'Tasa de desocupación', u['tasa' + k], a['tasa' + k], '%', 'pp');
+  add('i2', 'Desocupación de las mujeres', u['tasa' + k + '_f'], a['tasa' + k + '_f'], '%', 'pp');
+  add('i3', 'Desocupación de los hombres', u['tasa' + k + '_m'], a['tasa' + k + '_m'], '%', 'pp');
+  add('i4', 'Tasa de participación', u['tpar' + k], a['tpar' + k], '%', 'pp');
+  add('i5', 'Tasa de ocupación', u['tocu' + k], a['tocu' + k], '%', 'pp');
+  add('i6', 'Tasa de ocupación informal', u['inf' + k], a['inf' + k], '%', 'pp');
+  add('i7', 'Personas ocupadas', u['ocu' + k], a['ocu' + k], 'personas', '%');
+  add('i8', 'Personas desocupadas', u['des' + k], a['des' + k], 'personas', '%');
+  const fu = (!bad(u['ocu' + k]) && !bad(u['des' + k])) ? u['ocu' + k] + u['des' + k] : null;
+  const fa = (!bad(a['ocu' + k]) && !bad(a['des' + k])) ? a['ocu' + k] + a['des' + k] : null;
+  add('i9', 'Fuerza de trabajo', fu, fa, 'personas', '%');
+  add('i10', 'Ocupados en construcción', u['con' + k], a['con' + k], 'personas', '%');
+  return filas;
+}
+dash.calc('ind_oh', {
+  title: 'Indicadores de la región', description: 'Indicadores de la ENE de la región elegida (O\'Higgins si se ve el país) para el trimestre elegido, con variación a 12 meses',
+  inputs: ['serie', 'regiones_t'], fn: (serie, regT) => armaIndicadores(serieReg(serie, regT, regParam() || '06'), '_oh')
+});
+dash.calc('ind_nac', {
+  title: 'Indicadores del país', description: 'Indicadores de la ENE a nivel país para el trimestre elegido, con variación a 12 meses',
+  inputs: ['serie'], fn: (serie) => armaIndicadores(serie, '_nac')
+});
+
+/* ---------- utilidades ---------- */
+const played = new WeakSet();
+const ios = new WeakMap();
+const rafs = new WeakMap();
+const pendientes = new Set();
+let uid = 0;
+window.addEventListener('beforeprint', () => { pendientes.forEach((f) => f()); pendientes.clear(); });
+
+function whenVisible(el, fn) {
+  const prev = ios.get(el); if (prev) prev.disconnect();
+  if (!MOTION || document.hidden || typeof IntersectionObserver === 'undefined') { fn(); return; }
+  const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); fn(); } }, {root: document, threshold: 0.15});
+  ios.set(el, io); io.observe(el);
+}
+
+function gate(el, ids) {
+  const mal = ids.map((i) => dash.data(i)).find((g) => g.status !== 'ok');
+  if (!mal) { el.classList.remove('dash-skeleton'); return true; }
+  el.replaceChildren();
+  if (mal.status === 'loading') { el.classList.add('dash-skeleton'); return false; }
+  el.classList.remove('dash-skeleton');
+  if (mal.status === 'error' || mal.status === 'missing') vacio(el, 'No se pudo cargar este gráfico.');
+  return false;
+}
+function vacio(el, texto) {
+  const p = document.createElement('p'); p.className = 'mo-empty'; p.textContent = texto; el.replaceChildren(p);
+}
+function resumen() {
+  const g = dash.data('resumen');
+  return (g.status === 'ok' && g.data && g.data.length) ? g.data[0] : null;
+}
+function ultimoId() {
+  const g = dash.data('serie');
+  return g.status === 'ok' ? g.data[g.data.length - 1].id : null;
+}
+function setTrim(id) {
+  dash.setParams(Object.assign({}, dash.params(), {trim: id === ultimoId() ? '' : id}));
+}
+function setParam(k, v) {
+  const o = {}; o[k] = v;
+  dash.setParams(Object.assign({}, dash.params(), o));
+}
+
+function tipFor(el) {
+  const t = document.createElement('div'); t.className = 'mo-tt'; t.hidden = true; el.appendChild(t);
+  return {
+    show(lines, ev) {
+      t.replaceChildren();
+      lines.forEach((s, i) => { const d = document.createElement('div'); if (i === 0) { const b = document.createElement('b'); b.textContent = s; d.appendChild(b); } else d.textContent = s; t.appendChild(d); });
+      t.hidden = false;
+      const p = d3.pointer(ev, el); const tw = t.offsetWidth, W = el.clientWidth;
+      let left = p[0] + 14; if (left + tw > W) left = p[0] - tw - 14; if (left < 0) left = 0;
+      t.style.left = left + 'px'; t.style.top = Math.max(0, p[1] - 44) + 'px';
+    },
+    hide() { t.hidden = true; }
+  };
+}
+
+function baseSvg(W, H, label) {
+  return d3.create('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('width', '100%').attr('height', H).attr('role', 'img').attr('aria-label', label);
+}
+function addText(g, x, y, s, anchor, size, fill, halo) {
+  const t = g.append('text').attr('x', x).attr('y', y).attr('text-anchor', anchor || 'start').style('font-size', (size || 12) + 'px').style('fill', fill || 'var(--cds-text-secondary)').text(s);
+  if (halo) t.style('paint-order', 'stroke').style('stroke', 'var(--color-panel)').style('stroke-width', '4px').style('stroke-linejoin', 'round');
+  return t;
+}
+function textW(svg, s, size, peso) {
+  const t = svg.append('text').attr('x', 0).attr('y', -60).style('font-size', (size || 12) + 'px').style('font-weight', peso || 400).text(s);
+  const w = t.node().getComputedTextLength(); t.remove(); return w;
+}
+function armar(el, svg) {
+  if (MOTION && !played.has(el)) {
+    svg.classed('mo-pre', true);
+    whenVisible(el, () => { if (!el.contains(svg.node())) return; played.add(el); svg.classed('mo-pre', false); });
+  }
+}
+
+/* ---------- barra de filtros ---------- */
+document.getElementById('s-trim').addEventListener('change', (ev) => setTrim(ev.target.value));
+document.getElementById('b-prev').addEventListener('click', () => { const r = resumen(); if (r && r.prev_id) setTrim(r.prev_id); });
+document.getElementById('b-next').addEventListener('click', () => { const r = resumen(); if (r && r.next_id) setTrim(r.next_id); });
+const aUltimo = () => setParam('trim', '');
+document.getElementById('b-ult').addEventListener('click', aUltimo);
+document.getElementById('b-ult2').addEventListener('click', aUltimo);
+document.querySelectorAll('[data-rango]').forEach((b) => b.addEventListener('click', () => setParam('rango', +b.getAttribute('data-rango'))));
+document.querySelectorAll('[data-modo]').forEach((b) => b.addEventListener('click', () => setParam('orden', b.getAttribute('data-modo'))));
+function ponAmbito(v) {
+  const raiz = document.getElementById('mo-raiz'); if (!raiz) return;
+  raiz.classList.toggle('amb-oh', v === 'oh'); raiz.classList.toggle('amb-pais', v !== 'oh');
+}
+function irA(cod, sube) {
+  const c = REGS.some((x) => x[0] === cod) ? cod : '';
+  ponAmbito(c ? 'oh' : 'pais'); setParam('reg', c);
+  if (sube) { const p = document.getElementById('portada'); if (p) p.scrollIntoView({behavior: MOTION ? 'smooth' : 'auto', block: 'start'}); }
+}
+document.querySelectorAll('[data-amb]').forEach((b) => b.addEventListener('click', () => irA(b.getAttribute('data-amb') === 'pais' ? '' : b.getAttribute('data-amb'), true)));
+document.getElementById('s-reg').addEventListener('change', (ev) => irA(ev.target.value, false));
+dash.draw('ctl_reg', (el) => {
+  const r = resumen(); if (!r) return;
+  if (el.options.length !== REGS.length + 1) {
+    el.replaceChildren();
+    const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Chile (nacional)'; el.appendChild(o0);
+    const og = document.createElement('optgroup'); og.label = 'Regiones, de norte a sur';
+    REGS.forEach((x) => { const o = document.createElement('option'); o.value = x[0]; o.textContent = x[1]; og.appendChild(o); });
+    el.appendChild(og);
+  }
+  el.value = r.reg;
+});
+
+dash.draw('ctl_sel', (el) => {
+  const g = dash.data('serie'); const r = resumen();
+  if (g.status !== 'ok' || !r) return;
+  if (el.options.length !== g.data.length) {
+    el.replaceChildren();
+    const porAnio = d3.group(g.data.slice().reverse(), (x) => x.id.slice(0, 4));
+    porAnio.forEach((filas, anio) => {
+      const og = document.createElement('optgroup'); og.label = anio;
+      filas.forEach((x) => { const o = document.createElement('option'); o.value = x.id; o.textContent = x.largo; og.appendChild(o); });
+      el.appendChild(og);
+    });
+  }
+  el.value = r.id;
+  ponAmbito(r.ambito);
+  document.getElementById('b-prev').disabled = !r.prev_id;
+  document.getElementById('b-next').disabled = !r.next_id;
+  document.getElementById('b-ult').hidden = r.es_ultimo === 1;
+  document.getElementById('vista-hist').hidden = r.es_ultimo === 1;
+  document.querySelectorAll('[data-rango]').forEach((b) => {
+    const on = +b.getAttribute('data-rango') === r.rango;
+    b.classList.toggle('mo-on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+  document.querySelectorAll('[data-modo]').forEach((b) => {
+    const on = b.getAttribute('data-modo') === r.orden;
+    b.classList.toggle('mo-on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+});
+
+/* ---------- cifras sueltas ---------- */
+function textos(name, campo, fn, ocultaFila) {
+  dash.draw(name, (el) => {
+    const r = resumen(); el.textContent = r ? fn(r[campo]) : '—';
+    if (ocultaFila) { const fila = el.closest(ocultaFila === 'celda' ? '.mo-cell' : '.mo-d'); if (fila) fila.hidden = !r || bad(r[campo]); }
+  });
+}
+function conteo(name, campo, fn) {
+  dash.draw(name, (el) => {
+    const r = resumen();
+    const prev = rafs.get(el); if (prev) cancelAnimationFrame(prev);
+    if (!r) { el.textContent = '—'; return; }
+    const v = r[campo];
+    el.textContent = fn(v);
+    const cel = el.closest('.mo-cell'); if (cel) cel.hidden = bad(v);
+    if (!MOTION || document.hidden || played.has(el) || bad(v)) return;
+    const rc = el.getBoundingClientRect();
+    played.add(el);
+    if (rc.bottom < 0 || rc.top > window.innerHeight) return;
+    const t0 = performance.now();
+    const paso = (t) => {
+      const k = Math.min(1, (t - t0) / 1000), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = fn(k < 1 ? v * e : v);
+      if (k < 1) rafs.set(el, requestAnimationFrame(paso));
+    };
+    rafs.set(el, requestAnimationFrame(paso));
+  });
+}
+function variacion(name, campo, fn, malaSiSube) {
+  dash.draw(name, (el) => {
+    const r = resumen(); const chip = el.parentElement;
+    chip.classList.remove('mo-bad', 'mo-good');
+    if (!r) { el.textContent = '—'; return; }
+    const v = r[campo];
+    el.textContent = fn(v);
+    const fila = el.closest('.mo-d'); if (fila) fila.hidden = bad(v);
+    if (!bad(v) && v) chip.classList.add((v > 0) === malaSiSube ? 'mo-bad' : 'mo-good');
+  });
+}
+
+textos('h_per', 'largo', (v) => v);
+textos('h_oh', 'tasa_oh', f1);
+textos('h_br', 'brecha', (v) => f1(Math.abs(v)));
+textos('h_nac', 'tasa_nac', f1);
+textos('h_lug', 'lugar', (v) => String(v));
+dash.draw('h_sobre', (el) => { const r = resumen(); el.textContent = r ? (r.brecha >= 0 ? 'sobre' : 'bajo') : '—'; });
+dash.draw('ic_sel', (el) => {
+  const r = resumen();
+  const a = document.getElementById('ic-dentro'), b = document.getElementById('ic-fuera');
+  const sin = !r || r.ic_lo == null;
+  a.hidden = !(r && r.dentro_ic === 1);
+  b.hidden = !(r && r.dentro_ic === 0 && r.ic_lo != null);
+  document.getElementById('lead2').hidden = sin;
+  const lg = document.getElementById('leg-ic'); if (lg) lg.hidden = !r || r.ic_hay !== 1;
+  const sb = document.getElementById('sub-ic'); if (sb) sb.hidden = !r || r.ic_hay !== 1;
+  const kc = document.getElementById('k-ic'); if (kc) kc.hidden = !r || r.ic_hay !== 1 || r.ic_lo == null;
+});
+textos('pie_per', 'ult_largo', (v) => v);
+RT_IDS.forEach((x) => textos(x[0], x[1], (v) => v));
+textos('t_max', 'max_oh', f1); textos('t_maxq', 'max_largo', (v) => v);
+textos('t_min', 'min_oh', f1); textos('t_minq', 'min_largo', (v) => v);
+textos('s_br', 'brecha_sexo', f1); textos('s_m', 'muj', f1); textos('s_h', 'hom', f1);
+dash.draw('s_bra', (el) => {
+  const r = resumen(); el.textContent = r ? f1(r.brecha_sexo_ant) : '—';
+  document.getElementById('s-ant').hidden = !r || r.brecha_sexo_ant == null;
+});
+dash.draw('c_oh', (el) => {
+  const r = resumen(); el.textContent = r ? fI(r.con_oh) : '—';
+  document.getElementById('take-con').hidden = !r || r.con_oh == null;
+});
+textos('c_dif', 'con_dif', sgI); textos('c_var', 'con_var', sg1); textos('c_nac', 'con_var_nac', sg1);
+
+textos('hn_per', 'largo', (v) => v); textos('hn_nac', 'tasa_nac', f1); textos('hn_var', 'var_nac', (v) => f1(Math.abs(v)));
+dash.draw('hn_mas', (el) => { const r = resumen(); el.textContent = r && !bad(r.var_nac) ? (r.var_nac > 0 ? 'más' : r.var_nac < 0 ? 'menos' : 'igual') : '—'; });
+textos('hn_oh', 'tasa_oh', f1); textos('hn_lug', 'lugar', (v) => String(v));
+textos('hn_alta', 'reg_alta', (v) => v); textos('hn_alta_v', 'reg_alta_v', f1); textos('hn_baja', 'reg_baja', (v) => v); textos('hn_baja_v', 'reg_baja_v', f1);
+textos('tn_max', 'max_nac', f1); textos('tn_maxq', 'max_nac_largo', (v) => v); textos('tn_min', 'min_nac', f1); textos('tn_minq', 'min_nac_largo', (v) => v);
+conteo('kn1', 'tasa_nac', f1); variacion('kn1d', 'var_nac', sg1, true);
+conteo('kn2', 'ocu_nac', fI); variacion('kn2d', 'ocu_var_nac', sg1, false);
+conteo('kn3', 'inf_nac', f1); variacion('kn3d', 'inf_var_nac', sg1, true);
+conteo('kn4', 'con_nac', fI); variacion('kn4d', 'con_var_nac', sg1, false); textos('kn4p', 'con_peso_nac', f1, true);
+conteo('k1', 'tasa_oh', f1); textos('k1l', 'ic_lo', f1, true); textos('k1h', 'ic_hi', f1);
+variacion('k1d', 'var_oh', sg1, true);
+conteo('k2', 'ocu_oh', fI); variacion('k2d', 'ocu_var', sg1, false);
+conteo('k3', 'inf_oh', f1); textos('k3n', 'inf_nac', f1, true); variacion('k3d', 'inf_var', sg1, true);
+conteo('k4', 'con_oh', fI); textos('k4n', 'con_var_nac', sg1, true); variacion('k4d', 'con_var', sg1, false);
+
+dash.draw('grua_valor', (el) => { const r = resumen(); el.textContent = r ? f1(r.grua) + ' %' : '—'; });
+
+function hoyISO() { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function proxima(rows) {
+  const hoy = hoyISO();
+  return rows.find((r) => r.fecha >= hoy) || null;
+}
+dash.draw('px_fecha', (el) => {
+  const g = dash.data('calendario');
+  if (g.status !== 'ok') { el.textContent = '—'; return; }
+  const f = proxima(g.data);
+  el.textContent = f ? fFecha(f.fecha) + ', ' + f.hora : '—';
+});
+dash.draw('px_dias', (el) => {
+  const g = dash.data('calendario');
+  if (g.status !== 'ok') { el.textContent = '—'; return; }
+  const f = proxima(g.data);
+  if (!f) { el.textContent = '—'; return; }
+  const n = Math.round((new Date(f.fecha + 'T00:00:00') - new Date(hoyISO() + 'T00:00:00')) / 86400000);
+  el.textContent = n <= 0 ? 'es hoy' : n === 1 ? 'es mañana' : 'faltan ' + n + ' días';
+});
+
+/* ---------- minigráficos de las tarjetas ---------- */
+function sparkline(el, rows, key, color, etiqueta) {
+  const pts = rows.filter((r) => r[key] != null);
+  if (pts.length < 3) { vacio(el, 'Sin dato publicado en este período'); return; }
+  const W = Math.max(120, el.clientWidth || 200), H = 44;
+  const v = pts.map((r) => r[key]);
+  const svg = baseSvg(W, H, etiqueta + ' en los 13 trimestres móviles hasta el elegido');
+  const x = d3.scaleLinear().domain([0, v.length - 1]).range([3, W - 8]);
+  const lo = d3.min(v), hi = d3.max(v), pad = (hi - lo) * 0.18 || 1;
+  const y = d3.scaleLinear().domain([lo - pad, hi + pad]).range([H - 4, 4]);
+  const gid = 'sg' + (++uid);
+  const lg = svg.append('defs').append('linearGradient').attr('id', gid).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+  lg.append('stop').attr('offset', '0%').attr('stop-color', color).attr('stop-opacity', 0.26);
+  lg.append('stop').attr('offset', '100%').attr('stop-color', color).attr('stop-opacity', 0);
+  svg.append('path').attr('d', d3.area().curve(d3.curveMonotoneX).x((d, i) => x(i)).y0(H).y1((d) => y(d))(v)).attr('fill', 'url(#' + gid + ')').attr('class', 'mo-late');
+  const p = svg.append('path').attr('d', d3.line().curve(d3.curveMonotoneX).x((d, i) => x(i)).y((d) => y(d))(v)).attr('fill', 'none').style('stroke', color).style('stroke-width', 2.2).attr('stroke-linecap', 'round').attr('class', 'mo-line');
+  svg.append('circle').attr('cx', x(v.length - 1)).attr('cy', y(v[v.length - 1])).attr('r', 4).style('fill', color).style('stroke', 'var(--color-panel)').style('stroke-width', 2).attr('class', 'mo-late');
+  el.replaceChildren(svg.node());
+  p.style('--len', p.node().getTotalLength());
+  armar(el, svg);
+}
+[['spn1', 'tasa_nac', C_AZ, 'Desocupación del país'], ['spn2', 'ocu_nac', C_AZ, 'Personas ocupadas en el país'],
+ ['spn3', 'inf_nac', C_AZ, 'Ocupación informal en el país'], ['spn4', 'con_nac', C_OR, 'Ocupados en construcción en el país'],
+ ['sp1', 'tasa_oh', C_OR, 'Desocupación de la región'], ['sp2', 'ocu_oh', C_AZ, 'Personas ocupadas en la región'],
+ ['sp3', 'inf_oh', C_AZ, 'Ocupación informal en la región'], ['sp4', 'con_oh', C_OR, 'Ocupados en construcción en la región']].forEach(([name, key, color, et]) => {
+  dash.draw(name, (el) => { if (!gate(el, ['spark_sel'])) return; sparkline(el, dash.data('spark_sel').data, key, color, et); });
+});
+
+/* ---------- gráfico de líneas ---------- */
+function lineChart(el, o) {
+  const rows = o.rows, n = rows.length;
+  if (n < 2) { vacio(el, 'No hay datos publicados para este período.'); return; }
+  const W = Math.max(300, el.clientWidth || 600), H = o.h || 310;
+  const svg = baseSvg(W, H, o.aria);
+  el.replaceChildren(svg.node());
+  const anual = n > 40;
+  const mt = 34, mb = anual ? 32 : 46;
+  const vals = [];
+  o.series.forEach((s) => rows.forEach((r) => { if (r[s.key] != null) vals.push(r[s.key]); }));
+  if (o.band) rows.forEach((r) => { if (r[o.band.lo] != null) vals.push(r[o.band.lo], r[o.band.hi]); });
+  let lo = d3.min(vals), hi = d3.max(vals); const pad = (hi - lo) * 0.1 || 1; lo -= pad; hi += pad;
+  const ys = d3.scaleLinear().domain([lo, hi]).nice(5).range([H - mb, mt]);
+  const ticks = ys.ticks(5);
+  const g = svg.append('g');
+  let ml = 0; ticks.forEach((t) => { ml = Math.max(ml, textW(svg, o.yFmt(t), 11)); }); ml += 12;
+  let mr = 0; o.series.forEach((s) => { const v = rows[n - 1][s.key]; if (v != null) mr = Math.max(mr, textW(svg, o.yFmt(v), 12, 600)); }); mr += 14;
+  const xs = d3.scaleLinear().domain([0, n - 1]).range([ml, W - mr]);
+  ticks.forEach((t) => {
+    g.append('line').attr('x1', ml).attr('x2', W - mr).attr('y1', ys(t)).attr('y2', ys(t)).style('stroke', 'var(--cds-chart-grid)').style('stroke-dasharray', '2 4');
+    addText(g, ml - 8, ys(t) + 4, o.yFmt(t), 'end', 11);
+  });
+
+  // eje de tiempo en español: años en series largas; meses del trimestre en series cortas
+  const cand = [];
+  rows.forEach((r, i) => { const m = +r.id.slice(5); if (anual ? m === 1 : (m - 1) % 3 === 0) cand.push(i); });
+  const etq = cand.map((i) => { const m0 = +rows[i].id.slice(5) - 1; return anual ? rows[i].id.slice(0, 4) : MES3[m0] + '–' + MES3[(m0 + 2) % 12]; });
+  let lw = 0; etq.forEach((t) => { lw = Math.max(lw, textW(svg, t, 11)); });
+  const sp = cand.length > 1 ? xs(cand[1]) - xs(cand[0]) : 60;
+  const kk = Math.max(1, Math.ceil((lw + 14) / sp));
+  let anioPrev = '';
+  cand.forEach((i, j) => {
+    if (j % kk) return;
+    const x = xs(i);
+    g.append('line').attr('x1', x).attr('x2', x).attr('y1', H - mb).attr('y2', H - mb + 4).style('stroke', 'var(--cds-chart-axis)');
+    addText(g, x, H - mb + 17, etq[j], 'middle', 11);
+    if (!anual) {
+      const a = rows[i].id.slice(0, 4);
+      if (a !== anioPrev) { addText(g, x, H - mb + 31, a, 'middle', 11, 'var(--color-fg)').style('font-weight', 600); anioPrev = a; }
+    }
+  });
+  g.append('line').attr('x1', ml).attr('x2', W - mr).attr('y1', H - mb).attr('y2', H - mb).style('stroke', 'var(--cds-chart-axis)');
+
+  const curva = d3.curveMonotoneX;
+  if (o.band) {
+    const area = d3.area().curve(curva).defined((r) => r[o.band.lo] != null).x((r, i) => xs(i)).y0((r) => ys(r[o.band.lo])).y1((r) => ys(r[o.band.hi]));
+    g.append('path').attr('d', area(rows)).style('fill', o.band.color).attr('fill-opacity', 0.2).attr('class', 'mo-late');
+  }
+  if (o.area) {
+    const gid = 'ag' + (++uid);
+    const lg = svg.append('defs').append('linearGradient').attr('id', gid).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    lg.append('stop').attr('offset', '0%').attr('stop-color', o.area.color).attr('stop-opacity', 0.3);
+    lg.append('stop').attr('offset', '100%').attr('stop-color', o.area.color).attr('stop-opacity', 0);
+    g.append('path').attr('d', d3.area().curve(curva).defined((r) => r[o.area.key] != null).x((r, i) => xs(i)).y0(H - mb).y1((r) => ys(r[o.area.key]))(rows)).attr('fill', 'url(#' + gid + ')').attr('class', 'mo-late');
+  }
+  o.series.slice().reverse().forEach((s) => {
+    const p = g.append('path').attr('d', d3.line().curve(curva).defined((r) => r[s.key] != null).x((r, i) => xs(i)).y((r) => ys(r[s.key]))(rows)).attr('fill', 'none')
+      .style('stroke', s.color).style('stroke-width', s.width * (n > 100 ? 0.62 : n > 40 ? 0.8 : 1)).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('class', 'mo-line');
+    p.style('--len', p.node().getTotalLength());
+  });
+
+  // máximo y mínimo de la serie principal dentro del período visible
+  if (o.extremos && n >= 30) {
+    const k = o.series[0].key, col = o.series[0].color;
+    let imx = -1, imn = -1;
+    rows.forEach((r, i) => { if (r[k] == null) return; if (imx < 0 || r[k] > rows[imx][k]) imx = i; if (imn < 0 || r[k] < rows[imn][k]) imn = i; });
+    [[imx, 'Máx. ', -10], [imn, 'Mín. ', 19]].forEach(([i, pre, dy]) => {
+      if (i < 0) return;
+      g.append('circle').attr('cx', xs(i)).attr('cy', ys(rows[i][k])).attr('r', 4).style('fill', 'var(--color-panel)').style('stroke', col).style('stroke-width', 2).attr('class', 'mo-late');
+      const txt = pre + o.yFmt(rows[i][k]) + ' %';
+      const w = textW(svg, txt, 11.5, 600), x = Math.min(Math.max(xs(i), ml + w / 2), W - mr - w / 2);
+      addText(g, x, ys(rows[i][k]) + dy, txt, 'middle', 11.5, 'var(--color-fg)', true).style('font-weight', 600).attr('class', 'mo-late');
+    });
+  }
+
+  // valores al final de la serie visible
+  const fin = o.series.filter((s) => rows[n - 1][s.key] != null).map((s) => ({s, y: ys(rows[n - 1][s.key])})).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < fin.length; i++) if (fin[i].y - fin[i - 1].y < 15) fin[i].y = fin[i - 1].y + 15;
+  fin.forEach((f) => {
+    g.append('circle').attr('cx', xs(n - 1)).attr('cy', ys(rows[n - 1][f.s.key])).attr('r', 3.5).style('fill', f.s.color).attr('class', 'mo-late');
+    addText(g, W - mr + 8, f.y + 4, o.yFmt(rows[n - 1][f.s.key]), 'start', 12, 'var(--color-fg)').style('font-weight', 600).attr('class', 'mo-late');
+  });
+
+  // trimestre elegido
+  const si = rows.findIndex((r) => r.sel === 1);
+  if (si >= 0) {
+    const x = xs(si);
+    g.append('line').attr('x1', x).attr('x2', x).attr('y1', mt - 4).attr('y2', H - mb).style('stroke', C_NO).style('stroke-width', 1.3).style('stroke-dasharray', '3 3').attr('opacity', 0.55);
+    const txt = rows[si].periodo, tw = textW(svg, txt, 11.5, 600), pw = tw + 18;
+    const px = Math.min(Math.max(x - pw / 2, 0), W - pw);
+    g.append('rect').attr('x', px).attr('y', 2).attr('width', pw).attr('height', 22).attr('rx', 11).style('fill', C_NO);
+    addText(g, px + pw / 2, 17, txt, 'middle', 11.5, '#fff').style('font-weight', 600);
+    o.series.forEach((s) => {
+      if (rows[si][s.key] == null) return;
+      g.append('circle').attr('cx', x).attr('cy', ys(rows[si][s.key])).attr('r', 5.5).style('fill', s.color).style('stroke', 'var(--color-panel)').style('stroke-width', 2.5);
+    });
+  }
+
+  const cross = g.append('line').attr('y1', mt).attr('y2', H - mb).style('stroke', 'var(--cds-chart-axis)').attr('visibility', 'hidden');
+  const puntos = o.series.map((s) => g.append('circle').attr('r', 4.5).style('fill', s.color).style('stroke', 'var(--color-panel)').style('stroke-width', 2).attr('visibility', 'hidden'));
+  armar(el, svg);
+  const tip = tipFor(el);
+  const idx = (ev) => Math.max(0, Math.min(n - 1, Math.round(xs.invert(d3.pointer(ev, svg.node())[0]))));
+  g.append('rect').attr('x', ml).attr('y', mt).attr('width', W - ml - mr).attr('height', H - mt - mb).attr('fill', 'transparent').attr('class', 'mo-pick-rect')
+    .on('pointermove', (ev) => {
+      const i = idx(ev);
+      cross.attr('x1', xs(i)).attr('x2', xs(i)).attr('visibility', 'visible');
+      o.series.forEach((s, k) => { if (rows[i][s.key] == null) puntos[k].attr('visibility', 'hidden'); else puntos[k].attr('cx', xs(i)).attr('cy', ys(rows[i][s.key])).attr('visibility', 'visible'); });
+      tip.show(o.tip(rows[i]), ev);
+    })
+    .on('pointerleave', () => { tip.hide(); cross.attr('visibility', 'hidden'); puntos.forEach((p) => p.attr('visibility', 'hidden')); })
+    .on('click', (ev) => setTrim(rows[idx(ev)].id));
+}
+
+dash.draw('ch_tasa', (el) => {
+  if (!gate(el, ['serie_v'])) return;
+  lineChart(el, {
+    rows: dash.data('serie_v').data, aria: 'Líneas de la tasa de desocupación de ' + NR() + ' y del país por trimestre móvil' + (resumen() && resumen().ic_hay ? ', con el margen de error de la región' : ''),
+    series: [{key: 'tasa_oh', color: C_OR, width: 3.4}, {key: 'tasa_nac', color: C_AZ, width: 2.4}],
+    band: {lo: 'ic_lo', hi: 'ic_hi', color: C_OR}, yFmt: (v) => f1(v), extremos: true,
+    tip: (r) => [r.largo, NR() + ': ' + pct(r.tasa_oh), 'País: ' + pct(r.tasa_nac), 'Diferencia: ' + sg1(dif(r.tasa_oh, r.tasa_nac)) + ' puntos'].concat(r.ic_lo != null ? ['Margen de error 95 %: ' + f1(r.ic_lo) + ' a ' + f1(r.ic_hi)] : [])
+  });
+});
+dash.draw('ch_sexo', (el) => {
+  if (!gate(el, ['serie_v'])) return;
+  lineChart(el, {
+    rows: dash.data('serie_v').data, aria: 'Líneas de la desocupación de mujeres y hombres en ' + NR() + ' y del total del país por trimestre móvil',
+    series: [{key: 'tasa_oh_f', color: C_OR, width: 3}, {key: 'tasa_oh_m', color: C_NO, width: 3}, {key: 'tasa_nac', color: C_AZ, width: 2}],
+    yFmt: (v) => f1(v),
+    tip: (r) => [r.largo, 'Mujeres: ' + pct(r.tasa_oh_f), 'Hombres: ' + pct(r.tasa_oh_m), 'Total país: ' + pct(r.tasa_nac)]
+  });
+});
+dash.draw('ch_con', (el) => {
+  if (!gate(el, ['serie_v'])) return;
+  const rows = dash.data('serie_v').data.filter((r) => r.con_oh != null);
+  lineChart(el, {
+    rows, h: (el.clientWidth || 600) > 480 ? 430 : 300, aria: 'Línea de las personas ocupadas en construcción en ' + NR() + ' por trimestre móvil',
+    series: [{key: 'con_oh', color: C_OR, width: 3.4}], area: {key: 'con_oh', color: C_OR}, yFmt: (v) => fI(v),
+    tip: (r) => [r.largo, 'Ocupados en construcción: ' + fI(r.con_oh), 'País: ' + fI(r.con_nac)]
+  });
+});
+
+/* ---------- barras horizontales ---------- */
+function hbars(el, o) {
+  const rows = o.rows, rowH = o.rowH || 26, W = Math.max(300, el.clientWidth || 600);
+  const top = o.ref ? 26 : 8, H = rows.length * rowH + top + 8;
+  const svg = baseSvg(W, H, o.aria);
+  el.replaceChildren(svg.node());
+  let ml = 0, lw = 0;
+  rows.forEach((r) => { ml = Math.max(ml, textW(svg, r.label, 12, 600)); lw = Math.max(lw, textW(svg, o.fmt(r.value), 12, 600)); });
+  ml = Math.ceil(ml) + 12; lw = Math.ceil(lw) + 8;
+  const vmin = Math.min(0, d3.min(rows, (r) => r.value)), vmax = Math.max(0, d3.max(rows, (r) => r.value));
+  const x0 = o.dom ? o.dom[0] : vmin, x1 = o.dom ? o.dom[1] : vmax;
+  const x = d3.scaleLinear().domain([x0, x1]).range([ml + (x0 < 0 ? lw : 0), W - lw - 4]);
+  const g = svg.append('g');
+  if (o.ref) {
+    g.append('line').attr('x1', x(o.ref.v)).attr('x2', x(o.ref.v)).attr('y1', top - 4).attr('y2', H - 8).style('stroke', C_NO).style('stroke-width', 1.5).style('stroke-dasharray', '4 3');
+    addText(g, x(o.ref.v), 14, o.ref.label, 'middle', 12, 'var(--color-fg)').style('font-weight', 600);
+  }
+  rows.forEach((r, i) => {
+    const y = top + i * rowH, neg = r.value < 0;
+    addText(g, ml - 8, y + rowH / 2 + 4.5, r.label, 'end', 12, 'var(--color-fg)').style('font-weight', r.destaca ? 700 : 400);
+    const bx = neg ? x(r.value) : x(0), bw = Math.max(1, Math.abs(x(r.value) - x(0)));
+    g.append('rect').attr('x', bx).attr('y', y + (rowH - 17) / 2).attr('width', bw).attr('height', 17).attr('rx', 4).style('fill', r.color)
+      .attr('class', 'mo-bar2' + (neg ? ' neg' : '')).style('transition-delay', (i * 28) + 'ms');
+    const tx = neg ? bx - 5 : bx + bw + 5;
+    addText(g, tx, y + rowH / 2 + 4.5, o.fmt(r.value), neg ? 'end' : 'start', 12, 'var(--color-fg)', true).style('font-weight', r.destaca ? 700 : 500).attr('class', 'mo-late');
+  });
+  if (x0 < 0) g.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', top).attr('y2', H - 8).style('stroke', 'var(--cds-chart-axis)');
+  armar(el, svg);
+  const tip = tipFor(el);
+  rows.forEach((r, i) => {
+    const hit = g.append('rect').attr('x', 0).attr('y', top + i * rowH).attr('width', W).attr('height', rowH).attr('fill', 'transparent')
+      .on('pointermove', (ev) => tip.show(r.tip, ev)).on('pointerleave', () => tip.hide());
+    if (r.pick) hit.attr('class', 'mo-pick-rect').on('click', () => irA(r.pick, true));
+  });
+}
+
+['ch_reg', 'ch_reg_oh'].forEach((nombre) => dash.draw(nombre, (el) => {
+  if (!gate(el, ['reg_sel', 'resumen'])) return;
+  const r0 = resumen();
+  const regs = dash.data('reg_sel').data.slice().sort((a, b) => r0.orden === 'geo' ? a.geo - b.geo : b.tasa - a.tasa);
+  const mx = d3.max(regs, (r) => r.tasa);
+  hbars(el, {
+    aria: 'Barras horizontales con la tasa de desocupación de las 16 regiones en el trimestre elegido', fmt: pct, dom: [0, mx * 1.14], rowH: 31,
+    rows: regs.map((r) => ({label: r.region, value: r.tasa, destaca: r.id === r0.reg_cod, color: r.id === r0.reg_cod ? C_OR : C_AZ, pick: r.id,
+      tip: [r.region, 'Desocupación: ' + pct(r.tasa), 'Hace 12 meses: ' + pct(r.tasa_ant), 'Variación: ' + sg1(r.var_pp) + ' puntos', 'Clic para ver el detalle de la región']})),
+    ref: {v: r0.tasa_nac, label: 'País ' + pct(r0.tasa_nac)}
+  });
+}));
+
+['ch_conreg', 'ch_conreg_oh'].forEach((nombre) => dash.draw(nombre, (el) => {
+  if (!gate(el, ['reg_sel'])) return;
+  const regs = dash.data('reg_sel').data.filter((r) => r.con_var != null).sort((a, b) => b.con_var - a.con_var);
+  if (regs.length < 3) { vacio(el, 'El INE publica la apertura por rama desde 2013; la variación en 12 meses se calcula desde 2014.'); return; }
+  hbars(el, {
+    aria: 'Barras horizontales con la variación a 12 meses de los ocupados en construcción en cada región', fmt: (v) => sg1(v) + ' %',
+    rows: regs.map((r) => ({label: r.region + (r.con_est ? '*' : ''), value: r.con_var, destaca: r.id === resumen().reg_cod, pick: r.id,
+      color: r.id === resumen().reg_cod ? C_OR : (r.con_var >= 0 ? C_AZ : C_GR),
+      tip: [r.region, 'Ocupados en construcción: ' + fI(r.con_ocu), 'Variación en 12 meses: ' + sg1(r.con_var) + ' %', 'Peso en el empleo regional: ' + pct(r.con_peso)].concat(r.con_est ? ['Estimación ' + (r.con_est === 'X' ? 'no fiable' : 'poco fiable') + ' (INE)'] : [])}))
+  });
+}));
+
+function graficoRamas(el, id, donde) {
+  if (!gate(el, [id])) return;
+  const todas = dash.data(id).data;
+  const rows = todas.filter((r) => r.est !== 'X' && r.var_pers != null).sort((a, b) => b.var_pers - a.var_pers);
+  if (rows.length < 3) { vacio(el, todas.length ? 'En este trimestre el INE califica como no fiables casi todas las cifras por rama de esta región, por su tamaño muestral, y no se grafican.' : 'El INE publica el empleo por rama desde 2013; la variación en 12 meses se calcula desde 2014.'); return; }
+  hbars(el, {
+    aria: 'Barras horizontales con la variación de personas ocupadas por rama de actividad ' + donde + ' en 12 meses', fmt: sgI,
+    rows: rows.map((r) => ({label: r.rama + (r.est ? '*' : ''), value: r.var_pers, destaca: r.id === 'F',
+      color: r.id === 'F' ? C_OR : (r.var_pers >= 0 ? C_AZ : C_GR),
+      tip: [r.rama, 'Ocupados: ' + fI(r.ocu) + ' (hace 12 meses ' + fI(r.ocu_ant) + ')', 'Variación: ' + sgI(r.var_pers) + ' personas, ' + sg1(r.var_pct) + ' %', 'Peso en el empleo: ' + pct(r.peso)].concat(r.est ? ['Estimación poco fiable (INE)'] : [])}))
+  });
+}
+dash.draw('ch_sec', (el) => graficoRamas(el, 'sec_sel', 'en ' + NR()));
+dash.draw('ch_sec_nac', (el) => graficoRamas(el, 'sec_sel_nac', 'en el país'));
+
+/* ---------- tablas ---------- */
+function celda(tr, texto, cls) { const td = document.createElement('td'); td.textContent = texto; if (cls) td.className = cls; tr.appendChild(td); return td; }
+function tabla(name, id, fn, vacioTxt, cols) {
+  dash.draw(name, (tb) => {
+    tb.replaceChildren();
+    const g = dash.data(id);
+    if (g.status !== 'ok') return;
+    if (!g.data.length && vacioTxt) {
+      const tr = document.createElement('tr'); const td = celda(tr, vacioTxt); td.colSpan = cols || 1; tb.appendChild(tr); return;
+    }
+    g.data.forEach((r, i) => { const tr = document.createElement('tr'); tr.setAttribute('data-key', r.id); fn(tr, r, i, g.data); tb.appendChild(tr); });
+  });
+}
+const valor = (r) => r.unidad === '%' ? f1(r.valor) + ' %' : fI(r.valor);
+const vari = (r) => r.variacion == null ? '—' : sg1(r.variacion) + (r.unidad_var === '%' ? ' %' : ' pp');
+tabla('t_oh', 'ind_oh', (tr, r) => { celda(tr, r.indicador); celda(tr, valor(r), 'r'); celda(tr, vari(r), 'r'); });
+tabla('t_nac', 'ind_nac', (tr, r) => { celda(tr, r.indicador); celda(tr, valor(r), 'r'); celda(tr, vari(r), 'r'); });
+tabla('t_con', 'con_sel', (tr, r) => {
+  celda(tr, r.ambito); celda(tr, fI(r.ocupados), 'r'); celda(tr, fI(r.ocupados_ant), 'r'); celda(tr, bad(r.var_pct) ? '—' : sg1(r.var_pct) + ' %', 'r'); celda(tr, pct(r.peso), 'r');
+  if (r.id === 'c1') tr.classList.add('mo-oh');
+}, 'El INE publica la apertura por rama desde 2013.', 5);
+tabla('t_cal', 'calendario', (tr, r, i, rows) => {
+  celda(tr, fFecha(r.fecha)); celda(tr, r.hora); celda(tr, r.publicacion); celda(tr, r.periodo);
+  const p = proxima(rows); if (p && p.id === r.id) tr.classList.add('mo-prox');
+});
+const rampa = d3.scaleLinear().domain([4, 8, 12]).range(['#E8F1FB', '#4D9BE6', '#003D6B']).clamp(true);
+dash.draw('t_heat', (tb) => {
+  tb.replaceChildren();
+  const g = dash.data('reg_sel');
+  if (g.status !== 'ok') return;
+  g.data.slice().sort((a, b) => b.tasa - a.tasa).forEach((r) => {
+    const tr = document.createElement('tr'); tr.setAttribute('data-key', r.id);
+    const rr = resumen();
+    if (rr && r.id === rr.reg_cod) tr.classList.add('mo-oh');
+    tr.classList.add('mo-click'); tr.title = 'Ver el detalle de ' + r.region; tr.addEventListener('click', () => irA(r.id, true));
+    celda(tr, r.region, 'reg');
+    ['t0', 't1', 't2', 't3', 'tasa'].forEach((k) => {
+      const td = celda(tr, f1(r[k]), 'c');
+      if (r[k] != null) { td.style.background = rampa(r[k]); td.style.color = r[k] >= 8.6 ? '#fff' : '#0b2540'; }
+    });
+    tb.appendChild(tr);
+  });
+});
+
+/* ---------- análisis del trimestre ---------- */
+const verbo = (v, sube, baja, igual) => (bad(v) ? '' : v > 0 ? sube : v < 0 ? baja : igual);
+const pp = (v) => f1(Math.abs(v)) + ' puntos';
+const pers = (v) => fI(Math.abs(v)) + ' personas';
+const signo = (v) => (v > 0 ? 1 : v < 0 ? -1 : 0);
+
+function analizar(serie, regT, sid, cod) {
+  cod = cod || '06';
+  const RI = regInfo(cod);
+  const m = mapOf(serie), u = m.get(sid);
+  if (!u) return [];
+  const a = m.get(mesMas(sid, -12)) || {};
+  const q = m.get(mesMas(sid, -3)) || {};
+  const p19 = sid.slice(0, 4) > '2019' ? (m.get('2019-' + sid.slice(5)) || {}) : {};
+  const hist = serie.filter((r) => r.id <= sid);
+  const out = [];
+  const poner = (id, tema, valor, nota, tono, detalle, corto) => out.push({id, tema, valor, nota, tono, detalle: detalle.join(' '), corto: corto || ''});
+
+  // 1. desocupación
+  {
+    const menor = hist.filter((r) => r.tasa_oh < u.tasa_oh).length;
+    const mayor = hist.filter((r) => r.tasa_oh > u.tasa_oh).length;
+    const v12 = dif(u.tasa_oh, a.tasa_oh), v3 = dif(u.tasa_oh, q.tasa_oh), v19 = dif(u.tasa_oh, p19.tasa_oh);
+    const t = [];
+    if (mayor === 0) t.push('Es el nivel más alto de los ' + hist.length + ' trimestres móviles publicados desde 2010.');
+    else if (menor === 0) t.push('Es el nivel más bajo de los ' + hist.length + ' trimestres móviles publicados desde 2010.');
+    else t.push('De los ' + hist.length + ' trimestres móviles publicados desde 2010, ' + menor + ' tuvieron una desocupación menor y ' + mayor + ' una mayor.');
+    if (!bad(v12)) t.push('Frente al mismo trimestre del año anterior ' + (v12 === 0 ? 'se mantuvo igual' : verbo(v12, 'subió ', 'bajó ') + pp(v12)) + '.');
+    if (!bad(v3)) t.push('Respecto del trimestre móvil de tres meses antes ' + (v3 === 0 ? 'no hay cambio' : verbo(v3, 'subió ', 'bajó ') + pp(v3)) + '.');
+    if (!bad(v19)) t.push('Respecto del mismo trimestre de 2019, antes de la pandemia, la diferencia es de ' + sg1(v19) + ' puntos.');
+    if (u.ic_lo != null && !bad(v12)) {
+      const mitad = r1((u.ic_hi - u.ic_lo) / 2);
+      t.push('El margen de error del trimestre es de ±' + f1(mitad) + ' puntos' + (Math.abs(v12) < mitad ? ' y la variación anual es menor que eso, por lo que no es una señal concluyente.' : ', menor que la variación anual.'));
+    }
+    const mitad1 = u.ic_lo != null ? r1((u.ic_hi - u.ic_lo) / 2) : null;
+    const c1 = (bad(v12) ? '' : v12 === 0 ? 'Igual que hace un año. ' : verbo(v12, 'Subió ', 'Bajó ') + pp(v12) + ' en 12 meses. ') +
+      (mayor === 0 ? 'Es el máximo desde 2010.' : menor === 0 ? 'Es el mínimo desde 2010.' : mayor <= menor ? 'Solo ' + mayor + ' de ' + hist.length + ' trimestres desde 2010 tuvieron más.' : 'Solo ' + menor + ' de ' + hist.length + ' trimestres desde 2010 tuvieron menos.') +
+      (mitad1 != null && !bad(v12) && Math.abs(v12) < mitad1 ? ' Variación dentro del margen de error.' : '');
+    poner('a1', 'Desocupación', pct(u.tasa_oh), bad(v12) ? '' : sg1(v12) + ' pp en 12 meses', signo(v12) > 0 ? 'bad' : signo(v12) < 0 ? 'good' : 'neutro', t, c1);
+  }
+
+  // 2. distancia con el país
+  {
+    const ult = hist.slice(-12);
+    const brechas = ult.map((r) => r.tasa_oh - r.tasa_nac);
+    const prom = r1(d3.mean(brechas));
+    const sobre = brechas.filter((b) => b > 0).length;
+    const br = dif(u.tasa_oh, u.tasa_nac);
+    const t = ['La brecha de este trimestre es de ' + sg1(br) + ' puntos frente al país (' + pct(u.tasa_nac) + ').'];
+    if (ult.length === 12) {
+      t.push('El promedio de los últimos 12 trimestres móviles es de ' + sg1(prom) + ' puntos, y en ' + sobre + ' de esos 12 la región estuvo sobre el promedio nacional.');
+      const dBr = r1(br - prom);
+      if (Math.abs(dBr) >= 0.2) t.push('La brecha actual está ' + f1(Math.abs(dBr)) + ' puntos ' + (dBr > 0 ? 'por encima' : 'por debajo') + ' de ese promedio.');
+    }
+    if (u.ic_lo != null) t.push(u.tasa_nac >= u.ic_lo && u.tasa_nac <= u.ic_hi ? 'La tasa nacional cae dentro del margen de error de la región (' + f1(u.ic_lo) + ' a ' + f1(u.ic_hi) + ' %), así que la diferencia no se puede dar por segura.' : 'La tasa nacional queda fuera del margen de error de la región (' + f1(u.ic_lo) + ' a ' + f1(u.ic_hi) + ' %).');
+    const c2 = (br === 0 ? 'Igual al país' : pp(br) + (br > 0 ? ' sobre' : ' bajo') + ' el país') + ' (' + pct(u.tasa_nac) + ').' +
+      (u.ic_lo != null && u.tasa_nac >= u.ic_lo && u.tasa_nac <= u.ic_hi ? ' La diferencia cae dentro del margen de error.' : '');
+    poner('a2', 'Frente al país', sg1(br) + ' pp', 'promedio 12 trimestres: ' + sg1(prom) + ' pp', br > 0 ? 'bad' : br < 0 ? 'good' : 'neutro', t, c2);
+  }
+
+  // 3. mujeres y hombres
+  if (!bad(u.tasa_oh_f) && !bad(u.tasa_oh_m)) {
+    const b = r1(u.tasa_oh_f - u.tasa_oh_m), b0 = dif(a.tasa_oh_f, a.tasa_oh_m);
+    const t = ['La desocupación de las mujeres es de ' + pct(u.tasa_oh_f) + ' y la de los hombres de ' + pct(u.tasa_oh_m) + ', una brecha de ' + sg1(b) + ' puntos.'];
+    if (b0 != null) t.push('Hace un año la brecha era de ' + sg1(b0) + ' puntos.');
+    if (!bad(u.tasa_nac_f) && !bad(u.tasa_nac_m)) t.push('En el país es de ' + sg1(r1(u.tasa_nac_f - u.tasa_nac_m)) + ' puntos.');
+    poner('a3', 'Mujeres y hombres', sg1(b) + ' pp', 'mujeres menos hombres', 'neutro', t);
+  }
+
+  // 4. ocupados
+  {
+    const d12 = bad(a.ocu_oh) ? null : u.ocu_oh - a.ocu_oh, dd12 = bad(a.des_oh) ? null : u.des_oh - a.des_oh;
+    const t = ['Hay ' + fI(u.ocu_oh) + ' personas ocupadas en la región.'];
+    if (d12 != null) t.push('En 12 meses ' + (d12 === 0 ? 'no cambió el número de ocupados' : 'los ocupados ' + verbo(d12, 'aumentaron en ', 'disminuyeron en ') + pers(d12) + ' (' + sg1(pcv(u.ocu_oh, a.ocu_oh)) + ' %)') + (dd12 != null ? ', mientras los desocupados ' + (dd12 === 0 ? 'se mantuvieron' : verbo(dd12, 'subieron en ', 'bajaron en ') + pers(dd12)) : '') + '.');
+    if (!bad(p19.ocu_oh)) t.push('Frente al mismo trimestre de 2019 hay ' + sgI(u.ocu_oh - p19.ocu_oh) + ' ocupados (' + sg1(pcv(u.ocu_oh, p19.ocu_oh)) + ' %).');
+    if (d12 != null && dd12 != null && d12 > 0 && dd12 > 0) t.push('La desocupación sube aunque el empleo crece, porque la fuerza de trabajo crece más rápido que los empleos disponibles.');
+    const c4 = d12 == null ? '' : 'Los ocupados ' + (d12 === 0 ? 'no cambiaron' : verbo(d12, 'subieron ', 'bajaron ') + sg1(pcv(u.ocu_oh, a.ocu_oh)).replace(/^[+−]/, '') + ' %') + ' en 12 meses' + (dd12 != null && dd12 !== 0 ? '; los desocupados ' + verbo(dd12, 'subieron ', 'bajaron ') + fI(Math.abs(dd12)) + '.' : '.');
+    poner('a4', 'Personas ocupadas', fI(u.ocu_oh), d12 == null ? '' : sgI(d12) + ' en 12 meses', d12 == null || d12 === 0 ? 'neutro' : d12 > 0 ? 'good' : 'bad', t, c4);
+  }
+
+  // 5. construcción
+  if (u.con_oh != null) {
+    const d12 = bad(a.con_oh) ? null : u.con_oh - a.con_oh, o12 = bad(a.ocu_oh) ? null : u.ocu_oh - a.ocu_oh;
+    const conRows = hist.filter((r) => r.con_oh != null);
+    const mx = conRows.reduce((s, r) => (r.con_oh > s.con_oh ? r : s), conRows[0]);
+    const pesoO = u.con_oh / u.ocu_oh * 100, pesoN = u.con_nac / u.ocu_nac * 100;
+    const t = ['Son ' + fI(u.con_oh) + ' ocupados en construcción, el ' + f1(pesoO) + ' % del empleo regional (en el país es ' + f1(pesoN) + ' %).'];
+    if (d12 != null) t.push('En 12 meses ' + (d12 === 0 ? 'no hubo cambio' : verbo(d12, 'sumó ', 'perdió ') + pers(d12)) + ' (' + sg1(pcv(u.con_oh, a.con_oh)) + ' %), y a nivel país la variación fue de ' + sg1(pcv(u.con_nac, a.con_nac)) + ' %.');
+    if (d12 != null && o12 != null && d12 !== 0 && o12 !== 0) {
+      if (d12 > 0 && o12 > 0) t.push('De los ' + fI(o12) + ' empleos netos que creó la región, la construcción aportó ' + fI(d12) + ' (' + fI(d12 / o12 * 100) + ' %).');
+      else if (d12 < 0 && o12 > 0) t.push('El empleo total de la región creció en ' + pers(o12) + ' aunque la construcción perdió ' + pers(d12) + '.');
+      else if (d12 > 0 && o12 < 0) t.push('El empleo total de la región cayó en ' + pers(o12) + ' aunque la construcción sumó ' + pers(d12) + '.');
+      else t.push('El empleo total de la región cayó en ' + pers(o12) + ' y la construcción perdió ' + pers(d12) + (Math.abs(d12) > Math.abs(o12) ? ', más que el total regional.' : '.'));
+    }
+    if (!bad(p19.con_oh)) t.push('Frente al mismo trimestre de 2019 hay ' + sgI(u.con_oh - p19.con_oh) + ' ocupados (' + sg1(pcv(u.con_oh, p19.con_oh)) + ' %).');
+    if (mx) t.push(mx.id === sid ? 'Es el mayor número de ocupados en construcción desde que el INE publica la serie, en 2013.' : 'El máximo desde 2013 fue de ' + fI(mx.con_oh) + ' en ' + mx.largo + '; el nivel actual está ' + f1(Math.abs(pcv(u.con_oh, mx.con_oh))) + ' % por debajo.');
+    const c5 = (d12 == null ? '' : sg1(pcv(u.con_oh, a.con_oh)) + ' % en 12 meses. ') + f1(pesoO) + ' % del empleo regional. ' + (mx ? (mx.id === sid ? 'Récord desde 2013.' : f1(Math.abs(pcv(u.con_oh, mx.con_oh))) + ' % bajo el máximo de ' + mx.periodo + '.') : '');
+    poner('a5', 'Construcción', fI(u.con_oh), d12 == null ? 'ocupados' : sgI(d12) + ' en 12 meses', d12 == null || d12 === 0 ? 'neutro' : d12 > 0 ? 'good' : 'bad', t, c5);
+  }
+
+  // 6. informalidad
+  if (u.inf_oh != null) {
+    const v = dif(u.inf_oh, a.inf_oh);
+    const t = ['El ' + f1(u.inf_oh) + ' % de los ocupados de la región está en situación de informalidad, frente a ' + f1(u.inf_nac) + ' % en el país.'];
+    if (!bad(v)) t.push('Hace un año la tasa era de ' + f1(a.inf_oh) + ' % (' + sg1(v) + ' puntos).');
+    poner('a6', 'Informalidad', pct(u.inf_oh), bad(v) ? '' : sg1(v) + ' pp en 12 meses', signo(v) > 0 ? 'bad' : signo(v) < 0 ? 'good' : 'neutro', t, 'En el país es de ' + pct(u.inf_nac) + '.');
+  }
+
+  // 7. posición entre regiones
+  {
+    const r = regT.filter((x) => x.t === sid);
+    const orden = r.slice().sort((x, y) => y.tasa - x.tasa);
+    const i = orden.findIndex((x) => x.cod === cod);
+    if (i >= 0) {
+      const t = [RI.nom + ' ocupa el lugar ' + (i + 1) + ' de 16 entre las regiones con más desocupación (1 es la más alta). La más alta es ' + orden[0].region + ' (' + pct(orden[0].tasa) + ') y la más baja ' + orden[orden.length - 1].region + ' (' + pct(orden[orden.length - 1].tasa) + ').'];
+      const c = r.filter((x) => x.con_peso != null).sort((x, y) => y.con_peso - x.con_peso);
+      const j = c.findIndex((x) => x.cod === cod);
+      if (j >= 0) t.push('En peso de la construcción dentro del empleo, la región está en el lugar ' + (j + 1) + ' de 16 (' + pct(c[j].con_peso) + '); lidera ' + c[0].region + ' con ' + pct(c[0].con_peso) + '.');
+      poner('a7', 'Entre las 16 regiones', (i + 1) + ' de 16', 'en desocupación', i < 5 ? 'bad' : i > 10 ? 'good' : 'neutro', t,
+        'El lugar 1 es la mayor desocupación.' + (j >= 0 ? ' En peso de la construcción en el empleo, lugar ' + (j + 1) + ' de 16.' : ''));
+    }
+  }
+  return out;
+}
+
+dash.calc('analisis', {
+  title: 'Lectura del trimestre',
+  description: 'Comparaciones del trimestre elegido: historia desde 2010, mismo trimestre del año anterior y de 2019, distancia con el país, empleo, construcción y posición regional',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regT) => { const cod = regParam() || '06'; const serie = serieReg(serie0, regT, cod); return analizar(serie, regT, pickId(serie, dash.params().trim), cod); }
+});
+
+dash.calc('anual', {
+  title: 'Mismo trimestre, año a año',
+  description: 'El trimestre móvil elegido en cada año de la serie, para comparar sin el efecto de la temporada',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regT) => {
+    const serie = serieReg(serie0, regT, regParam() || '06');
+    const sid = pickId(serie, dash.params().trim), mm = sid.slice(5);
+    return serie.filter((r) => r.id.slice(5) === mm).map((r) => ({
+      id: r.id.slice(0, 4), anio: r.id.slice(0, 4), largo: r.largo, tasa_oh: r.tasa_oh, tasa_nac: r.tasa_nac,
+      con_oh: r.con_oh, con_nac: r.con_nac, con_peso: r.con_oh != null ? r1(r.con_oh / r.ocu_oh * 100) : null, sel: r.id === sid ? 1 : 0
+    }));
+  }
+});
+
+function tarjetas(name, id) {
+  dash.draw(name, (el) => {
+    if (!gate(el, [id])) return;
+    el.replaceChildren();
+    dash.data(id).data.filter((r) => r.corto).forEach((r) => {
+      const art = document.createElement('article'); art.className = 'mo-an mo-an-' + r.tono;
+      const t = document.createElement('h3'); t.textContent = r.tema; art.appendChild(t);
+      const v = document.createElement('p'); v.className = 'mo-an-v'; v.textContent = r.valor; art.appendChild(v);
+      if (r.nota) { const n = document.createElement('p'); n.className = 'mo-an-n'; n.textContent = r.nota; art.appendChild(n); }
+      const d = document.createElement('p'); d.className = 'mo-an-d'; d.textContent = r.corto; art.appendChild(d);
+      el.appendChild(art);
+    });
+  });
+}
+tarjetas('an_cards', 'analisis');
+tarjetas('an_cards_nac', 'analisis_nac');
+
+/* ---------- análisis a nivel nacional ---------- */
+function analizarNac(serie, regT, sid, cod) {
+  cod = cod || '06';
+  const RI = regInfo(cod);
+  const m = mapOf(serie), u = m.get(sid);
+  if (!u) return [];
+  const a = m.get(mesMas(sid, -12)) || {};
+  const p19 = sid.slice(0, 4) > '2019' ? (m.get('2019-' + sid.slice(5)) || {}) : {};
+  const hist = serie.filter((r) => r.id <= sid);
+  const out = [];
+  const poner = (id, tema, valor, nota, tono, detalle, corto) => out.push({id, tema, valor, nota, tono, detalle: detalle.join(' '), corto: corto || ''});
+
+  { // desocupación nacional
+    const menor = hist.filter((r) => r.tasa_nac < u.tasa_nac).length, mayor = hist.filter((r) => r.tasa_nac > u.tasa_nac).length;
+    const v12 = dif(u.tasa_nac, a.tasa_nac), v3 = dif(u.tasa_nac, (m.get(mesMas(sid, -3)) || {}).tasa_nac), v19 = dif(u.tasa_nac, p19.tasa_nac);
+    const t = ['La tasa de desocupación nacional es de ' + pct(u.tasa_nac) + '.'];
+    if (!bad(v12)) t.push('Frente al mismo trimestre del año anterior ' + (v12 === 0 ? 'se mantuvo igual' : verbo(v12, 'subió ', 'bajó ') + pp(v12)) + '.');
+    if (!bad(v3)) t.push('Respecto del trimestre móvil de tres meses antes ' + (v3 === 0 ? 'no hay cambio' : verbo(v3, 'subió ', 'bajó ') + pp(v3)) + '.');
+    if (!bad(v19)) t.push('Respecto del mismo trimestre de 2019, la diferencia es de ' + sg1(v19) + ' puntos.');
+    t.push(mayor === 0 ? 'Es el nivel más alto desde 2010.' : menor === 0 ? 'Es el nivel más bajo desde 2010.' : 'De los ' + hist.length + ' trimestres móviles desde 2010, ' + menor + ' tuvieron una desocupación menor y ' + mayor + ' una mayor.');
+    const c = (bad(v12) ? '' : v12 === 0 ? 'Igual que hace un año. ' : verbo(v12, 'Subió ', 'Bajó ') + pp(v12) + ' en 12 meses. ') +
+      (mayor === 0 ? 'Es el máximo desde 2010.' : menor === 0 ? 'Es el mínimo desde 2010.' : mayor <= menor ? 'Solo ' + mayor + ' de ' + hist.length + ' trimestres desde 2010 tuvieron más.' : 'Solo ' + menor + ' de ' + hist.length + ' trimestres desde 2010 tuvieron menos.');
+    poner('n1', 'Desocupación nacional', pct(u.tasa_nac), bad(v12) ? '' : sg1(v12) + ' pp en 12 meses', signo(v12) > 0 ? 'bad' : signo(v12) < 0 ? 'good' : 'neutro', t, c);
+  }
+  { // ocupados
+    const d12 = bad(a.ocu_nac) ? null : u.ocu_nac - a.ocu_nac, dd12 = bad(a.des_nac) ? null : u.des_nac - a.des_nac;
+    const t = ['Hay ' + fI(u.ocu_nac) + ' personas ocupadas en el país.'];
+    if (d12 != null) t.push('En 12 meses los ocupados ' + (d12 === 0 ? 'no cambiaron' : verbo(d12, 'aumentaron en ', 'disminuyeron en ') + pers(d12) + ' (' + sg1(pcv(u.ocu_nac, a.ocu_nac)) + ' %)') + (dd12 != null ? ', mientras los desocupados ' + (dd12 === 0 ? 'se mantuvieron' : verbo(dd12, 'subieron en ', 'bajaron en ') + pers(dd12)) : '') + '.');
+    if (!bad(p19.ocu_nac)) t.push('Frente al mismo trimestre de 2019 hay ' + sgI(u.ocu_nac - p19.ocu_nac) + ' ocupados (' + sg1(pcv(u.ocu_nac, p19.ocu_nac)) + ' %).');
+    const c = d12 == null ? '' : 'Los ocupados ' + (d12 === 0 ? 'no cambiaron' : verbo(d12, 'subieron ', 'bajaron ') + f1(Math.abs(pcv(u.ocu_nac, a.ocu_nac))) + ' %') + ' en 12 meses' + (dd12 != null && dd12 !== 0 ? '; los desocupados ' + verbo(dd12, 'subieron ', 'bajaron ') + fI(Math.abs(dd12)) + '.' : '.');
+    poner('n2', 'Personas ocupadas', fI(u.ocu_nac), d12 == null ? '' : sgI(d12) + ' en 12 meses', d12 == null || d12 === 0 ? 'neutro' : d12 > 0 ? 'good' : 'bad', t, c);
+  }
+  if (u.con_nac != null) { // construcción
+    const d12 = bad(a.con_nac) ? null : u.con_nac - a.con_nac, o12 = bad(a.ocu_nac) ? null : u.ocu_nac - a.ocu_nac;
+    const cr = hist.filter((r) => r.con_nac != null);
+    const mx = cr.reduce((q, r) => (r.con_nac > q.con_nac ? r : q), cr[0]);
+    const peso = u.con_nac / u.ocu_nac * 100;
+    const t = ['Son ' + fI(u.con_nac) + ' ocupados en construcción en el país, el ' + f1(peso) + ' % del empleo.'];
+    if (d12 != null) t.push('En 12 meses ' + (d12 === 0 ? 'no hubo cambio' : verbo(d12, 'sumó ', 'perdió ') + pers(d12)) + ' (' + sg1(pcv(u.con_nac, a.con_nac)) + ' %).');
+    if (d12 != null && o12 != null && d12 > 0 && o12 > 0) t.push('Aportó ' + fI(d12 / o12 * 100) + ' % de los empleos netos creados en el país.');
+    if (!bad(p19.con_nac)) t.push('Frente al mismo trimestre de 2019 hay ' + sgI(u.con_nac - p19.con_nac) + ' ocupados (' + sg1(pcv(u.con_nac, p19.con_nac)) + ' %).');
+    if (mx) t.push(mx.id === sid ? 'Es el mayor número desde 2013.' : 'El máximo desde 2013 fue de ' + fI(mx.con_nac) + ' en ' + mx.largo + '.');
+    const c = (d12 == null ? '' : sg1(pcv(u.con_nac, a.con_nac)) + ' % en 12 meses. ') + f1(peso) + ' % del empleo del país. ' + (mx ? (mx.id === sid ? 'Récord desde 2013.' : f1(Math.abs(pcv(u.con_nac, mx.con_nac))) + ' % bajo el máximo de ' + mx.periodo + '.') : '');
+    poner('n3', 'Construcción', fI(u.con_nac), d12 == null ? 'ocupados' : sgI(d12) + ' en 12 meses', d12 == null || d12 === 0 ? 'neutro' : d12 > 0 ? 'good' : 'bad', t, c);
+  }
+  if (u.inf_nac != null) {
+    const v = dif(u.inf_nac, a.inf_nac);
+    poner('n4', 'Informalidad', pct(u.inf_nac), bad(v) ? '' : sg1(v) + ' pp en 12 meses', signo(v) > 0 ? 'bad' : signo(v) < 0 ? 'good' : 'neutro',
+      ['El ' + f1(u.inf_nac) + ' % de los ocupados del país está en situación de informalidad.' + (bad(v) ? '' : ' Hace un año era de ' + f1(a.inf_nac) + ' % (' + sg1(v) + ' puntos).')],
+      'Hace un año era de ' + pct(a.inf_nac) + '.');
+  }
+  const reg = regT.filter((x) => x.t === sid).sort((x, y) => y.tasa - x.tasa);
+  if (reg.length) { // regiones
+    const prev = new Map(regT.filter((x) => x.t === mesMas(sid, -12)).map((x) => [x.cod, x]));
+    const con = reg.filter((x) => prev.has(x.cod)), suben = con.filter((x) => x.tasa > prev.get(x.cod).tasa).length;
+    const alta = reg[0], baja = reg[reg.length - 1];
+    const t = ['La desocupación más alta es la de ' + alta.region + ' (' + pct(alta.tasa) + ') y la más baja la de ' + baja.region + ' (' + pct(baja.tasa) + ').'];
+    if (con.length) t.push('En 12 meses la tasa subió en ' + suben + ' de ' + con.length + ' regiones.');
+    poner('n5', 'Entre las regiones', suben + ' de ' + (con.length || 16), 'subieron en 12 meses', suben > con.length / 2 ? 'bad' : 'neutro', t,
+      'Más alta: ' + alta.region + ' (' + pct(alta.tasa) + '). Más baja: ' + baja.region + ' (' + pct(baja.tasa) + ').');
+    const i = reg.findIndex((x) => x.cod === cod), br = dif(u.tasa_oh, u.tasa_nac);
+    if (i >= 0) poner('n6', RI.nom, pct(u.tasa_oh), 'lugar ' + (i + 1) + ' de 16', i < 5 ? 'bad' : i > 10 ? 'good' : 'neutro',
+      [RI.nom + ' tiene una desocupación de ' + pct(u.tasa_oh) + ', ' + (br === 0 ? 'igual al promedio nacional' : pp(br) + (br > 0 ? ' sobre' : ' bajo') + ' el promedio nacional') + ', y ocupa el lugar ' + (i + 1) + ' de 16.'],
+      (br === 0 ? 'Igual al país' : pp(br) + (br > 0 ? ' sobre' : ' bajo') + ' el promedio nacional') + '. Elige la región arriba para ver su detalle.');
+  }
+  return out;
+}
+
+dash.calc('analisis_nac', {
+  title: 'Lectura nacional del trimestre',
+  description: 'Comparaciones a nivel país del trimestre elegido: desocupación, ocupados, construcción, informalidad y regiones',
+  inputs: ['serie', 'regiones_t'],
+  fn: (serie0, regT) => { const cod = regParam() || '06'; const serie = serieReg(serie0, regT, cod); return analizarNac(serie, regT, pickId(serie, dash.params().trim), cod); }
+});
+
+/* ---------- barras verticales (mismo trimestre, año a año) ---------- */
+function vbars(el, o) {
+  const rows = o.rows, n = rows.length;
+  if (n < 2) { vacio(el, 'No hay datos publicados para este período.'); return; }
+  const W = Math.max(300, el.clientWidth || 600), H = o.h || 300, mt = 30, mb = 28;
+  const svg = baseSvg(W, H, o.aria);
+  el.replaceChildren(svg.node());
+  const vals = rows.filter((r) => r[o.key] != null).map((r) => r[o.key]);
+  const hi = d3.max(vals.concat(o.tick ? rows.filter((r) => r[o.tick] != null).map((r) => r[o.tick]) : []));
+  const ys = d3.scaleLinear().domain([0, hi]).nice(5).range([H - mb, mt]);
+  const tks = ys.ticks(5);
+  let ml = 0; tks.forEach((t) => { ml = Math.max(ml, textW(svg, o.fmt(t), 11)); }); ml += 12;
+  const xs = d3.scaleBand().domain(rows.map((r) => r.id)).range([ml, W - 6]).paddingInner(0.22).paddingOuter(0.08);
+  const g = svg.append('g');
+  tks.forEach((t) => {
+    g.append('line').attr('x1', ml).attr('x2', W - 6).attr('y1', ys(t)).attr('y2', ys(t)).style('stroke', 'var(--cds-chart-grid)').style('stroke-dasharray', '2 4');
+    addText(g, ml - 8, ys(t) + 4, o.fmt(t), 'end', 11);
+  });
+  g.append('line').attr('x1', ml).attr('x2', W - 6).attr('y1', H - mb).attr('y2', H - mb).style('stroke', 'var(--cds-chart-axis)');
+  const bw = xs.bandwidth(), corto = bw < 30;
+  const mxV = d3.max(vals), mnV = d3.min(vals);
+  const tip = tipFor(el);
+  const etqs = [];
+  rows.forEach((r, i) => {
+    const x = xs(r.id);
+    addText(g, x + bw / 2, H - mb + 17, corto ? ((i % 2 === 0 || r.sel) ? '’' + r.anio.slice(2) : '') : r.anio, 'middle', 11, r.sel ? 'var(--color-fg)' : undefined).style('font-weight', r.sel ? 700 : 400);
+    if (r[o.key] == null) return;
+    const y = ys(r[o.key]), h = Math.max(1, H - mb - y);
+    g.append('path').attr('d', 'M' + x + ',' + (H - mb) + 'V' + (y + 4) + 'Q' + x + ',' + y + ' ' + (x + 4) + ',' + y + 'H' + (x + bw - 4) + 'Q' + (x + bw) + ',' + y + ' ' + (x + bw) + ',' + (y + 4) + 'V' + (H - mb) + 'Z')
+      .style('fill', r.sel ? C_OR : C_AZ).attr('fill-opacity', r.sel ? 1 : 0.82).attr('class', 'mo-bar2').style('transition-delay', (i * 22) + 'ms');
+    if (o.tick && r[o.tick] != null) g.append('line').attr('x1', x - 2).attr('x2', x + bw + 2).attr('y1', ys(r[o.tick])).attr('y2', ys(r[o.tick])).style('stroke', C_NO).style('stroke-width', 2.2).attr('class', 'mo-late');
+    if (r.sel || r[o.key] === mxV || r[o.key] === mnV || (o.todas && !corto)) {
+      const yt = (o.tick && r[o.tick] != null) ? Math.min(y, ys(r[o.tick])) : y;
+      etqs.push(() => addText(g, x + bw / 2, yt - 7, o.fmt(r[o.key]), 'middle', 11.5, 'var(--color-fg)', true).style('font-weight', r.sel ? 700 : 500).style('pointer-events', 'none').attr('class', 'mo-late'));
+    }
+    g.append('rect').attr('x', x - 2).attr('y', mt - 6).attr('width', bw + 4).attr('height', H - mb - mt + 6).attr('fill', 'transparent').attr('class', 'mo-pick-rect')
+      .on('pointermove', (ev) => tip.show(o.tip(r), ev)).on('pointerleave', () => tip.hide())
+      .on('click', () => setTrim(r.anio + dash.data('resumen').data[0].id.slice(4)));
+  });
+  etqs.forEach((f) => f());
+  armar(el, svg);
+}
+
+dash.draw('ch_anual_des', (el) => {
+  if (!gate(el, ['anual'])) return;
+  vbars(el, {
+    rows: dash.data('anual').data, key: 'tasa_oh', tick: 'tasa_nac', fmt: (v) => f1(v), todas: true,
+    aria: 'Barras con la tasa de desocupación de ' + NR() + ' en el mismo trimestre móvil de cada año; la marca celeste es el país',
+    tip: (r) => [r.largo, NR() + ': ' + pct(r.tasa_oh), 'País: ' + pct(r.tasa_nac)]
+  });
+});
+dash.draw('ch_anual_con', (el) => {
+  if (!gate(el, ['anual'])) return;
+  const rows = dash.data('anual').data.filter((r) => r.con_oh != null);
+  vbars(el, {
+    rows, key: 'con_oh', fmt: (v) => fI(v), h: (el.clientWidth || 600) > 480 ? 430 : 300,
+    aria: 'Barras con los ocupados en construcción en ' + NR() + ' en el mismo trimestre móvil de cada año',
+    tip: (r) => [r.largo, 'Ocupados en construcción: ' + fI(r.con_oh), 'Peso en el empleo regional: ' + pct(r.con_peso)]
+  });
+});
+
+dash.draw('ch_peso', (el) => {
+  if (!gate(el, ['serie_v'])) return;
+  const rows = dash.data('serie_v').data.filter((r) => r.con_peso != null);
+  lineChart(el, {
+    rows, h: (el.clientWidth || 600) > 480 ? 430 : 300, aria: 'Líneas del peso de la construcción en el empleo de ' + NR() + ' y del país por trimestre móvil',
+    series: [{key: 'con_peso', color: C_OR, width: 3.2}, {key: 'con_peso_nac', color: C_AZ, width: 2.2}], yFmt: (v) => f1(v),
+    tip: (r) => [r.largo, NR() + ': ' + pct(r.con_peso), 'País: ' + pct(r.con_peso_nac)]
+  });
+});
+
+/* cifras de la franja de construcción */
+conteo('cb1', 'con_oh', fI);
+textos('cb_per', 'largo', (v) => v); textos('dl_per', 'largo', (v) => v);
+textos('cb2', 'con_peso', f1, 'celda'); textos('cb2n', 'con_peso_nac', f1);
+textos('cb3', 'con_19', sg1, 'celda');
+textos('cb4', 'con_max', fI, 'celda'); textos('cb4q', 'con_max_largo', (v) => v); textos('cb4v', 'con_vs_max', (v) => sg1(v));
+
+dash.draw('ch_tasa_nac', (el) => {
+  if (!gate(el, ['serie_v'])) return;
+  lineChart(el, {
+    rows: dash.data('serie_v').data, aria: 'Líneas de la tasa de desocupación nacional total, de mujeres y de hombres por trimestre móvil',
+    series: [{key: 'tasa_nac', color: C_AZ, width: 3.4}, {key: 'tasa_nac_f', color: C_OR, width: 2.2}, {key: 'tasa_nac_m', color: C_NO, width: 2.2}],
+    yFmt: (v) => f1(v), extremos: true,
+    tip: (r) => [r.largo, 'Total país: ' + pct(r.tasa_nac), 'Mujeres: ' + pct(r.tasa_nac_f), 'Hombres: ' + pct(r.tasa_nac_m)]
+  });
+});
+dash.draw('ch_anual_nac', (el) => {
+  if (!gate(el, ['anual'])) return;
+  vbars(el, {
+    rows: dash.data('anual').data, key: 'tasa_nac', fmt: (v) => f1(v), todas: true,
+    aria: 'Barras con la tasa de desocupación nacional en el mismo trimestre móvil de cada año',
+    tip: (r) => [r.largo, 'País: ' + pct(r.tasa_nac), NR() + ': ' + pct(r.tasa_oh)]
+  });
+});
+dash.draw('ch_con_nac', (el) => {
+  if (!gate(el, ['serie_v'])) return;
+  const rows = dash.data('serie_v').data.filter((r) => r.con_nac != null);
+  lineChart(el, {
+    rows, h: (el.clientWidth || 600) > 480 ? 430 : 300, aria: 'Línea de las personas ocupadas en construcción en el país por trimestre móvil',
+    series: [{key: 'con_nac', color: C_OR, width: 3.4}], area: {key: 'con_nac', color: C_OR}, yFmt: (v) => fI(v),
+    tip: (r) => [r.largo, 'Ocupados en construcción: ' + fI(r.con_nac), 'Peso en el empleo: ' + pct(r.con_nac && r.ocu_nac ? r1(r.con_nac / r.ocu_nac * 100) : null)]
+  });
+});
+dash.draw('ch_anual_con_nac', (el) => {
+  if (!gate(el, ['anual'])) return;
+  const rows = dash.data('anual').data.filter((r) => r.con_nac != null);
+  vbars(el, {
+    rows, key: 'con_nac', fmt: (v) => fI(v), h: (el.clientWidth || 600) > 480 ? 430 : 300,
+    aria: 'Barras con los ocupados en construcción del país en el mismo trimestre móvil de cada año',
+    tip: (r) => [r.largo, 'Ocupados en construcción: ' + fI(r.con_nac)]
+  });
+});
+
+conteo('cn1', 'con_nac', fI);
+textos('cn_per', 'largo', (v) => v);
+textos('cn2', 'con_peso_nac', f1, 'celda'); textos('cn2o', 'con_peso', f1);
+textos('cn3', 'con_19_nac', sg1, 'celda');
+textos('cn4', 'con_max_nac', fI, 'celda'); textos('cn4q', 'con_max_nac_largo', (v) => v); textos('cn4v', 'con_vs_max_nac', (v) => sg1(v));
+
+/* ---------- descargas: CSV, Excel y minuta en Word, armados en el navegador ---------- */
+const ENC = new TextEncoder();
+const CRC_T = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1); t[n] = c >>> 0; } return t; })();
+function crc32(u8) { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC_T[(c ^ u8[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+function zip(files, mime) {
+  const parts = [], central = [];
+  let off = 0;
+  files.forEach((f) => {
+    const nm = ENC.encode(f.name), d = typeof f.data === 'string' ? ENC.encode(f.data) : f.data, crc = crc32(d);
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true);
+    lh.setUint16(10, 0, true); lh.setUint16(12, 0x21, true); lh.setUint32(14, crc, true); lh.setUint32(18, d.length, true);
+    lh.setUint32(22, d.length, true); lh.setUint16(26, nm.length, true); lh.setUint16(28, 0, true);
+    parts.push(new Uint8Array(lh.buffer), nm, d);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint16(10, 0, true); ch.setUint16(12, 0, true); ch.setUint16(14, 0x21, true); ch.setUint32(16, crc, true);
+    ch.setUint32(20, d.length, true); ch.setUint32(24, d.length, true); ch.setUint16(28, nm.length, true);
+    ch.setUint32(42, off, true);
+    central.push(new Uint8Array(ch.buffer), nm);
+    off += 30 + nm.length + d.length;
+  });
+  const cd = central.reduce((s, x) => s + x.length, 0);
+  const end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true); end.setUint16(8, files.length, true); end.setUint16(10, files.length, true);
+  end.setUint32(12, cd, true); end.setUint32(16, off, true);
+  return new Blob(parts.concat(central, [new Uint8Array(end.buffer)]), {type: mime});
+}
+
+const xe = (s) => String(s == null ? '' : s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+/* ----- datos en forma de tabla ----- */
+function ambitoActual() {
+  const rs = resumen(); if (!rs) return null;
+  const pais = rs.ambito !== 'oh', RI = regInfo(pais ? '06' : rs.reg_cod);
+  return {rs, pais, RI, cod: RI.cod, slug: pais ? 'Chile' : RI.slug, nom: pais ? 'Chile' : RI.nom, la: pais ? 'Chile' : RI.la};
+}
+function datosTablas() {
+  const gs = dash.data('serie'), gr = dash.data('regiones_t'), gc = dash.data('sectores_t'), A = ambitoActual();
+  if (!A || gs.status !== 'ok' || gr.status !== 'ok' || gc.status !== 'ok') return null;
+  const serie = serieReg(gs.data, gr.data, A.cod), largo = new Map(serie.map((r) => [r.id, r.largo]));
+  const cal = (e) => e === 'X' ? 'No fiable' : e === 'Y' ? 'Poco fiable' : '';
+  const n = A.nom;
+  const peso = (c, o) => (r) => (r[c] != null && r[o] != null ? r1(r[c] / r[o] * 100) : null);
+  const colsSerie = A.pais ? [
+    {h: 'Trimestre móvil', w: 24, f: (r) => r.largo}, {h: 'Mes de inicio', w: 11, f: (r) => r.id},
+    {h: 'Desocupación total (%)', w: 14, t: 'd', f: (r) => r.tasa_nac}, {h: 'Desocupación mujeres (%)', w: 14, t: 'd', f: (r) => r.tasa_nac_f}, {h: 'Desocupación hombres (%)', w: 14, t: 'd', f: (r) => r.tasa_nac_m},
+    {h: 'Ocupados', w: 13, t: 'i', f: (r) => r.ocu_nac}, {h: 'Desocupados', w: 13, t: 'i', f: (r) => r.des_nac},
+    {h: 'Tasa de ocupación (%)', w: 14, t: 'd', f: (r) => r.tocu_nac}, {h: 'Tasa de participación (%)', w: 15, t: 'd', f: (r) => r.tpar_nac},
+    {h: 'Ocupación informal (%)', w: 15, t: 'd', f: (r) => r.inf_nac},
+    {h: 'Ocupados en construcción', w: 16, t: 'i', f: (r) => r.con_nac}, {h: 'Construcción en el empleo (%)', w: 16, t: 'd', f: peso('con_nac', 'ocu_nac')}
+  ] : [
+    {h: 'Trimestre móvil', w: 24, f: (r) => r.largo}, {h: 'Mes de inicio', w: 11, f: (r) => r.id},
+    {h: 'Desocupación ' + n + ' (%)', w: 15, t: 'd', f: (r) => r.tasa_oh}, {h: 'Desocupación país (%)', w: 14, t: 'd', f: (r) => r.tasa_nac},
+    {h: 'Desocupación mujeres ' + n + ' (%)', w: 16, t: 'd', f: (r) => r.tasa_oh_f}, {h: 'Desocupación hombres ' + n + ' (%)', w: 16, t: 'd', f: (r) => r.tasa_oh_m},
+    {h: 'Desocupación mujeres país (%)', w: 15, t: 'd', f: (r) => r.tasa_nac_f}, {h: 'Desocupación hombres país (%)', w: 15, t: 'd', f: (r) => r.tasa_nac_m}
+  ].concat(A.cod === '06' ? [
+    {h: 'Margen de error inferior ' + n + ' (%)', w: 16, t: 'd', f: (r) => r.ic_lo}, {h: 'Margen de error superior ' + n + ' (%)', w: 16, t: 'd', f: (r) => r.ic_hi}
+  ] : []).concat([
+    {h: 'Ocupados ' + n, w: 13, t: 'i', f: (r) => r.ocu_oh}, {h: 'Ocupados país', w: 13, t: 'i', f: (r) => r.ocu_nac},
+    {h: 'Desocupados ' + n, w: 13, t: 'i', f: (r) => r.des_oh}, {h: 'Desocupados país', w: 13, t: 'i', f: (r) => r.des_nac},
+    {h: 'Tasa de ocupación ' + n + ' (%)', w: 14, t: 'd', f: (r) => r.tocu_oh}, {h: 'Tasa de ocupación país (%)', w: 14, t: 'd', f: (r) => r.tocu_nac},
+    {h: 'Tasa de participación ' + n + ' (%)', w: 15, t: 'd', f: (r) => r.tpar_oh}, {h: 'Tasa de participación país (%)', w: 15, t: 'd', f: (r) => r.tpar_nac},
+    {h: 'Ocupación informal ' + n + ' (%)', w: 15, t: 'd', f: (r) => r.inf_oh}, {h: 'Ocupación informal país (%)', w: 15, t: 'd', f: (r) => r.inf_nac},
+    {h: 'Ocupados en construcción ' + n, w: 16, t: 'i', f: (r) => r.con_oh}, {h: 'Ocupados en construcción país', w: 16, t: 'i', f: (r) => r.con_nac},
+    {h: 'Construcción en el empleo de ' + n + ' (%)', w: 16, t: 'd', f: peso('con_oh', 'ocu_oh')},
+    {h: 'Construcción en el empleo del país (%)', w: 16, t: 'd', f: peso('con_nac', 'ocu_nac')}
+  ]);
+  const colsReg = [
+    {h: 'Trimestre móvil', w: 24, f: (r) => largo.get(r.t)}, {h: 'Mes de inicio', w: 11, f: (r) => r.t},
+    {h: 'Región', w: 24, f: (r) => r.region}, {h: 'Desocupación (%)', w: 14, t: 'd', f: (r) => r.tasa},
+    {h: 'Desocupación mujeres (%)', w: 14, t: 'd', f: (r) => r.tasa_f}, {h: 'Desocupación hombres (%)', w: 14, t: 'd', f: (r) => r.tasa_m},
+    {h: 'Ocupados', w: 13, t: 'i', f: (r) => r.ocu}, {h: 'Desocupados', w: 13, t: 'i', f: (r) => r.des},
+    {h: 'Tasa de ocupación (%)', w: 13, t: 'd', f: (r) => r.tocu}, {h: 'Tasa de participación (%)', w: 14, t: 'd', f: (r) => r.tpar},
+    {h: 'Ocupación informal (%)', w: 14, t: 'd', f: (r) => r.inf},
+    {h: 'Ocupados en construcción', w: 15, t: 'i', f: (r) => r.con_ocu}, {h: 'Construcción en el empleo regional (%)', w: 17, t: 'd', f: (r) => r.con_peso},
+    {h: 'Calidad de la cifra de construcción', w: 17, f: (r) => cal(r.con_est)}
+  ];
+  const colsRam = [
+    {h: 'Trimestre móvil', w: 24, f: (r) => largo.get(r.t)}, {h: 'Mes de inicio', w: 11, f: (r) => r.t},
+    {h: 'Rama de actividad', w: 44, f: (r) => r.nombre}, {h: 'Ocupados en ' + (A.pais ? 'el país' : n), w: 14, t: 'i', f: (r) => r.ocu},
+    {h: 'Peso en el empleo ' + (A.pais ? 'del país' : 'regional') + ' (%)', w: 16, t: 'd', f: (r) => r.peso}, {h: 'Calidad de la cifra', w: 15, f: (r) => cal(r.est)}
+  ];
+  const cr = A.pais ? '00' : A.cod;
+  return {A, serie, colsSerie, colsReg, colsRam, reg: gr.data.slice().sort((x, y) => (x.t < y.t ? -1 : x.t > y.t ? 1 : x.geo - y.geo)), ram: gc.data.filter((r) => r.cod === cr)};
+}
+
+/* ----- CSV ----- */
+function csv(cols, rows) {
+  const q = (s) => /[";\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  const cel = (c, r) => { const v = c.f(r); return v == null ? '' : typeof v === 'number' ? String(v).replace('.', ',') : q(String(v)); };
+  return '﻿' + [cols.map((c) => q(c.h)).join(';')].concat(rows.map((r) => cols.map((c) => cel(c, r)).join(';'))).join('\r\n') + '\r\n';
+}
+
+/* ----- Excel ----- */
+function colLet(i) { let s = '', n = i + 1; while (n > 0) { const r = (n - 1) % 26; s = String.fromCharCode(65 + r) + s; n = Math.floor((n - 1) / 26); } return s; }
+function hoja(cols, rows) {
+  const x = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0" showGridLines="0"><pane xSplit="2" ySplit="1" topLeftCell="C2" activePane="bottomRight" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/><cols>'];
+  cols.forEach((c, i) => x.push('<col min="' + (i + 1) + '" max="' + (i + 1) + '" width="' + c.w + '" customWidth="1"/>'));
+  x.push('</cols><sheetData><row r="1" ht="46" customHeight="1">');
+  cols.forEach((c, i) => x.push('<c r="' + colLet(i) + '1" s="1" t="inlineStr"><is><t>' + xe(c.h) + '</t></is></c>'));
+  x.push('</row>');
+  rows.forEach((r, k) => {
+    x.push('<row r="' + (k + 2) + '">');
+    cols.forEach((c, i) => {
+      const v = c.f(r), ref = colLet(i) + (k + 2);
+      if (v == null || v === '') return;
+      if (typeof v === 'number') x.push('<c r="' + ref + '" s="' + (c.t === 'i' ? 3 : 2) + '"><v>' + v + '</v></c>');
+      else x.push('<c r="' + ref + '" t="inlineStr"><is><t>' + xe(v) + '</t></is></c>');
+    });
+    x.push('</row>');
+  });
+  x.push('</sheetData><autoFilter ref="A1:' + colLet(cols.length - 1) + (rows.length + 1) + '"/></worksheet>');
+  return x.join('');
+}
+function hojaTexto(lineas) {
+  const x = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0" showGridLines="0"/></sheetViews><sheetFormatPr defaultRowHeight="15"/><cols><col min="1" max="1" width="120" customWidth="1"/></cols><sheetData>'];
+  lineas.forEach((l, i) => {
+    if (l === '') return;
+    x.push('<row r="' + (i + 1) + '"><c r="A' + (i + 1) + '" s="' + (i === 0 ? 4 : 5) + '" t="inlineStr"><is><t>' + xe(l) + '</t></is></c></row>');
+  });
+  x.push('</sheetData></worksheet>');
+  return x.join('');
+}
+
+function fechaHoy() { const d = new Date(); return d.getDate() + ' de ' + MESES[d.getMonth()] + ' de ' + d.getFullYear(); }
+
+function armaExcel() {
+  const D = datosTablas(); if (!D) return null;
+  const A = D.A, ult = D.serie[D.serie.length - 1];
+  const leeme = [
+    'Mercado laboral en ' + A.la,
+    'Cámara Chilena de la Construcción, Sede Región de O\'Higgins',
+    '',
+    'Último trimestre móvil incluido: ' + ult.largo,
+    'Archivo generado el ' + fechaHoy() + ' desde el panel de empleo.',
+    '',
+    'Fuente: INE, Encuesta Nacional de Empleo (ENE), descargada desde SIMEL (sdmx.ine.gob.cl).'
+  ].concat(A.cod === '06' && !A.pais ? ['Los márgenes de error de O\'Higgins vienen de las notas estadísticas de la ENE y solo están disponibles para los trimestres recientes.'] : ['El INE no publica el margen de error en SIMEL, por lo que este archivo no lo incluye.']).concat([
+    '',
+    'Hojas del archivo:',
+    A.pais ? 'Serie trimestral: tasas, ocupados y construcción del país, trimestre móvil por trimestre móvil desde enero–marzo 2010.' : 'Serie trimestral: tasas, ocupados y construcción de ' + A.nom + ' y del país, trimestre móvil por trimestre móvil desde enero–marzo 2010.',
+    'Regiones: desocupación, ocupados, informalidad y construcción de las 16 regiones, trimestre por trimestre. La apertura por rama de actividad parte en 2013.',
+    'Ramas de actividad: personas ocupadas por rama de actividad ' + (A.pais ? 'en el país' : 'en la región') + ', desde 2013.',
+    '',
+    'Notas:',
+    'Un trimestre móvil es el promedio de tres meses consecutivos. El INE publica uno nuevo cada mes.',
+    'La encuesta es una muestra y en una región el error es mayor que en el total del país. Las cifras por rama y las de construcción por región tienen más error todavía.',
+    'Las cifras marcadas por el INE como «Poco fiable» o «No fiable» deben usarse con cuidado.',
+    'La ocupación informal se publica desde mediados de 2017.'
+  ]);
+  const hojas = [['Léeme', hojaTexto(leeme)], ['Serie trimestral', hoja(D.colsSerie, D.serie)], ['Regiones', hoja(D.colsReg, D.reg)], ['Ramas de actividad', hoja(D.colsRam, D.ram)]];
+  const ns = 'http://schemas.openxmlformats.org/';
+  const files = [
+    {name: '[Content_Types].xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>' + hojas.map((h, i) => '<Override PartName="/xl/worksheets/sheet' + (i + 1) + '.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>').join('') + '</Types>'},
+    {name: '_rels/.rels', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="' + ns + 'officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>'},
+    {name: 'xl/workbook.xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="' + ns + 'officeDocument/2006/relationships"><bookViews><workbookView activeTab="1"/></bookViews><sheets>' + hojas.map((h, i) => '<sheet name="' + xe(h[0]) + '" sheetId="' + (i + 1) + '" r:id="rId' + (i + 1) + '"/>').join('') + '</sheets></workbook>'},
+    {name: 'xl/_rels/workbook.xml.rels', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' + hojas.map((h, i) => '<Relationship Id="rId' + (i + 1) + '" Type="' + ns + 'officeDocument/2006/relationships/worksheet" Target="worksheets/sheet' + (i + 1) + '.xml"/>').join('') + '<Relationship Id="rId' + (hojas.length + 1) + '" Type="' + ns + 'officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'},
+    {name: 'xl/styles.xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><numFmts count="1"><numFmt numFmtId="164" formatCode="0.0"/></numFmts><fonts count="4"><font><sz val="11"/><name val="Arial"/></font><font><b/><sz val="11"/><color rgb="FFFFFFFF"/><name val="Arial"/></font><font><b/><sz val="16"/><color rgb="FF003D6B"/><name val="Arial"/></font><font><sz val="11"/><color rgb="FF1F2933"/><name val="Arial"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF003D6B"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="6"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf numFmtId="164" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="3" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="0" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1"/><xf numFmtId="0" fontId="3" fillId="0" borderId="0" xfId="0" applyFont="1"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>'}
+  ].concat(hojas.map((h, i) => ({name: 'xl/worksheets/sheet' + (i + 1) + '.xml', data: h[1]})));
+  return {nombre: 'Empleo_' + A.slug + '_serie_2010-' + ult.id.slice(0, 4) + '_' + MES3[+ult.id.slice(5) - 1] + '.xlsx', data: zip(files, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')};
+}
+
+function armaCsv() {
+  const D = datosTablas(); if (!D) return null;
+  const ult = D.serie[D.serie.length - 1];
+  return {nombre: 'Empleo_' + D.A.slug + '_serie_2010-' + ult.id.slice(0, 4) + '.csv', data: new Blob([csv(D.colsSerie, D.serie)], {type: 'text/csv'})};
+}
+
+/* ----- minuta en Word ----- */
+const W = (s) => '<w:t xml:space="preserve">' + xe(s) + '</w:t>';
+function run(t, o) {
+  o = o || {};
+  const pr = (o.b ? '<w:b/>' : '') + (o.i ? '<w:i/>' : '') + (o.c ? '<w:color w:val="' + o.c + '"/>' : '') + (o.sz ? '<w:sz w:val="' + o.sz + '"/><w:szCs w:val="' + o.sz + '"/>' : '');
+  return '<w:r>' + (pr ? '<w:rPr>' + pr + '</w:rPr>' : '') + W(t) + '</w:r>';
+}
+function par(runs, o) {
+  o = o || {};
+  const pr = (o.st ? '<w:pStyle w:val="' + o.st + '"/>' : '') + (o.num ? '<w:numPr><w:ilvl w:val="0"/><w:numId w:val="1"/></w:numPr>' : '') + (o.keep ? '<w:keepNext/>' : '') + (o.sp ? '<w:spacing ' + o.sp + '/>' : '') + (o.jc ? '<w:jc w:val="' + o.jc + '"/>' : '');
+  return '<w:p>' + (pr ? '<w:pPr>' + pr + '</w:pPr>' : '') + (typeof runs === 'string' ? run(runs) : runs.join('')) + '</w:p>';
+}
+function tablaDoc(anchos, cab, filas, negritaFila) {
+  const tot = anchos.reduce((s, x) => s + x, 0);
+  const borde = '<w:top w:val="single" w:sz="4" w:space="0" w:color="D9D9D9"/><w:bottom w:val="single" w:sz="4" w:space="0" w:color="D9D9D9"/><w:insideH w:val="single" w:sz="4" w:space="0" w:color="D9D9D9"/>';
+  const celda = (t, i, o) => '<w:tc><w:tcPr><w:tcW w:w="' + anchos[i] + '" w:type="dxa"/>' + (o.fondo ? '<w:shd w:val="clear" w:color="auto" w:fill="' + o.fondo + '"/>' : '') + '<w:vAlign w:val="center"/></w:tcPr><w:p><w:pPr>' + (o.sigue ? '<w:keepNext/>' : '') + '<w:spacing w:before="40" w:after="40" w:line="240" w:lineRule="auto"/><w:jc w:val="' + (i === 0 ? 'left' : 'right') + '"/></w:pPr>' + run(t, {b: o.b, c: o.c, sz: 21}) + '</w:p></w:tc>';
+  let x = '<w:tbl><w:tblPr><w:tblW w:w="' + tot + '" w:type="dxa"/><w:tblBorders>' + borde + '</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>' + anchos.map((a) => '<w:gridCol w:w="' + a + '"/>').join('') + '</w:tblGrid>';
+  x += '<w:tr><w:trPr><w:cantSplit/><w:tblHeader/></w:trPr>' + cab.map((t, i) => celda(t, i, {fondo: '003D6B', b: true, c: 'FFFFFF', sigue: true})).join('') + '</w:tr>';
+  filas.forEach((f, k) => { x += '<w:tr><w:trPr><w:cantSplit/></w:trPr>' + f.map((t, i) => celda(t, i, {b: negritaFila === k, fondo: negritaFila === k ? 'FCE9E0' : null, sigue: k < filas.length - 1})).join('') + '</w:tr>'; });
+  return x + '</w:tbl>';
+}
+
+function armaMinuta() {
+  const gs = dash.data('serie'), gr = dash.data('regiones_t'), A = ambitoActual();
+  if (gs.status !== 'ok' || gr.status !== 'ok' || !A) return null;
+  const rs = A.rs, regT = gr.data, serie = serieReg(gs.data, regT, A.cod), sid = rs.id, m = mapOf(serie), u = m.get(sid), a = m.get(mesMas(sid, -12)) || {};
+  const it = {}; analizar(serie, regT, sid, A.cod).forEach((x) => { it[x.id] = x; });
+  const nt = {}; analizarNac(serie, regT, sid, A.cod).forEach((x) => { nt[x.id] = x; });
+  const gsec = dash.data(A.pais ? 'sec_sel_nac' : 'sec_sel');
+  const ramas = gsec.status === 'ok' ? gsec.data.slice().sort((x, y) => y.ocu - x.ocu) : [];
+  const cuerpo = [];
+  const P = (t) => cuerpo.push(par(t));
+  const H = (t) => cuerpo.push(par([run(t)], {st: 'Heading1', keep: true}));
+  const espacio = () => cuerpo.push(par('', {sp: 'w:after="120"'}));
+  const vN = dif(u.tasa_nac, a.tasa_nac);
+
+  cuerpo.push(par([run('Cámara Chilena de la Construcción, Sede Región de O\'Higgins', {c: '595959', sz: 22})], {sp: 'w:after="60" w:line="240" w:lineRule="auto"'}));
+  cuerpo.push(par([run(A.pais ? 'Minuta: mercado laboral en Chile' : 'Minuta: mercado laboral en ' + A.la)], {st: 'Title'}));
+  cuerpo.push(par([run('Trimestre móvil ', {b: true}), run(u.largo), run(', Encuesta Nacional de Empleo (INE)')], {sp: 'w:after="0"'}));
+  cuerpo.push(par([run('Elaborado por: ', {b: true}), run('Estudios, CChC Sede Región de O\'Higgins')], {sp: 'w:after="0"'}));
+  cuerpo.push(par([run('Fecha: ', {b: true}), run(fechaHoy())], {sp: 'w:after="240"'}));
+
+  const resumenN = 'En el trimestre móvil ' + u.largo + ', la tasa de desocupación nacional fue de ' + f1(u.tasa_nac) + ' %' +
+    (bad(vN) ? '' : vN === 0 ? ', igual que hace un año' : ', ' + f1(Math.abs(vN)) + ' puntos ' + (vN > 0 ? 'más' : 'menos') + ' que hace un año') + '. ' +
+    'En el país hay ' + fI(u.ocu_nac) + ' personas ocupadas' + (u.con_nac != null ? ', de las cuales ' + fI(u.con_nac) + ' trabajan en construcción (' + f1(u.con_nac / u.ocu_nac * 100) + ' % del empleo)' : '') + '.';
+  const fmtFil = (n, k, tipo, ambos) => {
+    const vo = u[k + '_oh'], vn = u[k + '_nac'], vp = a[k + (ambos ? '_oh' : '_nac')], v = ambos ? vo : vn;
+    if (bad(v)) return null;
+    const fmt = tipo === 'p' ? (x) => (bad(x) ? '—' : f1(x) + ' %') : (x) => fI(x);
+    const vr = tipo === 'p' ? (bad(vp) ? '—' : sg1(dif(v, vp)) + ' pp') : (bad(vp) ? '—' : sg1(pcv(v, vp)) + ' %');
+    return ambos ? [n, fmt(vo), fmt(vn), vr] : [n, fmt(vn), vr];
+  };
+  const INDS = [['Tasa de desocupación', 'tasa', 'p'], ['Tasa de participación', 'tpar', 'p'], ['Tasa de ocupación', 'tocu', 'p'], ['Ocupación informal', 'inf', 'p'], ['Personas ocupadas', 'ocu', 'n'], ['Personas desocupadas', 'des', 'n'], ['Ocupados en construcción', 'con', 'n']];
+  const regOrden = regT.filter((x) => x.t === sid).sort((x, y) => y.tasa - x.tasa);
+  const regA = new Map(regT.filter((x) => x.t === mesMas(sid, -12)).map((x) => [x.cod, x]));
+  const marca = (e) => (e ? ' *' : '');
+  const tablaRamas = () => {
+    if (!ramas.length) return;
+    const fr = ramas.map((r) => [r.rama + marca(r.est), fI(r.ocu), r.var_pers == null ? '—' : sgI(r.var_pers), pct(r.peso)]);
+    cuerpo.push(tablaDoc([3600, 1700, 1900, 1800], ['Rama de actividad', 'Ocupados', 'Variación en 12 meses', '% del empleo'], fr, ramas.findIndex((r) => r.id === 'F')));
+    if (ramas.some((r) => r.est)) cuerpo.push(par([run('* Estimación poco fiable o no fiable según el estándar de calidad del INE, por el tamaño de la muestra.', {sz: 20, c: '595959'})], {sp: 'w:before="60" w:after="120" w:line="240" w:lineRule="auto"'}));
+    else espacio();
+  };
+
+  H('Resumen');
+  if (A.pais) {
+    P(resumenN);
+    const alta = regOrden[0], baja = regOrden[regOrden.length - 1];
+    if (alta) P('Entre las regiones, la desocupación más alta es la de ' + alta.region + ' (' + f1(alta.tasa) + ' %) y la más baja la de ' + baja.region + ' (' + f1(baja.tasa) + ' %).' + (nt.n5 ? ' En 12 meses la tasa subió en ' + nt.n5.valor.replace(/ de.*$/, '') + ' regiones.' : ''));
+    const pts = [];
+    pts.push('Desocupación: ' + f1(u.tasa_nac) + ' %' + (bad(vN) ? '.' : ' (' + sg1(vN) + ' puntos en 12 meses).'));
+    pts.push('Ocupados: ' + fI(u.ocu_nac) + ' personas' + (bad(rs.ocu_var_nac) ? '.' : ' (' + sg1(rs.ocu_var_nac) + ' % en 12 meses).'));
+    if (u.con_nac != null) pts.push('Construcción: ' + fI(u.con_nac) + ' ocupados, el ' + f1(rs.con_peso_nac) + ' % del empleo' + (bad(rs.con_var_nac) ? '.' : ' (' + sg1(rs.con_var_nac) + ' % en 12 meses).'));
+    if (u.inf_nac != null) pts.push('Informalidad: ' + f1(u.inf_nac) + ' % de los ocupados.');
+    pts.forEach((t) => cuerpo.push(par(t, {num: true})));
+
+    H('Desocupación');
+    if (nt.n1) P(nt.n1.detalle);
+    H('Empleo y construcción');
+    ['n2', 'n3', 'n4'].forEach((k) => { if (nt[k]) P(nt[k].detalle); });
+
+    H('Cifras del trimestre');
+    const fil = INDS.map((x) => fmtFil(x[0], x[1], x[2], false)).filter(Boolean);
+    cuerpo.push(tablaDoc([4200, 2300, 2500], ['Indicador', 'País', 'Variación en 12 meses'], fil));
+    espacio();
+
+    if (ramas.length) { H('Empleo por rama de actividad'); tablaRamas(); }
+
+    H('Las 16 regiones');
+    if (nt.n5) P(nt.n5.detalle);
+    if (nt.n6) P(nt.n6.detalle);
+    const filasR = regOrden.map((r) => [r.region, f1(r.tasa) + ' %', regA.has(r.cod) ? sg1(dif(r.tasa, regA.get(r.cod).tasa)) + ' pp' : '—', r.ocu != null ? fI(r.ocu) : '—', r.con_ocu != null ? fI(r.con_ocu) : '—']);
+    cuerpo.push(tablaDoc([2600, 1500, 1700, 1600, 1600], ['Región', 'Desocupación', 'Variación en 12 meses', 'Ocupados', 'Ocupados en construcción'], filasR, regOrden.findIndex((r) => r.cod === '06')));
+    espacio();
+  } else {
+    const br = dif(u.tasa_oh, u.tasa_nac);
+    let resumen1 = 'En ' + A.la + ' la tasa de desocupación fue de ' + f1(u.tasa_oh) + ' %, ' +
+      (br === 0 ? 'igual al promedio nacional' : f1(Math.abs(br)) + ' puntos ' + (br > 0 ? 'sobre' : 'bajo') + ' el promedio nacional') + ' (' + f1(u.tasa_nac) + ' %). ' +
+      'La región ocupa el lugar ' + rs.lugar + ' de 16 entre las regiones con mayor desocupación.';
+    if (!bad(rs.var_oh)) resumen1 += ' En doce meses la tasa ' + (rs.var_oh === 0 ? 'se mantuvo igual' : verbo(rs.var_oh, 'subió ', 'bajó ') + f1(Math.abs(rs.var_oh)) + ' puntos') + '.';
+    P(resumen1);
+    const pts = [];
+    pts.push('Desocupación: ' + f1(u.tasa_oh) + ' % en ' + A.la + ' y ' + f1(u.tasa_nac) + ' % en el país' + (bad(rs.var_oh) ? '.' : ' (' + sg1(rs.var_oh) + ' puntos en 12 meses en la región).'));
+    pts.push('Ocupados: ' + fI(u.ocu_oh) + ' personas' + (bad(rs.ocu_var) ? '.' : ' (' + sg1(rs.ocu_var) + ' % en 12 meses).'));
+    if (u.con_oh != null) pts.push('Construcción: ' + fI(u.con_oh) + ' ocupados, el ' + f1(rs.con_peso) + ' % del empleo regional' + (bad(rs.con_var) ? '.' : ' (' + sg1(rs.con_var) + ' % en 12 meses).'));
+    if (u.inf_oh != null) pts.push('Informalidad: ' + f1(u.inf_oh) + ' % de los ocupados, frente a ' + f1(u.inf_nac) + ' % en el país.');
+    pts.forEach((t) => cuerpo.push(par(t, {num: true})));
+
+    H('Contexto nacional');
+    P(resumenN);
+    if (nt.n1) P(nt.n1.detalle);
+
+    H(A.la.charAt(0).toUpperCase() + A.la.slice(1) + ': desocupación');
+    ['a1', 'a2', 'a3'].forEach((k) => { if (it[k]) P(it[k].detalle); });
+
+    H(A.la.charAt(0).toUpperCase() + A.la.slice(1) + ': empleo y construcción');
+    ['a4', 'a5', 'a6'].forEach((k) => { if (it[k]) P(it[k].detalle); });
+
+    H('Cifras del trimestre');
+    const fil = INDS.map((x) => fmtFil(x[0], x[1], x[2], true)).filter(Boolean);
+    cuerpo.push(tablaDoc([3500, 1800, 1800, 1900], ['Indicador', A.nom, 'País', 'Variación en 12 meses de la región'], fil));
+    espacio();
+
+    if (ramas.length) { H('Empleo por rama de actividad'); tablaRamas(); }
+
+    H('Comparación entre regiones');
+    if (it.a7) P(it.a7.detalle);
+    const filasR = regOrden.map((r) => [r.region, f1(r.tasa) + ' %', regA.has(r.cod) ? sg1(dif(r.tasa, regA.get(r.cod).tasa)) + ' pp' : '—', r.con_ocu != null ? fI(r.con_ocu) : '—']);
+    cuerpo.push(tablaDoc([3300, 1700, 1900, 2100], ['Región', 'Desocupación', 'Variación en 12 meses', 'Ocupados en construcción'], filasR, regOrden.findIndex((r) => r.cod === A.cod)));
+    espacio();
+  }
+
+  H('A tener presente');
+  P('Un trimestre móvil es el promedio de tres meses consecutivos, y el INE publica uno nuevo cada mes. La encuesta es una muestra' + (A.pais ? '. En cada región el margen de error es bastante mayor que en el total del país, y las cifras por región, por rama de actividad y las de construcción tienen todavía más error.' : ', y en una región el margen de error es bastante mayor que en el total del país, por lo que diferencias de uno o dos décimos entre trimestres no son concluyentes. Las cifras por rama de actividad y las de construcción por región tienen todavía más error.'));
+  P('Fuente: INE, Encuesta Nacional de Empleo, descargada desde SIMEL (sdmx.ine.gob.cl).' + (A.cod === '06' && !A.pais ? ' Los márgenes de error de O\'Higgins vienen de las notas estadísticas del INE.' : ''));
+
+  const sect = '<w:sectPr><w:footerReference w:type="default" r:id="rId3"/><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1418" w:right="1418" w:bottom="1418" w:left="1418" w:header="709" w:footer="709" w:gutter="0"/></w:sectPr>';
+  const ns = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"';
+  const rel = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/';
+  const fuente = '<w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="Arial" w:cs="Arial"/>';
+  const files = [
+    {name: '[Content_Types].xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/word/numbering.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"/><Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/></Types>'},
+    {name: '_rels/.rels', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="' + rel + 'officeDocument" Target="word/document.xml"/></Relationships>'},
+    {name: 'word/_rels/document.xml.rels', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="' + rel + 'styles" Target="styles.xml"/><Relationship Id="rId2" Type="' + rel + 'numbering" Target="numbering.xml"/><Relationship Id="rId3" Type="' + rel + 'footer" Target="footer1.xml"/></Relationships>'},
+    {name: 'word/document.xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ' + ns + '><w:body>' + cuerpo.join('') + sect + '</w:body></w:document>'},
+    {name: 'word/styles.xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:docDefaults><w:rPrDefault><w:rPr>' + fuente + '<w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="es-CL" w:eastAsia="es-CL" w:bidi="ar-SA"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:after="120" w:line="360" w:lineRule="auto"/><w:jc w:val="left"/></w:pPr></w:pPrDefault></w:docDefaults>' +
+      '<w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/><w:qFormat/></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Title"><w:name w:val="Title"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:spacing w:before="0" w:after="160" w:line="276" w:lineRule="auto"/></w:pPr><w:rPr><w:b/><w:color w:val="003D6B"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading1"><w:name w:val="heading 1"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:pBdr><w:bottom w:val="single" w:sz="8" w:space="2" w:color="E74100"/></w:pBdr><w:spacing w:before="320" w:after="120" w:line="276" w:lineRule="auto"/><w:outlineLvl w:val="0"/></w:pPr><w:rPr><w:b/><w:color w:val="003D6B"/><w:sz w:val="26"/><w:szCs w:val="26"/></w:rPr></w:style>' +
+      '</w:styles>'},
+    {name: 'word/numbering.xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:numbering xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:abstractNum w:abstractNumId="0"><w:multiLevelType w:val="hybridMultilevel"/><w:lvl w:ilvl="0"><w:start w:val="1"/><w:numFmt w:val="bullet"/><w:lvlText w:val="•"/><w:lvlJc w:val="left"/><w:pPr><w:ind w:left="567" w:hanging="283"/></w:pPr><w:rPr>' + fuente + '<w:color w:val="E74100"/></w:rPr></w:lvl></w:abstractNum><w:num w:numId="1"><w:abstractNumId w:val="0"/></w:num></w:numbering>'},
+    {name: 'word/footer1.xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:ftr ' + ns + '><w:p><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:jc w:val="right"/></w:pPr><w:r><w:rPr><w:color w:val="595959"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>' + W('Estudios CChC Sede Región de O\'Higgins, página ') + '</w:r><w:r><w:rPr><w:color w:val="595959"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:rPr><w:color w:val="595959"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr><w:instrText xml:space="preserve"> PAGE </w:instrText></w:r><w:r><w:rPr><w:color w:val="595959"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:color w:val="595959"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>' + W('1') + '</w:r><w:r><w:rPr><w:color w:val="595959"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r></w:p></w:ftr>'}
+  ];
+  const nombre = 'Minuta_empleo_' + A.slug + '_' + u.largo.replace(/–/g, '-').replace(/\s+/g, '_') + '.docx';
+  return {nombre, data: zip(files, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')};
+}
+
+/* ----- botones ----- */
+let dlNs = null;
+const DL_ESTADOS = ['dl-ok', 'dl-no', 'dl-er', 'dl-rl'];
+function dlEstado(id) { DL_ESTADOS.forEach((s) => { const e = document.getElementById(s); if (e) e.hidden = s !== id; }); }
+function dlBotones(fn) { document.querySelectorAll('[data-dl]').forEach(fn); }
+
+document.querySelectorAll('[data-dl]').forEach((b) => b.addEventListener('click', () => {
+  if (!dlNs) return;
+  const tipo = b.getAttribute('data-dl');
+  let x = null;
+  try { x = tipo === 'minuta' ? armaMinuta() : tipo === 'excel' ? armaExcel() : armaCsv(); } catch (e) { x = null; }
+  if (!x) { dlEstado('dl-er'); return; }
+  dlNs.save({filename: x.nombre, data: x.data}).then(() => dlEstado('dl-ok'), (e) => {
+    const c = e && e.code;
+    dlEstado(c === 'declined' ? 'dl-no' : c === 'rate_limited' ? 'dl-rl' : 'dl-er');
+  });
+}));
+const bDesc = document.getElementById('b-desc');
+if (bDesc) bDesc.addEventListener('click', () => { const s = document.getElementById('descargas'); if (s) s.scrollIntoView({behavior: MOTION ? 'smooth' : 'auto', block: 'start'}); });
+
+if (window.claude && typeof claude.use === 'function') {
+  claude.use('downloads').then((ns) => {
+    dlNs = ns || null;
+    if (!ns) { dlBotones((b) => { b.hidden = true; }); const n = document.getElementById('dl-na'); if (n) n.hidden = false; return; }
+    dlBotones((b) => { b.disabled = false; });
+  }, () => { dlBotones((b) => { b.hidden = true; }); const n = document.getElementById('dl-na'); if (n) n.hidden = false; });
+} else {
+  dlBotones((b) => { b.hidden = true; });
+}
+
+/* ===================== Versión web: portada ilustrada, navegación y detalles ===================== */
+const SVGNS = 'http://www.w3.org/2000/svg';
+function E(tag, at, padre) {
+  const e = document.createElementNS(SVGNS, tag);
+  Object.keys(at || {}).forEach((k) => e.setAttribute(k, at[k]));
+  if (padre) padre.appendChild(e);
+  return e;
+}
+function semilla(s) { return function () { s |= 0; s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+function grua(g, x, base, alto, cls, flip) {
+  const f = flip ? -1 : 1, top = base - alto, w = 13;
+  const c = '#FF7A45';
+  E('line', {x1: x - w / 2, y1: base, x2: x - w / 2, y2: top, stroke: c, 'stroke-width': 2.2}, g);
+  E('line', {x1: x + w / 2, y1: base, x2: x + w / 2, y2: top, stroke: c, 'stroke-width': 2.2}, g);
+  let d = '';
+  for (let y = base, i = 0; y > top + 10; y -= 18, i++) d += 'M' + (x - w / 2) + ' ' + y + 'L' + (x + w / 2) + ' ' + (y - 18) + 'M' + (x + w / 2) + ' ' + y + 'L' + (x - w / 2) + ' ' + (y - 18);
+  E('path', {d, stroke: c, 'stroke-width': 1.1, fill: 'none', opacity: .85}, g);
+  const j = E('g', {class: 'jib ' + (cls || ''), style: 'transform-box:view-box;transform-origin:' + x + 'px ' + top + 'px'}, g);
+  E('rect', {x: x - w / 2 - 2, y: top - 6, width: w + 4, height: 14, fill: '#FF5B1F'}, j);
+  E('line', {x1: x - 118 * f, y1: top, x2: x + 250 * f, y2: top, stroke: c, 'stroke-width': 3.2}, j);
+  E('line', {x1: x - 118 * f, y1: top + 7, x2: x + 250 * f, y2: top + 3, stroke: c, 'stroke-width': 1.1, opacity: .8}, j);
+  E('path', {d: 'M' + (x - 118 * f) + ' ' + top + 'L' + x + ' ' + (top - 52) + 'L' + (x + 250 * f) + ' ' + top, stroke: c, 'stroke-width': 1.3, fill: 'none', opacity: .9}, j);
+  E('line', {x1: x, y1: top - 52, x2: x, y2: top - 66, stroke: c, 'stroke-width': 2}, j);
+  E('circle', {cx: x, cy: top - 68, r: 3, fill: '#FF3B1F', class: 'lz'}, j);
+  E('rect', {x: x - 118 * f - (f > 0 ? 0 : 26), y: top + 2, width: 26, height: 18, fill: PAL.contra, stroke: c, 'stroke-width': 1}, j);
+  const car = E('g', {class: 'carro'}, j);
+  const cx = x + 170 * f;
+  E('rect', {x: cx - 6, y: top, width: 12, height: 7, fill: '#FF5B1F'}, car);
+  E('line', {x1: cx, y1: top + 7, x2: cx, y2: top + 78, stroke: PAL.cable, 'stroke-width': 1}, car);
+  E('path', {d: 'M' + (cx - 5) + ' ' + (top + 78) + 'h10v6h-10z', fill: '#FF5B1F'}, car);
+  E('rect', {x: cx - 12, y: top + 86, width: 24, height: 9, fill: PAL.carga, opacity: .95}, car);
+}
+
+const PAL = {"lejos": "#2F7FD6", "medio": "#1B5FB3", "vent1": "#FFE2A6", "vent2": "#D4E9FF", "losa": "#8CBBF0", "cerca": "#0A3768", "suelo": "#08305F", "cable": "#D6E8FA", "carga": "#BFE0FF", "contra": "#0F4A8F"};
+function ciudad(svg, o) {
+  svg.replaceChildren();
+  const W = 1600, H = o.alto || 520, R = semilla(o.semilla || 7);
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('preserveAspectRatio', 'xMidYMax slice');
+  const capa = (k, op) => E('g', {class: 'cap', 'data-k': k, opacity: op == null ? 1 : op}, svg);
+  /* lejos */
+  const g0 = capa(5);
+  for (let x = -20; x < W + 40;) { const w = 40 + R() * 60, h = 70 + R() * 150; E('rect', {x, y: H - h, width: w, height: h, fill: PAL.lejos}, g0); x += w + R() * 8; }
+  /* medio, con ventanas */
+  const g1 = capa(10);
+  for (let x = -30; x < W + 40;) {
+    const w = 38 + R() * 54, h = 100 + R() * (o.alto ? 150 : 210);
+    E('rect', {x, y: H - h, width: w, height: h, fill: PAL.medio}, g1);
+    for (let yy = H - h + 10; yy < H - 14; yy += 13) for (let xx = x + 6; xx < x + w - 8; xx += 10) {
+      const r = R(); if (r > .3) continue;
+      E('rect', {x: xx, y: yy, width: 4, height: 6, fill: r < .05 ? PAL.vent1 : PAL.vent2, opacity: (.2 + R() * .55).toFixed(2), class: r < .04 ? 'lz' : ''}, g1);
+    }
+    x += w + 4 + R() * 12;
+  }
+  /* grúas */
+  if (o.gruas !== false) {
+    const g2 = capa(16);
+    grua(g2, W * .17, H, o.alto ? 220 : 262, '', false);
+    grua(g2, W * .86, H, o.alto ? 190 : 240, 'jib2', true);
+  }
+  /* cerca: obra en construcción */
+  const g3 = capa(26);
+  const bx = W * .52, bw = 230, bh = o.alto ? 120 : 190;
+  for (let i = 0; i < 5; i++) E('rect', {x: bx, y: H - 24 - i * (bh / 5), width: bw, height: 5, fill: PAL.losa}, g3);
+  for (let i = 0; i < 6; i++) E('rect', {x: bx + i * (bw - 5) / 5, y: H - 24 - bh, width: 5, height: bh, fill: '#FF5B1F'}, g3);
+  E('path', {d: 'M' + bx + ' ' + (H - 24) + 'l' + (bw / 2) + ' ' + (-bh * .95) + 'M' + (bx + bw) + ' ' + (H - 24) + 'l' + (-bw / 2) + ' ' + (-bh * .95), stroke: '#FF8A57', 'stroke-width': 1, opacity: .6}, g3);
+  for (let x = -20; x < W + 30;) { const w = 60 + R() * 120, h = 14 + R() * 26; E('rect', {x, y: H - h, width: w, height: h, fill: PAL.cerca}, g3); x += w + R() * 16; }
+  E('rect', {x: 0, y: H - 8, width: W, height: 8, fill: PAL.suelo}, g3);
+}
+
+/* mueve las capas con el puntero */
+(function () {
+  const portada = document.getElementById('portada'); if (!portada || !MOTION) return;
+  portada.addEventListener('pointermove', (ev) => {
+    const r = portada.getBoundingClientRect(), mx = (ev.clientX - r.left) / r.width - .5;
+    document.querySelectorAll('#sky .cap').forEach((g) => { g.style.transform = 'translateX(' + (-mx * +g.getAttribute('data-k')).toFixed(1) + 'px)'; });
+  });
+})();
+ciudad(document.getElementById('sky'), {semilla: 11});
+ciudad(document.getElementById('sky2'), {semilla: 5, alto: 190, gruas: false});
+
+/* ---------- Chile, región por región (portada) ---------- */
+dash.draw('hc_per', (el) => { const r = resumen(); el.textContent = r ? r.largo : '—'; });
+dash.draw('hero_chile', (el) => {
+  if (!gate(el, ['reg_sel', 'resumen'])) return;
+  const r0 = resumen();
+  const regs = dash.data('reg_sel').data.slice().sort((a, b) => a.geo - b.geo);
+  const mx = d3.max(regs, (r) => r.tasa);
+  hbars(el, {
+    aria: 'Desocupación de las 16 regiones, de norte a sur, en el trimestre elegido', fmt: pct, dom: [0, mx * 1.16], rowH: 23,
+    rows: regs.map((r) => ({label: r.region, value: r.tasa, destaca: r.id === r0.reg_cod && !!r0.reg, color: (r.id === r0.reg_cod && !!r0.reg) ? C_OR : C_AZ, pick: r.id,
+      tip: [r.region, 'Desocupación: ' + pct(r.tasa), 'Hace 12 meses: ' + pct(r.tasa_ant), 'Clic para ver el detalle de la región']})),
+    ref: {v: r0.tasa_nac, label: 'Chile ' + pct(r0.tasa_nac)}
+  });
+});
+
+/* ---------- navegación superior ---------- */
+const NAV = [
+  ['Resumen', 'i-ciu', ['cifras-nac', 'cifras']],
+  ['Desocupación', 'i-graf', ['desocupacion-nac', 'desocupacion']],
+  ['Regiones', 'i-mapa', ['regiones', 'posicion']],
+  ['Construcción', 'i-gru', ['construccion-nac', 'construccion']],
+  ['Ramas', 'i-pila', ['ramas-nac', 'f-sec']],
+  ['Descargas', 'i-baj', ['descargas']]
+];
+const navEl = document.getElementById('web-links');
+function visibleDe(ids) { for (const i of ids) { const e = document.getElementById(i); if (e && e.getClientRects().length) return e; } return null; }
+NAV.forEach((n) => {
+  const a = document.createElement('a'); a.href = '#' + n[2][0];
+  const sv = document.createElementNS(SVGNS, 'svg'); sv.setAttribute('class', 'mo-ic'); sv.setAttribute('aria-hidden', 'true');
+  const u = document.createElementNS(SVGNS, 'use'); u.setAttribute('href', '#' + n[1]); sv.appendChild(u);
+  a.appendChild(sv); a.appendChild(document.createTextNode(n[0]));
+  a.addEventListener('click', (ev) => { ev.preventDefault(); const t = visibleDe(n[2]); if (t) t.scrollIntoView({behavior: MOTION ? 'smooth' : 'auto', block: 'start'}); });
+  navEl.appendChild(a); n.push(a);
+});
+function espia() {
+  const y = window.innerHeight * .32; let act = null, mejor = -1e9;
+  NAV.forEach((n) => { const t = visibleDe(n[2]); if (!t) return; const b = t.getBoundingClientRect().top; if (b <= y && b > mejor) { mejor = b; act = n; } });
+  NAV.forEach((n) => n[3].classList.toggle('on', n === act));
+  document.getElementById('web-arriba').classList.toggle('on', window.scrollY > 800);
+}
+window.addEventListener('scroll', espia, {passive: true});
+document.addEventListener('panel:dibujado', espia);
+document.getElementById('web-arriba').addEventListener('click', () => window.scrollTo({top: 0, behavior: MOTION ? 'smooth' : 'auto'}));
+document.getElementById('web-inicio').addEventListener('click', (ev) => { ev.preventDefault(); irA('', false); window.scrollTo({top: 0, behavior: MOTION ? 'smooth' : 'auto'}); });
+
+/* ---------- iconos en los títulos de sección ---------- */
+const ICONO_SEC = {lectura: 'i-graf', 'lectura-nac': 'i-graf', desocupacion: 'i-sin', 'desocupacion-nac': 'i-sin', posicion: 'i-mapa', regiones: 'i-mapa', construccion: 'i-gru', 'construccion-nac': 'i-gru', 'ramas-nac': 'i-pila', detalle: 'i-xls', 'detalle-nac': 'i-xls', descargas: 'i-baj', calendario: 'i-cal'};
+Object.keys(ICONO_SEC).forEach((id) => {
+  const h = document.querySelector('#' + id + ' > h2'); if (!h) return;
+  const tx = document.createElement('span'); tx.className = 'mo-ht'; while (h.firstChild) tx.appendChild(h.firstChild); h.appendChild(tx);
+  const s = document.createElement('span'); s.className = 'mo-hic';
+  const sv = document.createElementNS(SVGNS, 'svg'); sv.setAttribute('class', 'mo-ic'); sv.setAttribute('aria-hidden', 'true');
+  const u = document.createElementNS(SVGNS, 'use'); u.setAttribute('href', '#' + ICONO_SEC[id]); sv.appendChild(u); s.appendChild(sv);
+  h.insertBefore(s, h.firstChild);
+});
+
+/* ---------- foco de luz en las tarjetas y aparición al desplazarse ---------- */
+document.addEventListener('pointermove', (ev) => {
+  const c = ev.target.closest && ev.target.closest('.mo-card,.mo-fig,.mo-an,.mo-dl'); if (!c) return;
+  const r = c.getBoundingClientRect(); c.style.setProperty('--mx', (ev.clientX - r.left) + 'px'); c.style.setProperty('--my', (ev.clientY - r.top) + 'px');
+}, {passive: true});
+if (MOTION && 'IntersectionObserver' in window && !/[?&]sin-anim/.test(location.search)) {
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } }), {threshold: .06, rootMargin: '0px 0px -4% 0px'});
+  document.querySelectorAll('.mo-sec,.mo-kpis,.mo-big,.mo-cta-box,.mo-det').forEach((e) => { e.classList.add('web-rev'); io.observe(e); });
+}
+
+/* ---------- ajuste al cambiar el tamaño de la ventana ---------- */
+let _rz = null, _ancho = window.innerWidth;
+window.addEventListener('resize', () => { if (window.innerWidth === _ancho) return; _ancho = window.innerWidth; clearTimeout(_rz); _rz = setTimeout(() => dash.draw(), 220); });
+
+/* ---------- carga de datos ---------- */
+dash.iniciar({serie: 'data/serie.json', regiones_t: 'data/regiones_t.json', sectores_t: 'data/sectores_t.json', calendario: 'data/calendario.json'});
+
+</script>
+</body>
+</html>
